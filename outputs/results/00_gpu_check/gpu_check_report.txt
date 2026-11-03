@@ -1,0 +1,7 @@
+python: 3.13.16
+anomalib: 2.7.0
+pytorch: 2.11.0+cu130
+gpu available: True
+gpu count: 2
+gpu name: Tesla T4
+calculation ran on: cuda:0
