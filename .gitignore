@@ -1,0 +1,43 @@
+# Private planning and learning notes: not part of the public repository
+CLAUDE.md
+PROJECT_LITERATURE_REVIEW.md
+PROJECT_BLUEPRINT.md
+RULES_BOOK.md
+EXECUTION_GUIDE.md
+DECISIONS.md
+DEBUG_LOG.md
+CONCEPTS.md
+AI_USAGE.md
+EXPERIMENT_LOG.md
+
+# Claude Code's project settings
+.claude/
+
+# The dataset: its licence does not allow redistributing it here
+/data/
+
+# Fitted models and checkpoints: large, and derived from the dataset
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Python environment folders: rebuilt from requirements.txt, never shared
+.venv/
+venv/
+env/
+
+# Kaggle credentials: they give access to my account
+kaggle.json
+.kaggle/
+access_token
+
+# Files Python and Jupyter generate by themselves
+__pycache__/
+.ipynb_checkpoints/
+
+# Run folders written by the libraries. The leading / means "only at the top
+# of the project", so that outputs/results/ is still tracked
+/results/
+lightning_logs/
