@@ -1,0 +1,14 @@
+{
+  "id": "revathyh/phase-1-data-and-integrity",
+  "title": "Phase 1 Data and Integrity",
+  "code_file": "../../notebooks/01_data_and_integrity.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": ["revathyh/mvtec-ad2-sheet-metal-vial"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

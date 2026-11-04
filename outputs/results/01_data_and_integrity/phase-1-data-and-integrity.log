@@ -1,0 +1,233 @@
+[{"stream_name":"stderr","time":10.610549815,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.61065546,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.61066218,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.610666265,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.504914897,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.504957257000001,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.504961673,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.504964736,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.046138635,"data":"sheet_metal root: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/sheet_metal\n"}
+,{"stream_name":"stdout","time":19.046177639,"data":"vial root: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/vial\n"}
+,{"stream_name":"stdout","time":20.325014198,"data":"\n"}
+,{"stream_name":"stdout","time":20.325058091,"data":"Folders for sheet_metal (file count, then folder)\n"}
+,{"stream_name":"stdout","time":20.325063838,"data":"142  sheet_metal/test_private\n"}
+,{"stream_name":"stdout","time":20.325067932,"data":"142  sheet_metal/test_private_mixed\n"}
+,{"stream_name":"stdout","time":20.32507239,"data":"90  sheet_metal/test_public/bad\n"}
+,{"stream_name":"stdout","time":20.325076272,"data":"24  sheet_metal/test_public/good\n"}
+,{"stream_name":"stdout","time":20.325080084,"data":"90  sheet_metal/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":20.325084199,"data":"137  sheet_metal/train/good\n"}
+,{"stream_name":"stdout","time":20.325088249,"data":"19  sheet_metal/validation/good\n"}
+,{"stream_name":"stdout","time":20.325092119,"data":"\n"}
+,{"stream_name":"stdout","time":20.325095415,"data":"Folders for vial (file count, then folder)\n"}
+,{"stream_name":"stdout","time":20.325099022,"data":"276  vial/test_private\n"}
+,{"stream_name":"stdout","time":20.325102759,"data":"276  vial/test_private_mixed\n"}
+,{"stream_name":"stdout","time":20.325106687999998,"data":"105  vial/test_public/bad\n"}
+,{"stream_name":"stdout","time":20.325110227,"data":"35  vial/test_public/good\n"}
+,{"stream_name":"stdout","time":20.325116079,"data":"105  vial/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":20.325119882,"data":"291  vial/train/good\n"}
+,{"stream_name":"stdout","time":20.325123964,"data":"41  vial/validation/good\n"}
+,{"stream_name":"stdout","time":21.623836841,"data":"Collecting anomalib==2.7.0\r\n"}
+,{"stream_name":"stdout","time":21.776877996,"data":"  Downloading anomalib-2.7.0-py3-none-any.whl.metadata (35 kB)\r\n"}
+,{"stream_name":"stdout","time":21.827941763,"data":"Requirement already satisfied: docstring-parser in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.18.0)\r\n"}
+,{"stream_name":"stdout","time":21.827973118,"data":"Requirement already satisfied: einops\u003e=0.3.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.8.2)\r\n"}
+,{"stream_name":"stdout","time":21.879120718,"data":"Collecting freia\u003e=0.2 (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":21.879153546,"data":"  Downloading FrEIA-0.2.tar.gz (34 kB)\r\n"}
+,{"stream_name":"stdout","time":26.104889062,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":26.614049105,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":26.919757889,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":27.072583977,"data":"Collecting imagecodecs (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.072636,"data":"  Downloading imagecodecs-2026.10.10-cp312-abi3-manylinux_2_28_x86_64.whl.metadata (22 kB)\r\n"}
+,{"stream_name":"stdout","time":27.174560967,"data":"Collecting jsonargparse\u003c4.47.0,\u003e=4.27.7 (from jsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.22577146,"data":"  Downloading jsonargparse-4.46.0-py3-none-any.whl.metadata (12 kB)\r\n"}
+,{"stream_name":"stdout","time":27.225797766,"data":"Requirement already satisfied: kornia\u003e=0.6.6 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.9.0)\r\n"}
+,{"stream_name":"stdout","time":27.327997222,"data":"Collecting lightning!=2.6.2,!=2.6.3,\u003e=2.6 (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.32803205,"data":"  Downloading lightning-2.6.6-py3-none-any.whl.metadata (45 kB)\r\n"}
+,{"stream_name":"stdout","time":27.430079572,"data":"Requirement already satisfied: lightning-utilities in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.15.3)\r\n"}
+,{"stream_name":"stdout","time":27.430112551,"data":"Requirement already satisfied: matplotlib\u003e=3.4.3 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (3.10.0)\r\n"}
+,{"stream_name":"stdout","time":27.430118643,"data":"Requirement already satisfied: omegaconf\u003e=2.1.1 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2.4.0)\r\n"}
+,{"stream_name":"stdout","time":27.430123049,"data":"Requirement already satisfied: opencv-python-headless\u003e=4.5.3.56 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (4.14.0.94)\r\n"}
+,{"stream_name":"stdout","time":27.4301271,"data":"Requirement already satisfied: pandas\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2.3.3)\r\n"}
+,{"stream_name":"stdout","time":27.430129842,"data":"Requirement already satisfied: pillow\u003e=10.1.0 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (13.0.0)\r\n"}
+,{"stream_name":"stdout","time":27.430132513,"data":"Requirement already satisfied: platformdirs\u003e=4.9.4 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (4.13.5)\r\n"}
+,{"stream_name":"stdout","time":27.481169476,"data":"Collecting rich-argparse (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.48119894,"data":"  Downloading rich_argparse-1.8.0-py3-none-any.whl.metadata (15 kB)\r\n"}
+,{"stream_name":"stdout","time":27.532363946,"data":"Requirement already satisfied: rich\u003e=13.5.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (13.9.4)\r\n"}
+,{"stream_name":"stdout","time":27.532390904,"data":"Requirement already satisfied: scikit-image in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.25.2)\r\n"}
+,{"stream_name":"stdout","time":27.532396115,"data":"Requirement already satisfied: scikit-learn in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.6.1)\r\n"}
+,{"stream_name":"stdout","time":27.532400203,"data":"Requirement already satisfied: tifffile in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2026.10.15)\r\n"}
+,{"stream_name":"stdout","time":27.532404486,"data":"Requirement already satisfied: timm in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.0.30)\r\n"}
+,{"stream_name":"stdout","time":27.53242031,"data":"Requirement already satisfied: torchmetrics\u003e=1.8.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.9.0)\r\n"}
+,{"stream_name":"stdout","time":27.53242514,"data":"Requirement already satisfied: PyYAML\u003e=3.13 in /usr/local/lib/python3.13/dist-packages (from jsonargparse\u003c4.47.0,\u003e=4.27.7-\u003ejsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0) (6.0.3)\r\n"}
+,{"stream_name":"stdout","time":27.583614457,"data":"Collecting typeshed-client\u003e=2.8.2 (from jsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.583651429,"data":"  Downloading typeshed_client-2.14.0-py3-none-any.whl.metadata (11 kB)\r\n"}
+,{"stream_name":"stdout","time":27.583657792,"data":"Requirement already satisfied: numpy\u003e=1.15.0 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (2.1.3)\r\n"}
+,{"stream_name":"stdout","time":27.583666786,"data":"Requirement already satisfied: scipy\u003e=1.5 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (1.16.3)\r\n"}
+,{"stream_name":"stdout","time":27.583671664,"data":"Requirement already satisfied: torch\u003e=1.0.0 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (2.11.0+cpu)\r\n"}
+,{"stream_name":"stdout","time":27.583676208,"data":"Requirement already satisfied: kornia-rs\u003e=0.2.0 in /usr/local/lib/python3.13/dist-packages (from kornia\u003e=0.6.6-\u003eanomalib==2.7.0) (0.2.0)\r\n"}
+,{"stream_name":"stdout","time":27.634669194,"data":"Requirement already satisfied: fsspec\u003c2028.0,\u003e=2022.5.0 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2025.12.0)\r\n"}
+,{"stream_name":"stdout","time":27.634709258,"data":"Requirement already satisfied: packaging\u003c27.0,\u003e=23.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (26.3)\r\n"}
+,{"stream_name":"stdout","time":27.634715847,"data":"Requirement already satisfied: tqdm\u003c6.0,\u003e=4.57.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (4.67.3)\r\n"}
+,{"stream_name":"stdout","time":27.634721173,"data":"Requirement already satisfied: typing-extensions\u003c6.0,\u003e4.5.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (4.16.0)\r\n"}
+,{"stream_name":"stdout","time":27.634725747,"data":"Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2.6.6)\r\n"}
+,{"stream_name":"stdout","time":27.634730045,"data":"Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (3.14.5)\r\n"}
+,{"stream_name":"stdout","time":27.634734329,"data":"Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (4.2.4)\r\n"}
+,{"stream_name":"stdout","time":27.634738833,"data":"Requirement already satisfied: setuptools\u003c82 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (81.0.0)\r\n"}
+,{"stream_name":"stdout","time":27.634742435,"data":"Requirement already satisfied: sympy\u003e=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.14.0)\r\n"}
+,{"stream_name":"stdout","time":27.634745407,"data":"Requirement already satisfied: networkx\u003e=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.7)\r\n"}
+,{"stream_name":"stdout","time":27.634764238,"data":"Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.1.6)\r\n"}
+,{"stream_name":"stdout","time":27.685949211,"data":"Requirement already satisfied: aiohappyeyeballs\u003e=2.5.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2.7.1)\r\n"}
+,{"stream_name":"stdout","time":27.685995119,"data":"Requirement already satisfied: aiosignal\u003e=1.4.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.4.0)\r\n"}
+,{"stream_name":"stdout","time":27.686001378,"data":"Requirement already satisfied: attrs\u003e=17.3.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (26.1.0)\r\n"}
+,{"stream_name":"stdout","time":27.686004964,"data":"Requirement already satisfied: frozenlist\u003e=1.1.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.8.0)\r\n"}
+,{"stream_name":"stdout","time":27.686008225,"data":"Requirement already satisfied: multidict\u003c8.0,\u003e=4.5 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (6.9.1)\r\n"}
+,{"stream_name":"stdout","time":27.686011622,"data":"Requirement already satisfied: propcache\u003e=0.2.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (0.5.4)\r\n"}
+,{"stream_name":"stdout","time":27.686014708,"data":"Requirement already satisfied: yarl\u003c2.0,\u003e=1.25.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.25.1)\r\n"}
+,{"stream_name":"stdout","time":27.6860178,"data":"Requirement already satisfied: idna\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from yarl\u003c2.0,\u003e=1.25.1-\u003eaiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (3.20)\r\n"}
+,{"stream_name":"stdout","time":27.686021138,"data":"Requirement already satisfied: contourpy\u003e=1.0.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.4.0)\r\n"}
+,{"stream_name":"stdout","time":27.686023873,"data":"Requirement already satisfied: cycler\u003e=0.10 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (0.12.1)\r\n"}
+,{"stream_name":"stdout","time":27.686028017,"data":"Requirement already satisfied: fonttools\u003e=4.22.0 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (4.67.0)\r\n"}
+,{"stream_name":"stdout","time":27.68603264,"data":"Requirement already satisfied: kiwisolver\u003e=1.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.5.1)\r\n"}
+,{"stream_name":"stdout","time":27.686036803,"data":"Requirement already satisfied: pyparsing\u003e=2.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (3.3.3)\r\n"}
+,{"stream_name":"stdout","time":27.686056748,"data":"Requirement already satisfied: python-dateutil\u003e=2.7 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (2.9.0.post0)\r\n"}
+,{"stream_name":"stdout","time":27.737056115,"data":"Requirement already satisfied: pytz\u003e=2020.1 in /usr/local/lib/python3.13/dist-packages (from pandas\u003e=1.1.0-\u003eanomalib==2.7.0) (2025.2)\r\n"}
+,{"stream_name":"stdout","time":27.737089938,"data":"Requirement already satisfied: tzdata\u003e=2022.7 in /usr/local/lib/python3.13/dist-packages (from pandas\u003e=1.1.0-\u003eanomalib==2.7.0) (2026.5)\r\n"}
+,{"stream_name":"stdout","time":27.737095902,"data":"Requirement already satisfied: six\u003e=1.5 in /usr/local/lib/python3.13/dist-packages (from python-dateutil\u003e=2.7-\u003ematplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.17.0)\r\n"}
+,{"stream_name":"stdout","time":27.737099337,"data":"Requirement already satisfied: markdown-it-py\u003e=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.5.2-\u003eanomalib==2.7.0) (4.2.0)\r\n"}
+,{"stream_name":"stdout","time":27.737102548,"data":"Requirement already satisfied: pygments\u003c3.0.0,\u003e=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.5.2-\u003eanomalib==2.7.0) (2.21.0)\r\n"}
+,{"stream_name":"stdout","time":27.737105506,"data":"Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py\u003e=2.2.0-\u003erich\u003e=13.5.2-\u003eanomalib==2.7.0) (0.1.2)\r\n"}
+,{"stream_name":"stdout","time":27.788169199,"data":"Requirement already satisfied: mpmath\u003c1.4,\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy\u003e=1.13.3-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.3.0)\r\n"}
+,{"stream_name":"stdout","time":27.788201811,"data":"Requirement already satisfied: MarkupSafe\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.0.4)\r\n"}
+,{"stream_name":"stdout","time":27.788207554,"data":"Requirement already satisfied: imageio!=2.35.0,\u003e=2.33 in /usr/local/lib/python3.13/dist-packages (from scikit-image-\u003eanomalib==2.7.0) (2.38.1)\r\n"}
+,{"stream_name":"stdout","time":27.788212314,"data":"Requirement already satisfied: lazy-loader\u003e=0.4 in /usr/local/lib/python3.13/dist-packages (from scikit-image-\u003eanomalib==2.7.0) (0.6)\r\n"}
+,{"stream_name":"stdout","time":27.788217046,"data":"Requirement already satisfied: joblib\u003e=1.2.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn-\u003eanomalib==2.7.0) (1.6.0)\r\n"}
+,{"stream_name":"stdout","time":27.788221596,"data":"Requirement already satisfied: threadpoolctl\u003e=3.1.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn-\u003eanomalib==2.7.0) (3.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.839588445,"data":"Requirement already satisfied: cloudpickle\u003e=3.0 in /usr/local/lib/python3.13/dist-packages (from joblib\u003e=1.2.0-\u003escikit-learn-\u003eanomalib==2.7.0) (3.1.2)\r\n"}
+,{"stream_name":"stdout","time":27.839617945,"data":"Requirement already satisfied: torchvision in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (0.26.0+cpu)\r\n"}
+,{"stream_name":"stdout","time":27.839623147,"data":"Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (1.33.0)\r\n"}
+,{"stream_name":"stdout","time":27.839627369,"data":"Requirement already satisfied: safetensors in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (0.8.0)\r\n"}
+,{"stream_name":"stdout","time":27.839636217,"data":"Requirement already satisfied: click\u003c9.0.0,\u003e=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (8.5.0)\r\n"}
+,{"stream_name":"stdout","time":27.839653146,"data":"Requirement already satisfied: hf-xet\u003c2.0.0,\u003e=1.6.0 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (1.7.0)\r\n"}
+,{"stream_name":"stdout","time":27.83965711,"data":"Requirement already satisfied: httpx\u003c1,\u003e=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (0.28.1)\r\n"}
+,{"stream_name":"stdout","time":27.839661455,"data":"Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (4.15.1)\r\n"}
+,{"stream_name":"stdout","time":27.839665838,"data":"Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (2026.10.23)\r\n"}
+,{"stream_name":"stdout","time":27.83966971,"data":"Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (1.0.9)\r\n"}
+,{"stream_name":"stdout","time":27.839673941,"data":"Requirement already satisfied: h11\u003e=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*-\u003ehttpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (0.16.0)\r\n"}
+,{"stream_name":"stdout","time":27.890821252,"data":"Downloading anomalib-2.7.0-py3-none-any.whl (1.1 MB)\r\n"}
+,{"stream_name":"stdout","time":27.941951041,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/1.1 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.1/1.1 MB\u001b[0m \u001b[31m14.3 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":27.993259676,"data":"\u001b[?25hDownloading jsonargparse-4.46.0-py3-none-any.whl (246 kB)\r\n"}
+,{"stream_name":"stdout","time":28.044240231,"data":"Downloading lightning-2.6.6-py3-none-any.whl (849 kB)\r\n"}
+,{"stream_name":"stdout","time":28.04427786,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/849.3 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m849.3/849.3 kB\u001b[0m \u001b[31m17.3 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":28.095041069,"data":"\u001b[?25hDownloading typeshed_client-2.14.0-py3-none-any.whl (803 kB)\r\n"}
+,{"stream_name":"stdout","time":28.095077126,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/803.9 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m803.9/803.9 kB\u001b[0m \u001b[31m18.1 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":28.146823208,"data":"\u001b[?25hDownloading imagecodecs-2026.10.10-cp312-abi3-manylinux_2_28_x86_64.whl (28.4 MB)\r\n"}
+,{"stream_name":"stdout","time":28.350555893,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/28.4 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m28.3/28.4 MB\u001b[0m \u001b[31m235.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m28.4/28.4 MB\u001b[0m \u001b[31m122.0 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":28.401625129,"data":"\u001b[?25hDownloading rich_argparse-1.8.0-py3-none-any.whl (25 kB)\r\n"}
+,{"stream_name":"stdout","time":28.554557326,"data":"Building wheels for collected packages: freia\r\n"}
+,{"stream_name":"stdout","time":28.912059082,"data":"  Building wheel for freia (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":28.912093718,"data":"  Created wheel for freia: filename=freia-0.2-py3-none-any.whl size=42849 sha256=01bd78c60f1a7c346ed6ec55569085da10e72dc6a9927c0d5505d39ffc10a071\r\n"}
+,{"stream_name":"stdout","time":28.912100285,"data":"  Stored in directory: /root/.cache/pip/wheels/b1/66/ba/29fd62b92bba7c42af99ae475baafa7d205b2c3e7fcc8670b7\r\n"}
+,{"stream_name":"stdout","time":28.912104925,"data":"Successfully built freia\r\n"}
+,{"stream_name":"stdout","time":30.034093733,"data":"Installing collected packages: typeshed-client, jsonargparse, imagecodecs, rich-argparse, freia, lightning, anomalib\r\n"}
+,{"stream_name":"stdout","time":32.897059014,"data":"\u001b[?25l\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0/7\u001b[0m [typeshed-client]\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1/7\u001b[0m [jsonargparse]\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1/7\u001b[0m [jsonargparse]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m7/7\u001b[0m [anomalib]\r\n"}
+,{"stream_name":"stdout","time":32.99966552,"data":"\u001b[?25h\r\u001b[1A\u001b[2KSuccessfully installed anomalib-2.7.0 freia-0.2 imagecodecs-2026.10.10 jsonargparse-4.46.0 lightning-2.6.6 rich-argparse-1.8.0 typeshed-client-2.14.0\r\n"}
+,{"stream_name":"stdout","time":72.512345962,"data":"\n"}
+,{"stream_name":"stdout","time":72.512401846,"data":"Folders for sheet_metal (file count, then folder)\n"}
+,{"stream_name":"stdout","time":72.512408561,"data":"142  sheet_metal/test_private\n"}
+,{"stream_name":"stdout","time":72.512413281,"data":"142  sheet_metal/test_private_mixed\n"}
+,{"stream_name":"stdout","time":72.512417884,"data":"90  sheet_metal/test_public/bad\n"}
+,{"stream_name":"stdout","time":72.512423347,"data":"24  sheet_metal/test_public/good\n"}
+,{"stream_name":"stdout","time":72.512428727,"data":"90  sheet_metal/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":72.512433749,"data":"137  sheet_metal/train/good\n"}
+,{"stream_name":"stdout","time":72.512438239,"data":"19  sheet_metal/validation/good\n"}
+,{"stream_name":"stdout","time":72.512443302,"data":"\n"}
+,{"stream_name":"stdout","time":72.512447772,"data":"Folders for vial (file count, then folder)\n"}
+,{"stream_name":"stdout","time":72.512452654,"data":"276  vial/test_private\n"}
+,{"stream_name":"stdout","time":72.512457591,"data":"276  vial/test_private_mixed\n"}
+,{"stream_name":"stdout","time":72.512462577,"data":"105  vial/test_public/bad\n"}
+,{"stream_name":"stdout","time":72.512467406,"data":"35  vial/test_public/good\n"}
+,{"stream_name":"stdout","time":72.512472222,"data":"105  vial/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":72.512477038,"data":"291  vial/train/good\n"}
+,{"stream_name":"stdout","time":72.512481788,"data":"41  vial/validation/good\n"}
+,{"stream_name":"stdout","time":72.512486749,"data":"\n"}
+,{"stream_name":"stdout","time":72.512491252,"data":"python: 3.13.18\n"}
+,{"stream_name":"stdout","time":72.512496156,"data":"anomalib: 2.7.0\n"}
+,{"stream_name":"stdout","time":72.512525905,"data":"pytorch: 2.11.0+cpu\n"}
+,{"stream_name":"stdout","time":72.51253119,"data":"gpu available: False\n"}
+,{"stream_name":"stdout","time":72.512535703,"data":"\n"}
+,{"stream_name":"stdout","time":72.512550686,"data":"Images the loader found for sheet_metal\n"}
+,{"stream_name":"stdout","time":72.512554579,"data":"train: 137\n"}
+,{"stream_name":"stdout","time":72.512558145,"data":"validation: 19\n"}
+,{"stream_name":"stdout","time":72.512561659,"data":"public test: 114\n"}
+,{"stream_name":"stdout","time":72.512565541,"data":"private test: 142\n"}
+,{"stream_name":"stdout","time":72.512569271,"data":"private mixed test: 142\n"}
+,{"stream_name":"stdout","time":72.512572797,"data":"\n"}
+,{"stream_name":"stdout","time":72.512576437,"data":"Images the loader found for vial\n"}
+,{"stream_name":"stdout","time":72.512580461,"data":"train: 291\n"}
+,{"stream_name":"stdout","time":72.512584167,"data":"validation: 41\n"}
+,{"stream_name":"stdout","time":72.512587871,"data":"public test: 140\n"}
+,{"stream_name":"stdout","time":72.512591418,"data":"private test: 276\n"}
+,{"stream_name":"stdout","time":72.512595232,"data":"private mixed test: 276\n"}
+,{"stream_name":"stdout","time":74.560089592,"data":"\n"}
+,{"stream_name":"stdout","time":74.560126661,"data":"Folders for sheet_metal (file count, then folder)\n"}
+,{"stream_name":"stdout","time":74.560131209,"data":"142  sheet_metal/test_private\n"}
+,{"stream_name":"stdout","time":74.560135513,"data":"142  sheet_metal/test_private_mixed\n"}
+,{"stream_name":"stdout","time":74.560139209,"data":"90  sheet_metal/test_public/bad\n"}
+,{"stream_name":"stdout","time":74.560142955,"data":"24  sheet_metal/test_public/good\n"}
+,{"stream_name":"stdout","time":74.5601469,"data":"90  sheet_metal/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":74.560150804,"data":"137  sheet_metal/train/good\n"}
+,{"stream_name":"stdout","time":74.560154693,"data":"19  sheet_metal/validation/good\n"}
+,{"stream_name":"stdout","time":74.560158449,"data":"\n"}
+,{"stream_name":"stdout","time":74.560162302,"data":"Folders for vial (file count, then folder)\n"}
+,{"stream_name":"stdout","time":74.560166458,"data":"276  vial/test_private\n"}
+,{"stream_name":"stdout","time":74.560170342,"data":"276  vial/test_private_mixed\n"}
+,{"stream_name":"stdout","time":74.560174023,"data":"105  vial/test_public/bad\n"}
+,{"stream_name":"stdout","time":74.560177852,"data":"35  vial/test_public/good\n"}
+,{"stream_name":"stdout","time":74.560181634,"data":"105  vial/test_public/ground_truth/bad\n"}
+,{"stream_name":"stdout","time":74.560185507,"data":"291  vial/train/good\n"}
+,{"stream_name":"stdout","time":74.560189147,"data":"41  vial/validation/good\n"}
+,{"stream_name":"stdout","time":74.560193082,"data":"\n"}
+,{"stream_name":"stdout","time":74.56019628,"data":"python: 3.13.18\n"}
+,{"stream_name":"stdout","time":74.560198685,"data":"anomalib: 2.7.0\n"}
+,{"stream_name":"stdout","time":74.560201103,"data":"pytorch: 2.11.0+cpu\n"}
+,{"stream_name":"stdout","time":74.560203598,"data":"gpu available: False\n"}
+,{"stream_name":"stdout","time":74.560205952,"data":"\n"}
+,{"stream_name":"stdout","time":74.560208248,"data":"Images the loader found for sheet_metal\n"}
+,{"stream_name":"stdout","time":74.560210652,"data":"train: 137\n"}
+,{"stream_name":"stdout","time":74.560213002,"data":"validation: 19\n"}
+,{"stream_name":"stdout","time":74.560215526,"data":"public test: 114\n"}
+,{"stream_name":"stdout","time":74.56021788,"data":"private test: 142\n"}
+,{"stream_name":"stdout","time":74.560220253,"data":"private mixed test: 142\n"}
+,{"stream_name":"stdout","time":74.56022265,"data":"\n"}
+,{"stream_name":"stdout","time":74.56022543,"data":"Images the loader found for vial\n"}
+,{"stream_name":"stdout","time":74.56024454,"data":"train: 291\n"}
+,{"stream_name":"stdout","time":74.560248863,"data":"validation: 41\n"}
+,{"stream_name":"stdout","time":74.56025256,"data":"public test: 140\n"}
+,{"stream_name":"stdout","time":74.56025661,"data":"private test: 276\n"}
+,{"stream_name":"stdout","time":74.560260517,"data":"private mixed test: 276\n"}
+,{"stream_name":"stdout","time":74.560264398,"data":"\n"}
+,{"stream_name":"stdout","time":74.560268009,"data":"One sample from sheet_metal\n"}
+,{"stream_name":"stdout","time":74.560271839,"data":"train image shape: [3, 1056, 4224]\n"}
+,{"stream_name":"stdout","time":74.560275697,"data":"defective image file: 000_overexposed.png\n"}
+,{"stream_name":"stdout","time":74.56027959,"data":"defective image shape: [3, 1056, 4224]\n"}
+,{"stream_name":"stdout","time":74.560283414,"data":"mask file: 000_overexposed_mask.png\n"}
+,{"stream_name":"stdout","time":74.560287506,"data":"mask shape: [1056, 4224]\n"}
+,{"stream_name":"stdout","time":74.560291288,"data":"mask values: [0, 1]\n"}
+,{"stream_name":"stdout","time":74.560294994,"data":"\n"}
+,{"stream_name":"stdout","time":74.560298626,"data":"One sample from vial\n"}
+,{"stream_name":"stdout","time":74.560302313,"data":"train image shape: [3, 1900, 1400]\n"}
+,{"stream_name":"stdout","time":74.560306634,"data":"defective image file: 000_overexposed.png\n"}
+,{"stream_name":"stdout","time":74.560310128,"data":"defective image shape: [3, 1900, 1400]\n"}
+,{"stream_name":"stdout","time":74.560312533,"data":"mask file: 000_overexposed_mask.png\n"}
+,{"stream_name":"stdout","time":74.560315201,"data":"mask shape: [1900, 1400]\n"}
+,{"stream_name":"stdout","time":74.560317622,"data":"mask values: [0, 1]\n"}
+,{"stream_name":"stdout","time":74.587574104,"data":"archives found after loading: 0\n"}
+,{"stream_name":"stdout","time":74.587610321,"data":"Saved folder_structure.txt\n"}
+,{"stream_name":"stderr","time":79.755337918,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":79.755379397,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":79.959519557,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":79.959552893,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":80.903097948,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":81.011695547,"data":"[NbConvertApp] Writing 33890 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":84.225759764,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":84.888019392,"data":"[NbConvertApp] Writing 316975 bytes to __results__.html\n"}
+]

@@ -1,0 +1,55 @@
+
+Folders for sheet_metal (file count, then folder)
+142  sheet_metal/test_private
+142  sheet_metal/test_private_mixed
+90  sheet_metal/test_public/bad
+24  sheet_metal/test_public/good
+90  sheet_metal/test_public/ground_truth/bad
+137  sheet_metal/train/good
+19  sheet_metal/validation/good
+
+Folders for vial (file count, then folder)
+276  vial/test_private
+276  vial/test_private_mixed
+105  vial/test_public/bad
+35  vial/test_public/good
+105  vial/test_public/ground_truth/bad
+291  vial/train/good
+41  vial/validation/good
+
+python: 3.13.18
+anomalib: 2.7.0
+pytorch: 2.11.0+cpu
+gpu available: False
+
+Images the loader found for sheet_metal
+train: 137
+validation: 19
+public test: 114
+private test: 142
+private mixed test: 142
+
+Images the loader found for vial
+train: 291
+validation: 41
+public test: 140
+private test: 276
+private mixed test: 276
+
+One sample from sheet_metal
+train image shape: [3, 1056, 4224]
+defective image file: 000_overexposed.png
+defective image shape: [3, 1056, 4224]
+mask file: 000_overexposed_mask.png
+mask shape: [1056, 4224]
+mask values: [0, 1]
+
+One sample from vial
+train image shape: [3, 1900, 1400]
+defective image file: 000_overexposed.png
+defective image shape: [3, 1900, 1400]
+mask file: 000_overexposed_mask.png
+mask shape: [1900, 1400]
+mask values: [0, 1]
+
+archives found after loading: 0
