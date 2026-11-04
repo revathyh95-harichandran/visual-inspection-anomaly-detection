@@ -1,0 +1,21 @@
+
+=== sheet_metal, training and half A only
+average brightness of a photo: photos, middle, lowest, highest
+  training: 137, 52.6, 44.9, 65.6
+  regular: 9, 52.3, 48.3, 60.9
+  overexposed: 9, 60.4, 56.4, 70.4
+  shift_1: 9, 53.9, 51.6, 62.6
+  shift_2: 9, 60.9, 58.5, 70.8
+  shift_3: 9, 46.6, 44.4, 54.1
+  underexposed: 9, 43.8, 40.1, 50.9
+
+=== vial, training and half A only
+average brightness of a photo: photos, middle, lowest, highest
+  training: 291, 210.3, 204.8, 215.5
+  regular: 10, 207.7, 204.6, 213.0
+  overexposed: 10, 215.0, 212.6, 221.0
+  shift_1: 10, 209.0, 205.8, 214.2
+  shift_2: 10, 210.1, 207.3, 215.4
+  shift_3: 10, 207.9, 204.8, 213.3
+  shift_4: 10, 209.2, 206.1, 214.5
+  underexposed: 10, 185.6, 180.4, 190.2

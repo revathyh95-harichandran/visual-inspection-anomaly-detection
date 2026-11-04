@@ -145,6 +145,23 @@ Measured on all good training photos. Full results are in [good_part_variation_s
 
 **Limits:** the movement check only measures sliding, in steps of 4 pixels. It does not measure turning. Parts of the photo that stay still can pull answers towards 0, so movement may be understated.
 
+## Brightness: training against half A
+
+Each photo's average brightness, on a scale from 0 (black) to 255 (white). Good and defective half A photos are combined. Full results are in [brightness_summary.txt](../outputs/results/02_exploration/brightness_summary.txt), and the charts are [Sheet Metal](../outputs/figures/brightness_comparison_sheet_metal.png) and [Vial](../outputs/figures/brightness_comparison_vial.png).
+
+| Middle value (lowest to highest) | Sheet Metal | Vial |
+| --- | --- | --- |
+| Training | 52.6 (44.9 to 65.6) | 210.3 (204.8 to 215.5) |
+| `regular` | 52.3 (48.3 to 60.9) | 207.7 (204.6 to 213.0) |
+| `overexposed` | 60.4 (56.4 to 70.4) | 215.0 (212.6 to 221.0) |
+| `underexposed` | 43.8 (40.1 to 50.9) | 185.6 (180.4 to 190.2) |
+| `shift_1` | 53.9 (51.6 to 62.6) | 209.0 (205.8 to 214.2) |
+| `shift_2` | 60.9 (58.5 to 70.8) | 210.1 (207.3 to 215.4) |
+| `shift_3` | 46.6 (44.4 to 54.1) | 207.9 (204.8 to 213.3) |
+| `shift_4` | Does not exist | 209.2 (206.1 to 214.5) |
+
+**Limits:** half A has 9 or 10 photos per condition, from 9 or 10 parts. A histogram does not show where light falls. The private test sets were not looked at, so this says nothing about their lighting.
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).
