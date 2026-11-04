@@ -78,6 +78,33 @@ Every lighting condition has the same number of images, so only one image in 6 (
 
 **Defect types:** `test_public/bad` has no subfolders, and file names give only a scene number and a lighting condition, so the files do not label defect types.
 
+## Half A and half B
+
+The public test set is split once, with fixed seed 42. Half A is the development set, and half B is kept for final results only. The file lists are [half_a_files.csv](../outputs/results/02_exploration/half_a_files.csv) and [half_b_files.csv](../outputs/results/02_exploration/half_b_files.csv).
+
+| | Sheet Metal: A / B | Vial: A / B |
+| --- | --- | --- |
+| Good parts | 2 / 2 | 3 / 2 |
+| Defective parts | 7 / 8 | 7 / 8 |
+| Images | 54 / 60 | 70 / 70 |
+
+All lighting versions of a part stay in one half. Good and defective parts are shuffled separately. Defect types cannot be balanced, because the files do not label them. An extra good part goes to half A and an extra defective part goes to half B, to keep the halves as even as possible.
+
+## Defect sizes, half A only
+
+Measured from the masks of half A's defective images. White shapes that touch, including at corners, count as one defect. Full results are in [defect_sizes.csv](../outputs/results/02_exploration/defect_sizes.csv) and [defect_size_summary.txt](../outputs/results/02_exploration/defect_size_summary.txt), and the chart is [defect_size_histogram.png](../outputs/figures/defect_size_histogram.png).
+
+| | Sheet Metal | Vial |
+| --- | --- | --- |
+| Defective parts | 7 | 7 |
+| Defective images | 42 | 49 |
+| Separate defects, counting every lighting version | 240 | 56 |
+| Smallest area | 7 pixels, 0.00016 percent | 5,621 pixels, 0.21132 percent |
+| Median area | 965.5 pixels, 0.02165 percent | 41,550 pixels, 1.56203 percent |
+| Largest area | 168,272 pixels, 3.77245 percent | 344,970 pixels, 12.9688 percent |
+
+**Limits:** half B's defects were not measured, so its smallest defect is unknown. The same defect is counted once per lighting condition. Width and height come from a box around the defect, so thin diagonal defects can look wider than they are.
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).

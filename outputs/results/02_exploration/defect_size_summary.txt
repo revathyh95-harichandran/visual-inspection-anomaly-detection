@@ -1,0 +1,72 @@
+
+=== sheet_metal, half A only
+original image: 4224 x 1056
+defective parts: 7
+defective images: 42
+separate defects found: 240
+area in pixels, smallest: 7
+area in pixels, middle (median): 965.5
+area in pixels, largest: 168272
+area in percent of image, smallest: 0.00016
+area in percent of image, middle (median): 0.02165
+area in percent of image, largest: 3.77245
+keep shape, 256 wide:
+  one shrunk pixel covers 272.2 original pixels
+  smallest defect becomes 0.026 pixels
+  middle defect becomes 3.546 pixels
+  defects below 1 pixel of area: 18 of 240
+  defects narrower than 1 pixel in width or height: 66 of 240
+squash to 256 x 256:
+  one shrunk pixel covers 68.1 original pixels
+  smallest defect becomes 0.103 pixels
+  middle defect becomes 14.185 pixels
+  defects below 1 pixel of area: 6 of 240
+  defects narrower than 1 pixel in width or height: 66 of 240
+keep shape, 512 wide:
+  one shrunk pixel covers 68.1 original pixels
+  smallest defect becomes 0.103 pixels
+  middle defect becomes 14.185 pixels
+  defects below 1 pixel of area: 6 of 240
+  defects narrower than 1 pixel in width or height: 18 of 240
+squash to 512 x 512:
+  one shrunk pixel covers 17.0 original pixels
+  smallest defect becomes 0.411 pixels
+  middle defect becomes 56.742 pixels
+  defects below 1 pixel of area: 6 of 240
+  defects narrower than 1 pixel in width or height: 18 of 240
+
+=== vial, half A only
+original image: 1400 x 1900
+defective parts: 7
+defective images: 49
+separate defects found: 56
+area in pixels, smallest: 5621
+area in pixels, middle (median): 41550.0
+area in pixels, largest: 344970
+area in percent of image, smallest: 0.21132
+area in percent of image, middle (median): 1.56203
+area in percent of image, largest: 12.9688
+keep shape, 256 wide:
+  one shrunk pixel covers 29.9 original pixels
+  smallest defect becomes 187.948 pixels
+  middle defect becomes 1389.296 pixels
+  defects below 1 pixel of area: 0 of 56
+  defects narrower than 1 pixel in width or height: 0 of 56
+squash to 256 x 256:
+  one shrunk pixel covers 40.6 original pixels
+  smallest defect becomes 138.488 pixels
+  middle defect becomes 1023.692 pixels
+  defects below 1 pixel of area: 0 of 56
+  defects narrower than 1 pixel in width or height: 0 of 56
+keep shape, 512 wide:
+  one shrunk pixel covers 7.5 original pixels
+  smallest defect becomes 751.792 pixels
+  middle defect becomes 5557.185 pixels
+  defects below 1 pixel of area: 0 of 56
+  defects narrower than 1 pixel in width or height: 0 of 56
+squash to 512 x 512:
+  one shrunk pixel covers 10.1 original pixels
+  smallest defect becomes 553.952 pixels
+  middle defect becomes 4094.768 pixels
+  defects below 1 pixel of area: 0 of 56
+  defects narrower than 1 pixel in width or height: 0 of 56
