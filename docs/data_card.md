@@ -105,6 +105,28 @@ Measured from the masks of half A's defective images. White shapes that touch, i
 
 **Limits:** half B's defects were not measured, so its smallest defect is unknown. The same defect is counted once per lighting condition. Width and height come from a box around the defect, so thin diagonal defects can look wider than they are.
 
+## Defect locations, half A only
+
+Measured from the masks of half A's defective images. Each count includes every lighting version of a defect. Full results are in [defect_location_summary.txt](../outputs/results/02_exploration/defect_location_summary.txt). The location maps are mask-derived, so they are not in this repository.
+
+| | Sheet Metal | Vial |
+| --- | --- | --- |
+| Defects touching a photo edge | 48 of 240 | 0 of 56 |
+| Defects within 5 percent of a photo edge | 72 of 240 | 0 of 56 |
+| Defects within 10 percent of a photo edge | 96 of 240 | 21 of 56 |
+| Parts with a defect within 10 percent of a photo edge | 6 of 7 | 3 of 7 |
+
+| What a crop would lose | Sheet Metal | Vial |
+| --- | --- | --- |
+| Square from the centre: defects fully lost | 186 of 240 | 14 of 56 |
+| Square from the centre: defects partly cut | 12 of 240 | 7 of 56 |
+| Square from the centre: defect pixels lost | 91.5 percent | 10.2 percent |
+| Central 90 percent: defects fully lost | 0 of 240 | 0 of 56 |
+| Central 90 percent: defects partly cut | 72 of 240 | 0 of 56 |
+| Central 90 percent: defect pixels lost | 9.2 percent | 0.0 percent |
+
+**Limits:** these are 7 parts per product, and half B's defects are unseen. Distance is measured from the photo's edge, which is not always the part's edge. "Near" at 5 and 10 percent is a working choice, not an official meaning.
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).

@@ -1,0 +1,36 @@
+
+=== sheet_metal, half A only
+defective parts: 7
+defective images: 42
+separate defects: 240
+highest share of photos with a defect at one spot: 0.286
+defects touching a photo edge: 48 of 240, from 5 of 7 parts
+defects within 5 percent of a photo edge: 72 of 240
+defects within 10 percent of a photo edge: 96 of 240
+parts with a defect within 10 percent of a photo edge: 6 of 7
+square from the centre, keeping 1056 x 1056:
+  defects fully lost: 186 of 240
+  defects partly cut: 12 of 240
+  defect pixels lost: 91.5 percent
+central 90 percent, keeping 3802 x 950:
+  defects fully lost: 0 of 240
+  defects partly cut: 72 of 240
+  defect pixels lost: 9.2 percent
+
+=== vial, half A only
+defective parts: 7
+defective images: 49
+separate defects: 56
+highest share of photos with a defect at one spot: 0.571
+defects touching a photo edge: 0 of 56, from 0 of 7 parts
+defects within 5 percent of a photo edge: 0 of 56
+defects within 10 percent of a photo edge: 21 of 56
+parts with a defect within 10 percent of a photo edge: 3 of 7
+square from the centre, keeping 1400 x 1400:
+  defects fully lost: 14 of 56
+  defects partly cut: 7 of 56
+  defect pixels lost: 10.2 percent
+central 90 percent, keeping 1260 x 1710:
+  defects fully lost: 0 of 56
+  defects partly cut: 0 of 56
+  defect pixels lost: 0.0 percent

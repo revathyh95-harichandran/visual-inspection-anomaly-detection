@@ -1,146 +1,185 @@
-[{"stream_name":"stderr","time":9.338305333,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":9.33840848,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":9.338413591,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":9.338416291,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":10.140908504,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":10.140964182,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":10.140973351,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":10.140978174,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stdout","time":13.454182822,"data":"sheet_metal folder: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/sheet_metal/sheet_metal\n"}
-,{"stream_name":"stdout","time":13.45424347,"data":"vial folder: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/vial/vial\n"}
-,{"stream_name":"stdout","time":27.421816246,"data":"Saved gallery_sheet_metal.png\n"}
-,{"stream_name":"stdout","time":35.956503266,"data":"Saved gallery_vial.png\n"}
-,{"stream_name":"stdout","time":44.810601053,"data":"Saved gallery_scene_check_sheet_metal.png with 6 images\n"}
-,{"stream_name":"stdout","time":50.458108616,"data":"Saved gallery_scene_check_vial.png with 7 images\n"}
-,{"stream_name":"stdout","time":50.591602392,"data":"\n"}
-,{"stream_name":"stdout","time":50.591640383,"data":"=== sheet_metal\n"}
-,{"stream_name":"stdout","time":50.591646534,"data":"good images: 24\n"}
-,{"stream_name":"stdout","time":50.591651318,"data":"defective images: 90\n"}
-,{"stream_name":"stdout","time":50.59165645,"data":"defective share: 78.9 percent\n"}
-,{"stream_name":"stdout","time":50.591660912,"data":"good scene numbers: 4\n"}
-,{"stream_name":"stdout","time":50.591665438,"data":"defective scene numbers: 15\n"}
-,{"stream_name":"stdout","time":50.591669139,"data":"lighting condition: good images, defective images\n"}
-,{"stream_name":"stdout","time":50.591673015,"data":"  overexposed: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591677562,"data":"  regular: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591682268,"data":"  shift_1: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591686862,"data":"  shift_2: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591691137,"data":"  shift_3: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591696022,"data":"  underexposed: 4, 15\n"}
-,{"stream_name":"stdout","time":50.591700845,"data":"subfolders inside test_public/bad: 0 []\n"}
-,{"stream_name":"stdout","time":50.591705817,"data":"distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, underexposed\n"}
-,{"stream_name":"stdout","time":50.591710443,"data":"flag-everything baseline:\n"}
-,{"stream_name":"stdout","time":50.591715086,"data":"  accuracy: 0.789\n"}
-,{"stream_name":"stdout","time":50.591719808,"data":"  precision: 0.789\n"}
-,{"stream_name":"stdout","time":50.591724373,"data":"  recall: 1\n"}
-,{"stream_name":"stdout","time":50.591728899,"data":"  F1: 0.882\n"}
-,{"stream_name":"stdout","time":50.591733318,"data":"\n"}
-,{"stream_name":"stdout","time":50.59173747,"data":"=== vial\n"}
-,{"stream_name":"stdout","time":50.591741921,"data":"good images: 35\n"}
-,{"stream_name":"stdout","time":50.591767135,"data":"defective images: 105\n"}
-,{"stream_name":"stdout","time":50.591770675,"data":"defective share: 75.0 percent\n"}
-,{"stream_name":"stdout","time":50.591774544,"data":"good scene numbers: 5\n"}
-,{"stream_name":"stdout","time":50.591778112,"data":"defective scene numbers: 15\n"}
-,{"stream_name":"stdout","time":50.591781997,"data":"lighting condition: good images, defective images\n"}
-,{"stream_name":"stdout","time":50.591786003,"data":"  overexposed: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591789656,"data":"  regular: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591793517,"data":"  shift_1: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591797266,"data":"  shift_2: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591800705,"data":"  shift_3: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591804477,"data":"  shift_4: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591808053,"data":"  underexposed: 5, 15\n"}
-,{"stream_name":"stdout","time":50.591811716,"data":"subfolders inside test_public/bad: 0 []\n"}
-,{"stream_name":"stdout","time":50.591815439,"data":"distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, shift_4, underexposed\n"}
-,{"stream_name":"stdout","time":50.591819281,"data":"flag-everything baseline:\n"}
-,{"stream_name":"stdout","time":50.591822887,"data":"  accuracy: 0.75\n"}
-,{"stream_name":"stdout","time":50.591826381,"data":"  precision: 0.75\n"}
-,{"stream_name":"stdout","time":50.5918299,"data":"  recall: 1\n"}
-,{"stream_name":"stdout","time":50.59183367,"data":"  F1: 0.857\n"}
-,{"stream_name":"stdout","time":50.630322788,"data":"sheet_metal good half A: 2 parts, 12 images | half B: 2 parts, 12 images\n"}
-,{"stream_name":"stdout","time":50.630352607,"data":"sheet_metal bad half A: 7 parts, 42 images | half B: 8 parts, 48 images\n"}
-,{"stream_name":"stdout","time":50.630357322,"data":"vial good half A: 3 parts, 21 images | half B: 2 parts, 14 images\n"}
-,{"stream_name":"stdout","time":50.630361327,"data":"vial bad half A: 7 parts, 49 images | half B: 8 parts, 56 images\n"}
-,{"stream_name":"stdout","time":50.630365065,"data":"Saved half_a_files.csv and half_b_files.csv\n"}
-,{"stream_name":"stdout","time":51.508929396,"data":"Counting test passed, areas found: [1, 3, 4]\n"}
-,{"stream_name":"stdout","time":60.357265007,"data":"Saved defect_sizes.csv with 296 defects\n"}
-,{"stream_name":"stdout","time":60.393667476,"data":"\n"}
-,{"stream_name":"stdout","time":60.393709502,"data":"=== sheet_metal, half A only\n"}
-,{"stream_name":"stdout","time":60.393713938,"data":"original image: 4224 x 1056\n"}
-,{"stream_name":"stdout","time":60.393716406,"data":"defective parts: 7\n"}
-,{"stream_name":"stdout","time":60.39371878,"data":"defective images: 42\n"}
-,{"stream_name":"stdout","time":60.393721386,"data":"separate defects found: 240\n"}
-,{"stream_name":"stdout","time":60.393723721,"data":"area in pixels, smallest: 7\n"}
-,{"stream_name":"stdout","time":60.393726044,"data":"area in pixels, middle (median): 965.5\n"}
-,{"stream_name":"stdout","time":60.393728387,"data":"area in pixels, largest: 168272\n"}
-,{"stream_name":"stdout","time":60.393730771,"data":"area in percent of image, smallest: 0.00016\n"}
-,{"stream_name":"stdout","time":60.393733043,"data":"area in percent of image, middle (median): 0.02165\n"}
-,{"stream_name":"stdout","time":60.393735585,"data":"area in percent of image, largest: 3.77245\n"}
-,{"stream_name":"stdout","time":60.393737873,"data":"keep shape, 256 wide:\n"}
-,{"stream_name":"stdout","time":60.393809727,"data":"  one shrunk pixel covers 272.2 original pixels\n"}
-,{"stream_name":"stdout","time":60.393826893,"data":"  smallest defect becomes 0.026 pixels\n"}
-,{"stream_name":"stdout","time":60.393829476,"data":"  middle defect becomes 3.546 pixels\n"}
-,{"stream_name":"stdout","time":60.393831784,"data":"  defects below 1 pixel of area: 18 of 240\n"}
-,{"stream_name":"stdout","time":60.393834093,"data":"  defects narrower than 1 pixel in width or height: 66 of 240\n"}
-,{"stream_name":"stdout","time":60.393836471,"data":"squash to 256 x 256:\n"}
-,{"stream_name":"stdout","time":60.393838853,"data":"  one shrunk pixel covers 68.1 original pixels\n"}
-,{"stream_name":"stdout","time":60.393841332,"data":"  smallest defect becomes 0.103 pixels\n"}
-,{"stream_name":"stdout","time":60.393843671,"data":"  middle defect becomes 14.185 pixels\n"}
-,{"stream_name":"stdout","time":60.393845951,"data":"  defects below 1 pixel of area: 6 of 240\n"}
-,{"stream_name":"stdout","time":60.393848723,"data":"  defects narrower than 1 pixel in width or height: 66 of 240\n"}
-,{"stream_name":"stdout","time":60.39385235,"data":"keep shape, 512 wide:\n"}
-,{"stream_name":"stdout","time":60.393855639,"data":"  one shrunk pixel covers 68.1 original pixels\n"}
-,{"stream_name":"stdout","time":60.393858989,"data":"  smallest defect becomes 0.103 pixels\n"}
-,{"stream_name":"stdout","time":60.393862223,"data":"  middle defect becomes 14.185 pixels\n"}
-,{"stream_name":"stdout","time":60.393865832,"data":"  defects below 1 pixel of area: 6 of 240\n"}
-,{"stream_name":"stdout","time":60.393869421,"data":"  defects narrower than 1 pixel in width or height: 18 of 240\n"}
-,{"stream_name":"stdout","time":60.393872768,"data":"squash to 512 x 512:\n"}
-,{"stream_name":"stdout","time":60.39387613,"data":"  one shrunk pixel covers 17.0 original pixels\n"}
-,{"stream_name":"stdout","time":60.393879467,"data":"  smallest defect becomes 0.411 pixels\n"}
-,{"stream_name":"stdout","time":60.393883071,"data":"  middle defect becomes 56.742 pixels\n"}
-,{"stream_name":"stdout","time":60.39388615,"data":"  defects below 1 pixel of area: 6 of 240\n"}
-,{"stream_name":"stdout","time":60.393889505,"data":"  defects narrower than 1 pixel in width or height: 18 of 240\n"}
-,{"stream_name":"stdout","time":60.393893586,"data":"\n"}
-,{"stream_name":"stdout","time":60.393897072,"data":"=== vial, half A only\n"}
-,{"stream_name":"stdout","time":60.393900707,"data":"original image: 1400 x 1900\n"}
-,{"stream_name":"stdout","time":60.393904328,"data":"defective parts: 7\n"}
-,{"stream_name":"stdout","time":60.393908026,"data":"defective images: 49\n"}
-,{"stream_name":"stdout","time":60.393911584,"data":"separate defects found: 56\n"}
-,{"stream_name":"stdout","time":60.393915102,"data":"area in pixels, smallest: 5621\n"}
-,{"stream_name":"stdout","time":60.393918817,"data":"area in pixels, middle (median): 41550.0\n"}
-,{"stream_name":"stdout","time":60.393923456,"data":"area in pixels, largest: 344970\n"}
-,{"stream_name":"stdout","time":60.393926288,"data":"area in percent of image, smallest: 0.21132\n"}
-,{"stream_name":"stdout","time":60.393928631,"data":"area in percent of image, middle (median): 1.56203\n"}
-,{"stream_name":"stdout","time":60.393931004,"data":"area in percent of image, largest: 12.9688\n"}
-,{"stream_name":"stdout","time":60.393933293,"data":"keep shape, 256 wide:\n"}
-,{"stream_name":"stdout","time":60.393954265,"data":"  one shrunk pixel covers 29.9 original pixels\n"}
-,{"stream_name":"stdout","time":60.393963151,"data":"  smallest defect becomes 187.948 pixels\n"}
-,{"stream_name":"stdout","time":60.393967044,"data":"  middle defect becomes 1389.296 pixels\n"}
-,{"stream_name":"stdout","time":60.393976474,"data":"  defects below 1 pixel of area: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.393980365,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.393984076,"data":"squash to 256 x 256:\n"}
-,{"stream_name":"stdout","time":60.393987639,"data":"  one shrunk pixel covers 40.6 original pixels\n"}
-,{"stream_name":"stdout","time":60.393993407,"data":"  smallest defect becomes 138.488 pixels\n"}
-,{"stream_name":"stdout","time":60.393997102,"data":"  middle defect becomes 1023.692 pixels\n"}
-,{"stream_name":"stdout","time":60.394000976,"data":"  defects below 1 pixel of area: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.39400467,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.394008427,"data":"keep shape, 512 wide:\n"}
-,{"stream_name":"stdout","time":60.394012024,"data":"  one shrunk pixel covers 7.5 original pixels\n"}
-,{"stream_name":"stdout","time":60.394015613,"data":"  smallest defect becomes 751.792 pixels\n"}
-,{"stream_name":"stdout","time":60.394020314,"data":"  middle defect becomes 5557.185 pixels\n"}
-,{"stream_name":"stdout","time":60.394022793,"data":"  defects below 1 pixel of area: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.394025068,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.394027604,"data":"squash to 512 x 512:\n"}
-,{"stream_name":"stdout","time":60.394029983,"data":"  one shrunk pixel covers 10.1 original pixels\n"}
-,{"stream_name":"stdout","time":60.394032314,"data":"  smallest defect becomes 553.952 pixels\n"}
-,{"stream_name":"stdout","time":60.394034651,"data":"  middle defect becomes 4094.768 pixels\n"}
-,{"stream_name":"stdout","time":60.394037087,"data":"  defects below 1 pixel of area: 0 of 56\n"}
-,{"stream_name":"stdout","time":60.39404081,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
-,{"stream_name":"stdout","time":61.373973529,"data":"Saved defect_size_histogram.png\n"}
-,{"stream_name":"stderr","time":64.849473669,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":64.849509921,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":65.056386974,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":65.05643723,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":65.958101842,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":66.057960455,"data":"[NbConvertApp] Writing 47282 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":69.145636542,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":69.850575219,"data":"[NbConvertApp] Writing 380436 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":9.185503176,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.185551815,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.185558517,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.185562922999999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.003197695,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.003242313,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.003247602,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.003250595,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.197948774,"data":"sheet_metal folder: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/sheet_metal/sheet_metal\n"}
+,{"stream_name":"stdout","time":13.197989454,"data":"vial folder: /kaggle/input/datasets/revathyh/mvtec-ad2-sheet-metal-vial/vial/vial\n"}
+,{"stream_name":"stdout","time":26.740461091,"data":"Saved gallery_sheet_metal.png\n"}
+,{"stream_name":"stdout","time":35.137510322,"data":"Saved gallery_vial.png\n"}
+,{"stream_name":"stdout","time":43.989572594,"data":"Saved gallery_scene_check_sheet_metal.png with 6 images\n"}
+,{"stream_name":"stdout","time":49.425622388,"data":"Saved gallery_scene_check_vial.png with 7 images\n"}
+,{"stream_name":"stdout","time":49.534368443,"data":"\n"}
+,{"stream_name":"stdout","time":49.534427905,"data":"=== sheet_metal\n"}
+,{"stream_name":"stdout","time":49.534436294,"data":"good images: 24\n"}
+,{"stream_name":"stdout","time":49.534445573,"data":"defective images: 90\n"}
+,{"stream_name":"stdout","time":49.534450722,"data":"defective share: 78.9 percent\n"}
+,{"stream_name":"stdout","time":49.534455559,"data":"good scene numbers: 4\n"}
+,{"stream_name":"stdout","time":49.534460357,"data":"defective scene numbers: 15\n"}
+,{"stream_name":"stdout","time":49.534465262,"data":"lighting condition: good images, defective images\n"}
+,{"stream_name":"stdout","time":49.534470322,"data":"  overexposed: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534475331,"data":"  regular: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534480273,"data":"  shift_1: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534485066,"data":"  shift_2: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534489741,"data":"  shift_3: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534494459,"data":"  underexposed: 4, 15\n"}
+,{"stream_name":"stdout","time":49.534499243,"data":"subfolders inside test_public/bad: 0 []\n"}
+,{"stream_name":"stdout","time":49.53450409,"data":"distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, underexposed\n"}
+,{"stream_name":"stdout","time":49.534509219,"data":"flag-everything baseline:\n"}
+,{"stream_name":"stdout","time":49.534513887,"data":"  accuracy: 0.789\n"}
+,{"stream_name":"stdout","time":49.534518947,"data":"  precision: 0.789\n"}
+,{"stream_name":"stdout","time":49.534523725,"data":"  recall: 1\n"}
+,{"stream_name":"stdout","time":49.534528451,"data":"  F1: 0.882\n"}
+,{"stream_name":"stdout","time":49.534533166,"data":"\n"}
+,{"stream_name":"stdout","time":49.534537888,"data":"=== vial\n"}
+,{"stream_name":"stdout","time":49.53454239,"data":"good images: 35\n"}
+,{"stream_name":"stdout","time":49.534565746,"data":"defective images: 105\n"}
+,{"stream_name":"stdout","time":49.534570291,"data":"defective share: 75.0 percent\n"}
+,{"stream_name":"stdout","time":49.534574572,"data":"good scene numbers: 5\n"}
+,{"stream_name":"stdout","time":49.534578498,"data":"defective scene numbers: 15\n"}
+,{"stream_name":"stdout","time":49.53458233,"data":"lighting condition: good images, defective images\n"}
+,{"stream_name":"stdout","time":49.534586175,"data":"  overexposed: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534589879,"data":"  regular: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534593555,"data":"  shift_1: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534597199,"data":"  shift_2: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534600853,"data":"  shift_3: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534604786,"data":"  shift_4: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534608572,"data":"  underexposed: 5, 15\n"}
+,{"stream_name":"stdout","time":49.534612351,"data":"subfolders inside test_public/bad: 0 []\n"}
+,{"stream_name":"stdout","time":49.534616238,"data":"distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, shift_4, underexposed\n"}
+,{"stream_name":"stdout","time":49.534620247,"data":"flag-everything baseline:\n"}
+,{"stream_name":"stdout","time":49.534623945,"data":"  accuracy: 0.75\n"}
+,{"stream_name":"stdout","time":49.534627421,"data":"  precision: 0.75\n"}
+,{"stream_name":"stdout","time":49.534631099,"data":"  recall: 1\n"}
+,{"stream_name":"stdout","time":49.534635036,"data":"  F1: 0.857\n"}
+,{"stream_name":"stdout","time":49.574121715,"data":"sheet_metal good half A: 2 parts, 12 images | half B: 2 parts, 12 images\n"}
+,{"stream_name":"stdout","time":49.574155507,"data":"sheet_metal bad half A: 7 parts, 42 images | half B: 8 parts, 48 images\n"}
+,{"stream_name":"stdout","time":49.574161257,"data":"vial good half A: 3 parts, 21 images | half B: 2 parts, 14 images\n"}
+,{"stream_name":"stdout","time":49.574165369,"data":"vial bad half A: 7 parts, 49 images | half B: 8 parts, 56 images\n"}
+,{"stream_name":"stdout","time":49.574169373,"data":"Saved half_a_files.csv and half_b_files.csv\n"}
+,{"stream_name":"stdout","time":50.424046352,"data":"Counting test passed, areas found: [1, 3, 4]\n"}
+,{"stream_name":"stdout","time":58.234778886,"data":"Saved defect_sizes.csv with 296 defects\n"}
+,{"stream_name":"stdout","time":58.275465232,"data":"\n"}
+,{"stream_name":"stdout","time":58.275501976,"data":"=== sheet_metal, half A only\n"}
+,{"stream_name":"stdout","time":58.27550683,"data":"original image: 4224 x 1056\n"}
+,{"stream_name":"stdout","time":58.27551049,"data":"defective parts: 7\n"}
+,{"stream_name":"stdout","time":58.275514862,"data":"defective images: 42\n"}
+,{"stream_name":"stdout","time":58.275517692,"data":"separate defects found: 240\n"}
+,{"stream_name":"stdout","time":58.275520249,"data":"area in pixels, smallest: 7\n"}
+,{"stream_name":"stdout","time":58.27552269,"data":"area in pixels, middle (median): 965.5\n"}
+,{"stream_name":"stdout","time":58.27552549,"data":"area in pixels, largest: 168272\n"}
+,{"stream_name":"stdout","time":58.275527992,"data":"area in percent of image, smallest: 0.00016\n"}
+,{"stream_name":"stdout","time":58.275530472,"data":"area in percent of image, middle (median): 0.02165\n"}
+,{"stream_name":"stdout","time":58.275532902,"data":"area in percent of image, largest: 3.77245\n"}
+,{"stream_name":"stdout","time":58.275535355,"data":"keep shape, 256 wide:\n"}
+,{"stream_name":"stdout","time":58.2755377,"data":"  one shrunk pixel covers 272.2 original pixels\n"}
+,{"stream_name":"stdout","time":58.275553092,"data":"  smallest defect becomes 0.026 pixels\n"}
+,{"stream_name":"stdout","time":58.275555636,"data":"  middle defect becomes 3.546 pixels\n"}
+,{"stream_name":"stdout","time":58.275558281,"data":"  defects below 1 pixel of area: 18 of 240\n"}
+,{"stream_name":"stdout","time":58.275560708,"data":"  defects narrower than 1 pixel in width or height: 66 of 240\n"}
+,{"stream_name":"stdout","time":58.27556318,"data":"squash to 256 x 256:\n"}
+,{"stream_name":"stdout","time":58.275565534,"data":"  one shrunk pixel covers 68.1 original pixels\n"}
+,{"stream_name":"stdout","time":58.275568001,"data":"  smallest defect becomes 0.103 pixels\n"}
+,{"stream_name":"stdout","time":58.275570376,"data":"  middle defect becomes 14.185 pixels\n"}
+,{"stream_name":"stdout","time":58.275572754,"data":"  defects below 1 pixel of area: 6 of 240\n"}
+,{"stream_name":"stdout","time":58.275575133,"data":"  defects narrower than 1 pixel in width or height: 66 of 240\n"}
+,{"stream_name":"stdout","time":58.275577843,"data":"keep shape, 512 wide:\n"}
+,{"stream_name":"stdout","time":58.275580252,"data":"  one shrunk pixel covers 68.1 original pixels\n"}
+,{"stream_name":"stdout","time":58.275582735,"data":"  smallest defect becomes 0.103 pixels\n"}
+,{"stream_name":"stdout","time":58.275585141,"data":"  middle defect becomes 14.185 pixels\n"}
+,{"stream_name":"stdout","time":58.275587576,"data":"  defects below 1 pixel of area: 6 of 240\n"}
+,{"stream_name":"stdout","time":58.275589955,"data":"  defects narrower than 1 pixel in width or height: 18 of 240\n"}
+,{"stream_name":"stdout","time":58.275592385,"data":"squash to 512 x 512:\n"}
+,{"stream_name":"stdout","time":58.275594703,"data":"  one shrunk pixel covers 17.0 original pixels\n"}
+,{"stream_name":"stdout","time":58.275597351,"data":"  smallest defect becomes 0.411 pixels\n"}
+,{"stream_name":"stdout","time":58.275599732,"data":"  middle defect becomes 56.742 pixels\n"}
+,{"stream_name":"stdout","time":58.275602229,"data":"  defects below 1 pixel of area: 6 of 240\n"}
+,{"stream_name":"stdout","time":58.275604632,"data":"  defects narrower than 1 pixel in width or height: 18 of 240\n"}
+,{"stream_name":"stdout","time":58.275607085,"data":"\n"}
+,{"stream_name":"stdout","time":58.275609368,"data":"=== vial, half A only\n"}
+,{"stream_name":"stdout","time":58.275611732,"data":"original image: 1400 x 1900\n"}
+,{"stream_name":"stdout","time":58.275614105,"data":"defective parts: 7\n"}
+,{"stream_name":"stdout","time":58.275616624,"data":"defective images: 49\n"}
+,{"stream_name":"stdout","time":58.275619432,"data":"separate defects found: 56\n"}
+,{"stream_name":"stdout","time":58.275621812,"data":"area in pixels, smallest: 5621\n"}
+,{"stream_name":"stdout","time":58.275624224,"data":"area in pixels, middle (median): 41550.0\n"}
+,{"stream_name":"stdout","time":58.275626613,"data":"area in pixels, largest: 344970\n"}
+,{"stream_name":"stdout","time":58.275628995,"data":"area in percent of image, smallest: 0.21132\n"}
+,{"stream_name":"stdout","time":58.275631434,"data":"area in percent of image, middle (median): 1.56203\n"}
+,{"stream_name":"stdout","time":58.275633851,"data":"area in percent of image, largest: 12.9688\n"}
+,{"stream_name":"stdout","time":58.275636441,"data":"keep shape, 256 wide:\n"}
+,{"stream_name":"stdout","time":58.275638815,"data":"  one shrunk pixel covers 29.9 original pixels\n"}
+,{"stream_name":"stdout","time":58.275641242,"data":"  smallest defect becomes 187.948 pixels\n"}
+,{"stream_name":"stdout","time":58.275643656,"data":"  middle defect becomes 1389.296 pixels\n"}
+,{"stream_name":"stdout","time":58.275648491,"data":"  defects below 1 pixel of area: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275650981,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275653459,"data":"squash to 256 x 256:\n"}
+,{"stream_name":"stdout","time":58.275656277,"data":"  one shrunk pixel covers 40.6 original pixels\n"}
+,{"stream_name":"stdout","time":58.27566034,"data":"  smallest defect becomes 138.488 pixels\n"}
+,{"stream_name":"stdout","time":58.275662811,"data":"  middle defect becomes 1023.692 pixels\n"}
+,{"stream_name":"stdout","time":58.27566528,"data":"  defects below 1 pixel of area: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275667676,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275670116,"data":"keep shape, 512 wide:\n"}
+,{"stream_name":"stdout","time":58.275672439,"data":"  one shrunk pixel covers 7.5 original pixels\n"}
+,{"stream_name":"stdout","time":58.275674933,"data":"  smallest defect becomes 751.792 pixels\n"}
+,{"stream_name":"stdout","time":58.275677283,"data":"  middle defect becomes 5557.185 pixels\n"}
+,{"stream_name":"stdout","time":58.275679853,"data":"  defects below 1 pixel of area: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275682232,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275684799,"data":"squash to 512 x 512:\n"}
+,{"stream_name":"stdout","time":58.275687119,"data":"  one shrunk pixel covers 10.1 original pixels\n"}
+,{"stream_name":"stdout","time":58.275689502,"data":"  smallest defect becomes 553.952 pixels\n"}
+,{"stream_name":"stdout","time":58.275691868,"data":"  middle defect becomes 4094.768 pixels\n"}
+,{"stream_name":"stdout","time":58.275694335,"data":"  defects below 1 pixel of area: 0 of 56\n"}
+,{"stream_name":"stdout","time":58.275696818,"data":"  defects narrower than 1 pixel in width or height: 0 of 56\n"}
+,{"stream_name":"stdout","time":59.297730653,"data":"Saved defect_size_histogram.png\n"}
+,{"stream_name":"stdout","time":59.497765095,"data":"Border and crop test passed\n"}
+,{"stream_name":"stdout","time":67.168038087,"data":"\n"}
+,{"stream_name":"stdout","time":67.16807823,"data":"=== sheet_metal, half A only\n"}
+,{"stream_name":"stdout","time":67.16808378,"data":"defective parts: 7\n"}
+,{"stream_name":"stdout","time":67.168087888,"data":"defective images: 42\n"}
+,{"stream_name":"stdout","time":67.168091752,"data":"separate defects: 240\n"}
+,{"stream_name":"stdout","time":67.168095661,"data":"highest share of photos with a defect at one spot: 0.286\n"}
+,{"stream_name":"stdout","time":67.16809981,"data":"defects touching a photo edge: 48 of 240, from 5 of 7 parts\n"}
+,{"stream_name":"stdout","time":67.168103852,"data":"defects within 5 percent of a photo edge: 72 of 240\n"}
+,{"stream_name":"stdout","time":67.168107702,"data":"defects within 10 percent of a photo edge: 96 of 240\n"}
+,{"stream_name":"stdout","time":67.168111489,"data":"parts with a defect within 10 percent of a photo edge: 6 of 7\n"}
+,{"stream_name":"stdout","time":67.168115616,"data":"square from the centre, keeping 1056 x 1056:\n"}
+,{"stream_name":"stdout","time":67.168119413,"data":"  defects fully lost: 186 of 240\n"}
+,{"stream_name":"stdout","time":67.168123224,"data":"  defects partly cut: 12 of 240\n"}
+,{"stream_name":"stdout","time":67.168127099,"data":"  defect pixels lost: 91.5 percent\n"}
+,{"stream_name":"stdout","time":67.168130753,"data":"central 90 percent, keeping 3802 x 950:\n"}
+,{"stream_name":"stdout","time":67.168153469,"data":"  defects fully lost: 0 of 240\n"}
+,{"stream_name":"stdout","time":67.168157542,"data":"  defects partly cut: 72 of 240\n"}
+,{"stream_name":"stdout","time":67.168161268,"data":"  defect pixels lost: 9.2 percent\n"}
+,{"stream_name":"stdout","time":67.168165125,"data":"\n"}
+,{"stream_name":"stdout","time":67.168168709,"data":"=== vial, half A only\n"}
+,{"stream_name":"stdout","time":67.168173011,"data":"defective parts: 7\n"}
+,{"stream_name":"stdout","time":67.168176596,"data":"defective images: 49\n"}
+,{"stream_name":"stdout","time":67.16818014,"data":"separate defects: 56\n"}
+,{"stream_name":"stdout","time":67.168183866,"data":"highest share of photos with a defect at one spot: 0.571\n"}
+,{"stream_name":"stdout","time":67.168187824,"data":"defects touching a photo edge: 0 of 56, from 0 of 7 parts\n"}
+,{"stream_name":"stdout","time":67.168191839,"data":"defects within 5 percent of a photo edge: 0 of 56\n"}
+,{"stream_name":"stdout","time":67.168196015,"data":"defects within 10 percent of a photo edge: 21 of 56\n"}
+,{"stream_name":"stdout","time":67.168199965,"data":"parts with a defect within 10 percent of a photo edge: 3 of 7\n"}
+,{"stream_name":"stdout","time":67.16820392,"data":"square from the centre, keeping 1400 x 1400:\n"}
+,{"stream_name":"stdout","time":67.168207805,"data":"  defects fully lost: 14 of 56\n"}
+,{"stream_name":"stdout","time":67.168211649,"data":"  defects partly cut: 7 of 56\n"}
+,{"stream_name":"stdout","time":67.168215481,"data":"  defect pixels lost: 10.2 percent\n"}
+,{"stream_name":"stdout","time":67.168219308,"data":"central 90 percent, keeping 1260 x 1710:\n"}
+,{"stream_name":"stdout","time":67.168223208,"data":"  defects fully lost: 0 of 56\n"}
+,{"stream_name":"stdout","time":67.168227841,"data":"  defects partly cut: 0 of 56\n"}
+,{"stream_name":"stdout","time":67.168231785,"data":"  defect pixels lost: 0.0 percent\n"}
+,{"stream_name":"stdout","time":68.709806502,"data":"Saved gallery_defect_location_sheet_metal.png\n"}
+,{"stream_name":"stdout","time":69.639318928,"data":"Saved gallery_defect_location_vial.png\n"}
+,{"stream_name":"stderr","time":73.360921712,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":73.360959906,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":73.573379822,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":73.573451512,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":74.465954368,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":74.57556399,"data":"[NbConvertApp] Writing 63901 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":77.796379606,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":78.593196159,"data":"[NbConvertApp] Writing 425718 bytes to __results__.html\n"}
 ]
