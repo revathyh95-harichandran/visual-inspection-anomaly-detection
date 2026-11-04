@@ -1,0 +1,111 @@
+Integrity report
+Files read: 1773
+
+Check 1: counts against the paper
+sheet_metal train/good: found 137, expected 137 ok
+sheet_metal validation/good: found 19, expected 19 ok
+sheet_metal test_public/good: found 24, expected 24 ok
+sheet_metal test_public/bad: found 90, expected 90 ok
+sheet_metal test_public/ground_truth/bad: found 90, expected 90 ok
+sheet_metal test_private: found 142, expected 142 ok
+sheet_metal test_private_mixed: found 142, expected 142 ok
+vial train/good: found 291, expected 291 ok
+vial validation/good: found 41, expected 41 ok
+vial test_public/good: found 35, expected 35 ok
+vial test_public/bad: found 105, expected 105 ok
+vial test_public/ground_truth/bad: found 105, expected 105 ok
+vial test_private: found 276, expected 276 ok
+vial test_private_mixed: found 276, expected 276 ok
+Check 1 problems: 0
+
+Check 2: open every file
+Check 2 problems: 0
+
+Check 3: sizes and channels (number of files, then description)
+644  sheet_metal width 4224 height 1056 mode L
+1129  vial width 1400 height 1900 mode L
+Check 3 problems: 0
+
+Check 4: masks
+Check 4 problems: 0
+
+Check 5: duplicate images (byte-identical files)
+DUPLICATE: sheet_metal/test_private/003_regular.png, sheet_metal/test_private_mixed/135_mixed.png
+DUPLICATE: sheet_metal/test_private/008_regular.png, sheet_metal/test_private_mixed/072_mixed.png
+DUPLICATE: sheet_metal/test_private/013_regular.png, sheet_metal/test_private_mixed/125_mixed.png
+DUPLICATE: sheet_metal/test_private/020_regular.png, sheet_metal/test_private_mixed/071_mixed.png
+DUPLICATE: sheet_metal/test_private/024_regular.png, sheet_metal/test_private_mixed/131_mixed.png
+DUPLICATE: sheet_metal/test_private/030_regular.png, sheet_metal/test_private_mixed/084_mixed.png
+DUPLICATE: sheet_metal/test_private/032_regular.png, sheet_metal/test_private_mixed/016_mixed.png
+DUPLICATE: sheet_metal/test_private/034_regular.png, sheet_metal/test_private_mixed/043_mixed.png
+DUPLICATE: sheet_metal/test_private/067_regular.png, sheet_metal/test_private_mixed/091_mixed.png
+DUPLICATE: sheet_metal/test_private/072_regular.png, sheet_metal/test_private_mixed/130_mixed.png
+DUPLICATE: sheet_metal/test_private/073_regular.png, sheet_metal/test_private_mixed/117_mixed.png
+DUPLICATE: sheet_metal/test_private/074_regular.png, sheet_metal/test_private_mixed/048_mixed.png
+DUPLICATE: sheet_metal/test_private/075_regular.png, sheet_metal/test_private_mixed/132_mixed.png
+DUPLICATE: sheet_metal/test_private/077_regular.png, sheet_metal/test_private_mixed/109_mixed.png
+DUPLICATE: sheet_metal/test_private/081_regular.png, sheet_metal/test_private_mixed/070_mixed.png
+DUPLICATE: sheet_metal/test_private/086_regular.png, sheet_metal/test_private_mixed/001_mixed.png
+DUPLICATE: sheet_metal/test_private/097_regular.png, sheet_metal/test_private_mixed/083_mixed.png
+DUPLICATE: sheet_metal/test_private/102_regular.png, sheet_metal/test_private_mixed/075_mixed.png
+DUPLICATE: sheet_metal/test_private/108_regular.png, sheet_metal/test_private_mixed/099_mixed.png
+DUPLICATE: sheet_metal/test_private/120_regular.png, sheet_metal/test_private_mixed/093_mixed.png
+DUPLICATE: sheet_metal/test_private/121_regular.png, sheet_metal/test_private_mixed/137_mixed.png
+DUPLICATE: sheet_metal/test_private/125_regular.png, sheet_metal/test_private_mixed/049_mixed.png
+DUPLICATE: sheet_metal/test_private/127_regular.png, sheet_metal/test_private_mixed/107_mixed.png
+DUPLICATE: sheet_metal/test_private/129_regular.png, sheet_metal/test_private_mixed/036_mixed.png
+DUPLICATE: sheet_metal/test_private/130_regular.png, sheet_metal/test_private_mixed/118_mixed.png
+DUPLICATE: sheet_metal/test_private/133_regular.png, sheet_metal/test_private_mixed/090_mixed.png
+DUPLICATE: sheet_metal/test_private/135_regular.png, sheet_metal/test_private_mixed/028_mixed.png
+DUPLICATE: vial/test_private/021_regular.png, vial/test_private_mixed/052_mixed.png
+DUPLICATE: vial/test_private/022_regular.png, vial/test_private_mixed/085_mixed.png
+DUPLICATE: vial/test_private/024_regular.png, vial/test_private_mixed/239_mixed.png
+DUPLICATE: vial/test_private/025_regular.png, vial/test_private_mixed/275_mixed.png
+DUPLICATE: vial/test_private/026_regular.png, vial/test_private_mixed/146_mixed.png
+DUPLICATE: vial/test_private/027_regular.png, vial/test_private_mixed/254_mixed.png
+DUPLICATE: vial/test_private/050_regular.png, vial/test_private_mixed/224_mixed.png
+DUPLICATE: vial/test_private/062_regular.png, vial/test_private_mixed/228_mixed.png
+DUPLICATE: vial/test_private/069_regular.png, vial/test_private_mixed/243_mixed.png
+DUPLICATE: vial/test_private/073_regular.png, vial/test_private_mixed/082_mixed.png
+DUPLICATE: vial/test_private/085_regular.png, vial/test_private_mixed/002_mixed.png
+DUPLICATE: vial/test_private/090_regular.png, vial/test_private_mixed/056_mixed.png
+DUPLICATE: vial/test_private/102_regular.png, vial/test_private_mixed/036_mixed.png
+DUPLICATE: vial/test_private/129_regular.png, vial/test_private_mixed/040_mixed.png
+DUPLICATE: vial/test_private/140_regular.png, vial/test_private_mixed/196_mixed.png
+DUPLICATE: vial/test_private/143_regular.png, vial/test_private_mixed/035_mixed.png
+DUPLICATE: vial/test_private/145_regular.png, vial/test_private_mixed/041_mixed.png
+DUPLICATE: vial/test_private/153_regular.png, vial/test_private_mixed/195_mixed.png
+DUPLICATE: vial/test_private/154_regular.png, vial/test_private_mixed/198_mixed.png
+DUPLICATE: vial/test_private/155_regular.png, vial/test_private_mixed/244_mixed.png
+DUPLICATE: vial/test_private/156_regular.png, vial/test_private_mixed/143_mixed.png
+DUPLICATE: vial/test_private/169_regular.png, vial/test_private_mixed/113_mixed.png
+DUPLICATE: vial/test_private/170_regular.png, vial/test_private_mixed/102_mixed.png
+DUPLICATE: vial/test_private/176_regular.png, vial/test_private_mixed/242_mixed.png
+DUPLICATE: vial/test_private/181_regular.png, vial/test_private_mixed/048_mixed.png
+DUPLICATE: vial/test_private/189_regular.png, vial/test_private_mixed/119_mixed.png
+DUPLICATE: vial/test_private/191_regular.png, vial/test_private_mixed/123_mixed.png
+DUPLICATE: vial/test_private/198_regular.png, vial/test_private_mixed/004_mixed.png
+DUPLICATE: vial/test_private/201_regular.png, vial/test_private_mixed/079_mixed.png
+DUPLICATE: vial/test_private/209_regular.png, vial/test_private_mixed/205_mixed.png
+DUPLICATE: vial/test_private/211_regular.png, vial/test_private_mixed/009_mixed.png
+DUPLICATE: vial/test_private/212_regular.png, vial/test_private_mixed/232_mixed.png
+DUPLICATE: vial/test_private/216_regular.png, vial/test_private_mixed/163_mixed.png
+DUPLICATE: vial/test_private/228_regular.png, vial/test_private_mixed/149_mixed.png
+DUPLICATE: vial/test_private/240_regular.png, vial/test_private_mixed/157_mixed.png
+DUPLICATE: vial/test_private/256_regular.png, vial/test_private_mixed/160_mixed.png
+DUPLICATE: vial/test_private/265_regular.png, vial/test_private_mixed/164_mixed.png
+DUPLICATE: vial/test_private/273_regular.png, vial/test_private_mixed/125_mixed.png
+Check 5 problems: 65
+
+Check 6: scene pattern in the public test set
+sheet_metal test_public/good: 4 scene numbers
+  conditions: overexposed, regular, shift_1, shift_2, shift_3, underexposed
+sheet_metal test_public/bad: 15 scene numbers
+  conditions: overexposed, regular, shift_1, shift_2, shift_3, underexposed
+sheet_metal: 12 of 15 defective scene numbers have one identical mask across all conditions
+vial test_public/good: 5 scene numbers
+  conditions: overexposed, regular, shift_1, shift_2, shift_3, shift_4, underexposed
+vial test_public/bad: 15 scene numbers
+  conditions: overexposed, regular, shift_1, shift_2, shift_3, shift_4, underexposed
+vial: 9 of 15 defective scene numbers have one identical mask across all conditions
+Check 6 problems: 0

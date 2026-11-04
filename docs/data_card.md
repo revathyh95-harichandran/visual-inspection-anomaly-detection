@@ -1,6 +1,6 @@
 # Data card: MVTec AD 2 (Sheet Metal and Vial)
 
-**CRISP-DM stage:** Data understanding. This card grows during Phases 1 to 3. Integrity checks are still to come.
+**CRISP-DM stage:** Data understanding. This card grows during Phases 1 to 3.
 
 ## Source and licence
 
@@ -40,13 +40,15 @@ Counted on Kaggle from the unmodified files. These counts match Table IV of the 
 
 ## Image format
 
-Read through anomalib's `MVTecAD2` loader, with no resizing, from one training image and one defective image per product.
+Read directly from all 1,773 files on Kaggle.
 
 | | Sheet Metal | Vial |
 | --- | --- | --- |
-| Image shape (channels, height, width) | 3, 1056, 4224 | 3, 1900, 1400 |
-| Mask shape (height, width) | 1056, 4224 | 1900, 1400 |
-| Mask values | 0 and 1 | 0 and 1 |
+| Width × height, for every image and mask | 4224 × 1056 | 1400 × 1900 |
+| Stored channels, for every image and mask | 1, greyscale (mode `L`) | 1, greyscale (mode `L`) |
+| Raw mask values | 0 and 255 | 0 and 255 |
+
+anomalib's `MVTecAD2` loader changes this when it reads a file. In one sample per product, images came back with 3 channels, and masks held 0 and 1.
 
 ## File naming
 
@@ -56,9 +58,25 @@ Files are named `<number>_<lighting>.png`.
 - `test_private_mixed` images are named `mixed`.
 - `test_public` images use `regular`, `overexposed`, `underexposed` and `shift_1` to `shift_3`, plus `shift_4` for Vial.
 
+## Integrity checks
+
+Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).
+
+| Check | Result |
+| --- | --- |
+| Counts against the paper's Table IV (arXiv version) | All 14 folder counts match |
+| Every file opens and decodes | All open |
+| Size and channels | One size and one mode per product, and sizes match the paper |
+| Masks | Every defective image has a mask of the same size, holding only 0 and 255, with at least one defect pixel. Every mask has an image. No good image has a mask |
+| Byte-identical images | 65 pairs, all between `test_private` and `test_private_mixed`. None involves `train`, `validation` or `test_public` |
+| Lighting conditions per scene number | Consistent within each product |
+
+**The 65 pairs:** 27 for Sheet Metal and 38 for Vial. The paper describes `test_private_mixed` as the same scenes as `test_private` under seen and unseen lighting, so a likely reading is that these are scenes that kept regular lighting. I have not confirmed that with MVTec.
+
+**Limit of the duplicate check:** it finds byte-identical files only. It does not find the same scene under different lighting, or a re-saved copy.
+
 ## Known limits so far
 
-- **Repeated scenes:** in `test_public`, each number appears once per lighting condition. Sheet Metal has 4 good and 15 defective numbers with 6 conditions each. Vial has 5 good and 15 defective numbers with 7 conditions each. This suggests far fewer distinct scenes than images, but it comes from file names and has not yet been checked by looking at the images.
+- **Repeated scenes:** in `test_public`, each number appears once per lighting condition. Sheet Metal has 4 good and 15 defective numbers with 6 conditions each. Vial has 5 good and 15 defective numbers with 7 conditions each. Masks support this: a scene number has one identical mask across all conditions for 12 of 15 Sheet Metal numbers and 9 of 15 Vial numbers. The other masks differ, for reasons not yet examined. Whether a number really is one physical scene has not been checked by looking at the images.
 - **Defect types:** no folder or file name gives a defect type, and the archive's readme does not mention one.
 - **Share of defects:** the public test sets are about 75 to 80 percent defective, far more than a real production line.
-- **Samples checked:** image and mask shapes above come from one sample per product. Every file is checked in the integrity step, which has not run yet.
