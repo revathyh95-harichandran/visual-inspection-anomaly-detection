@@ -127,6 +127,24 @@ Measured from the masks of half A's defective images. Each count includes every 
 
 **Limits:** these are 7 parts per product, and half B's defects are unseen. Distance is measured from the photo's edge, which is not always the part's edge. "Near" at 5 and 10 percent is a working choice, not an official meaning.
 
+## How much good parts vary
+
+Measured on all good training photos. Full results are in [good_part_variation_summary.txt](../outputs/results/02_exploration/good_part_variation_summary.txt) and [good_part_positions.csv](../outputs/results/02_exploration/good_part_positions.csv). The average images look like the dataset's parts, so they are not in this repository.
+
+| | Sheet Metal | Vial |
+| --- | --- | --- |
+| Photos used | 137 | 291 |
+| Typical pixel's variation, in brightness units from 0 to 255 | 39.2 | 2.5 |
+| Most varying 1 percent of pixels start at | 75.9 | 92.2 |
+| Typical move needed to match the other photos, up or down / sideways | 0 / 0 pixels | 0 / 8 pixels |
+| Largest move, up or down / sideways | 88 / 64 pixels | 4 / 32 pixels |
+| Photos moved more than 10 pixels | 8 of 137 | 78 of 291 |
+| Photos moved more than 50 pixels | 3 of 137 | 0 of 291 |
+
+**Seen in the figures:** Sheet Metal's surface pattern varies across its whole middle area, while its side bands stay steady. Vial's background stays steady, and variation gathers along the vial's outline, lid and contents.
+
+**Limits:** the movement check only measures sliding, in steps of 4 pixels. It does not measure turning. Parts of the photo that stay still can pull answers towards 0, so movement may be understated.
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).

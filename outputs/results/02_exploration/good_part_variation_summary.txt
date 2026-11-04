@@ -1,0 +1,26 @@
+
+=== sheet_metal, good training photos only
+photos used: 137
+variation in brightness units (0 to 255 scale):
+  typical pixel (median): 39.2
+  average pixel: 38.7
+  most varying 1 percent start at: 75.9
+  highest pixel: 97.1
+movement needed to match the other photos, in original pixels:
+  up or down, median: 0.0, largest: 88
+  sideways, median: 0.0, largest: 64
+  photos moved more than 10 pixels: 8 of 137
+  photos moved more than 50 pixels: 3 of 137
+
+=== vial, good training photos only
+photos used: 291
+variation in brightness units (0 to 255 scale):
+  typical pixel (median): 2.5
+  average pixel: 13.6
+  most varying 1 percent start at: 92.2
+  highest pixel: 107.1
+movement needed to match the other photos, in original pixels:
+  up or down, median: 0.0, largest: 4
+  sideways, median: 8.0, largest: 32
+  photos moved more than 10 pixels: 78 of 291
+  photos moved more than 50 pixels: 0 of 291
