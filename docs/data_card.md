@@ -58,6 +58,26 @@ Files are named `<number>_<lighting>.png`.
 - `test_private_mixed` images are named `mixed`.
 - `test_public` images use `regular`, `overexposed`, `underexposed` and `shift_1` to `shift_3`, plus `shift_4` for Vial.
 
+## Public test set
+
+Counted from file names on Kaggle.
+
+| | Sheet Metal | Vial |
+| --- | --- | --- |
+| Good images | 24 | 35 |
+| Defective images | 90 | 105 |
+| Defective share | 78.9 percent | 75.0 percent |
+| Good scene numbers | 4 | 5 |
+| Defective scene numbers | 15 | 15 |
+| Lighting conditions | 6 | 7 |
+| Images in `regular` lighting, good and defective | 4 and 15 | 5 and 15 |
+
+Every lighting condition has the same number of images, so only one image in 6 (Sheet Metal) or 7 (Vial) has the training images' lighting.
+
+**Flag-everything baseline:** a system that calls every image defective would score an image-level F1 of 0.882 on Sheet Metal and 0.857 on Vial, and accuracy of 0.789 and 0.75. A method's image-level F1 on this set only means something if it beats these numbers.
+
+**Defect types:** `test_public/bad` has no subfolders, and file names give only a scene number and a lighting condition, so the files do not label defect types.
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).

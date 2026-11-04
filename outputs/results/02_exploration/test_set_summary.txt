@@ -1,0 +1,43 @@
+
+=== sheet_metal
+good images: 24
+defective images: 90
+defective share: 78.9 percent
+good scene numbers: 4
+defective scene numbers: 15
+lighting condition: good images, defective images
+  overexposed: 4, 15
+  regular: 4, 15
+  shift_1: 4, 15
+  shift_2: 4, 15
+  shift_3: 4, 15
+  underexposed: 4, 15
+subfolders inside test_public/bad: 0 []
+distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, underexposed
+flag-everything baseline:
+  accuracy: 0.789
+  precision: 0.789
+  recall: 1
+  F1: 0.882
+
+=== vial
+good images: 35
+defective images: 105
+defective share: 75.0 percent
+good scene numbers: 5
+defective scene numbers: 15
+lighting condition: good images, defective images
+  overexposed: 5, 15
+  regular: 5, 15
+  shift_1: 5, 15
+  shift_2: 5, 15
+  shift_3: 5, 15
+  shift_4: 5, 15
+  underexposed: 5, 15
+subfolders inside test_public/bad: 0 []
+distinct name endings: overexposed, regular, shift_1, shift_2, shift_3, shift_4, underexposed
+flag-everything baseline:
+  accuracy: 0.75
+  precision: 0.75
+  recall: 1
+  F1: 0.857
