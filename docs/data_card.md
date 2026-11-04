@@ -162,6 +162,19 @@ Each photo's average brightness, on a scale from 0 (black) to 255 (white). Good 
 
 **Limits:** half A has 9 or 10 photos per condition, from 9 or 10 parts. A histogram does not show where light falls. The private test sets were not looked at, so this says nothing about their lighting.
 
+## Which later decisions the figures support
+
+These figures are evidence. No image size or crop has been chosen yet.
+
+| Figure | What it showed | Decision it supports | When |
+| --- | --- | --- | --- |
+| Sample gallery and scene check | Each scene number looks like one part under several lights, checked by eye on one scene per product | Keeping all photos of a part in one half | Done, in the split |
+| Public test set summary | 75 to 79 percent of images are defective, with no defect type labels | How to read each metric, and the defect rate the cost analysis must state | Phases 4 to 6 |
+| Defect-size histogram | Half A median defect: 965.5 pixels for Sheet Metal, 41,550 for Vial. Sheet Metal's smallest is 7 pixels | Image size, and the later resolution test | Phase 3, and the resolution test |
+| Defect location maps | A square crop from the centre would lose 91.5 percent of Sheet Metal's defect pixels and 10.2 percent of Vial's | Pad, resize or crop | Phase 3 |
+| Good-part variation and position | Vial often slides sideways by small amounts. Sheet Metal's surface varies everywhere, and it rarely moves | Checking the PaDiM prediction, and reading the failure analysis | Phase 4 onward |
+| Brightness comparison | `regular` lighting closely matches training, and other conditions differ, Vial `underexposed` most | The lighting experiment, and reading its results | Lighting experiment |
+
 ## Integrity checks
 
 Run on Kaggle on all 1,773 images and masks. The checks only read files, and nothing was changed. Full results are in [integrity_report.txt](../outputs/results/01_data_and_integrity/integrity_report.txt) and [image_inventory.csv](../outputs/results/01_data_and_integrity/image_inventory.csv).

@@ -14,10 +14,13 @@ This project follows CRISP-DM, a standard process for data science projects.
 | --- | --- | --- |
 | 0. Setup and business understanding | Business understanding | Repository structure, licence, laptop environment, and a notebook that ran on a Kaggle GPU ([report](outputs/results/00_gpu_check/gpu_check_report.txt)) |
 | 1. Data acquisition and integrity | Data understanding | Sheet Metal and Vial confirmed, a [data card](docs/data_card.md), and integrity checks on all 1,773 images and masks ([report](outputs/results/01_data_and_integrity/integrity_report.txt)) |
+| 2. Exploring the images | Data understanding | A public test [summary](outputs/results/02_exploration/test_set_summary.txt), its one split into a development half and a final half ([A](outputs/results/02_exploration/half_a_files.csv), [B](outputs/results/02_exploration/half_b_files.csv)), [defect sizes](outputs/figures/defect_size_histogram.png), [defect locations](outputs/results/02_exploration/defect_location_summary.txt), [good-part variation](outputs/results/02_exploration/good_part_variation_summary.txt), and brightness charts ([Sheet Metal](outputs/figures/brightness_comparison_sheet_metal.png), [Vial](outputs/figures/brightness_comparison_vial.png)) |
 
 ## Data
 
 This project uses the Sheet Metal and Vial product types from [MVTec AD 2](https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2), licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See the [data card](docs/data_card.md) for what each folder holds and what the checks found.
+
+Figures showing dataset images or masks are not in this repository. To remake them, run [the exploration notebook](notebooks/02_exploration.ipynb) with the dataset attached. They are saved as `gallery_*` files.
 
 Heckler-Kram, Neudeck, Scheler, König and Steger. The MVTec AD 2 Dataset: Advanced Scenarios for Unsupervised Anomaly Detection. *International Journal of Computer Vision* 134(4), 2026. DOI [10.1007/s11263-026-02743-0](https://doi.org/10.1007/s11263-026-02743-0).
 
