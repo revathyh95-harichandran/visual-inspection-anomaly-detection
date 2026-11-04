@@ -16,6 +16,9 @@ EXPERIMENT_LOG.md
 # The dataset: its licence does not allow redistributing it here
 /data/
 
+# Figures that contain real dataset images stay on my laptop
+/outputs/figures/gallery_*
+
 # Fitted models and checkpoints: large, and derived from the dataset
 *.ckpt
 *.pt

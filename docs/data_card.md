@@ -77,6 +77,6 @@ Run on Kaggle on all 1,773 images and masks. The checks only read files, and not
 
 ## Known limits so far
 
-- **Repeated scenes:** in `test_public`, each number appears once per lighting condition. Sheet Metal has 4 good and 15 defective numbers with 6 conditions each. Vial has 5 good and 15 defective numbers with 7 conditions each. Masks support this: a scene number has one identical mask across all conditions for 12 of 15 Sheet Metal numbers and 9 of 15 Vial numbers. The other masks differ, for reasons not yet examined. Whether a number really is one physical scene has not been checked by looking at the images.
+- **Repeated scenes:** in `test_public`, each number appears once per lighting condition. Sheet Metal has 4 good and 15 defective numbers with 6 conditions each. Vial has 5 good and 15 defective numbers with 7 conditions each. Masks support this: a scene number has one identical mask across all conditions for 12 of 15 Sheet Metal numbers and 9 of 15 Vial numbers. Looking at defective scene `000` of each product, the same physical part appears under every lighting condition. In Vial, its mask outlines visibly differ between conditions, which may explain some of the differing masks. This was checked by eye on one scene per product, so it does not prove the pattern for every scene.
 - **Defect types:** no folder or file name gives a defect type, and the archive's readme does not mention one.
 - **Share of defects:** the public test sets are about 75 to 80 percent defective, far more than a real production line.
