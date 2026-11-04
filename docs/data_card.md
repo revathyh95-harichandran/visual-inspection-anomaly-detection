@@ -162,6 +162,14 @@ Each photo's average brightness, on a scale from 0 (black) to 255 (white). Good 
 
 **Limits:** half A has 9 or 10 photos per condition, from 9 or 10 parts. A histogram does not show where light falls. The private test sets were not looked at, so this says nothing about their lighting.
 
+## A closer look at the smallest defects, half A only
+
+The 6 smallest Sheet Metal defects in `regular` lighting were viewed at original size. Numbers are in [small_defect_summary.txt](../outputs/results/02_exploration/small_defect_summary.txt). The zoomed views show real parts, so they are not in this repository.
+
+- **What they look like:** by eye, these marks look like long thin scratches or pieces of them, where the mask has gaps along the scratch. Each piece is counted as its own defect, because counting follows touching pixels. So the size chart may show more tiny defects than there are physical defects.
+- **The 7-pixel mark, part 009:** it is 1 pixel wide and 7 tall, and appears in the same place under all 6 lighting conditions. It sits in line with other outlined pieces beside a longer scratch. It stands out from its surroundings by about 2.8 standard deviations under `regular`, `overexposed` and `underexposed`, but only about 0.5 under `shift_1` to `shift_3`.
+- **What this does not show:** what the marks physically are, or why the masks have gaps. This was judged by eye on 6 defects, and no measurement was removed or changed.
+
 ## Which later decisions the figures support
 
 These figures are evidence. No image size or crop has been chosen yet.
