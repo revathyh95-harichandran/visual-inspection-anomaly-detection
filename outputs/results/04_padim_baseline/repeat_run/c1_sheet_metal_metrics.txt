@@ -1,0 +1,18 @@
+configuration: C1, PaDiM, resnet18, sheet_metal, seed 42
+image size: 256, squashed. Half A only, every lighting condition
+photos: training 137, validation 19, half A 54 (42 defective)
+pretrained network: True
+benchmark threshold, mean plus 3 standard deviations of good validation pixels: 19.6001
+good validation photos above the threshold: 19 of 19
+AU-PRO at 5 percent: 0.0427
+AU-PRO at 30 percent: 0.2413
+pixel F1: 0.1063
+all lighting: photos 54, image F1 0.8842, flag-everything F1 0.875, image AU-ROC 0.75
+regular lighting only: photos 9, image F1 0.9333, flag-everything F1 0.875, image AU-ROC 1.0
+all lighting, defective photos flagged: 42 of 42
+all lighting, good photos flagged: 11 of 12
+seconds per photo, model only: 0.0061
+seconds for features, training photos: 40.94
+seconds for the fit, on the processor: 4.75
+peak GPU memory GB, features: 0.36
+peak GPU memory GB, scoring: 0.33
