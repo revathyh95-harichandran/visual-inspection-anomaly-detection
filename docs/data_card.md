@@ -170,6 +170,19 @@ The 6 smallest Sheet Metal defects in `regular` lighting were viewed at original
 - **The 7-pixel mark, part 009:** it is 1 pixel wide and 7 tall, and appears in the same place under all 6 lighting conditions. It sits in line with other outlined pieces beside a longer scratch. It stands out from its surroundings by about 2.8 standard deviations under `regular`, `overexposed` and `underexposed`, but only about 0.5 under `shift_1` to `shift_3`.
 - **What this does not show:** what the marks physically are, or why the masks have gaps. This was judged by eye on 6 defects, and no measurement was removed or changed.
 
+## As prepared for the experiments
+
+| Setting | Value |
+| --- | --- |
+| Image size | 256 x 256 for PaDiM, PatchCore and Reverse Distillation, 240 x 240 for WinCLIP, whose size anomalib fixes. 512 x 512 for the resolution test |
+| Shape | Squashed to a square, with no padding or cropping |
+| Normalization | ImageNet numbers, and CLIP's own numbers for WinCLIP |
+| Channels | One stored channel, copied into three identical channels when read |
+| Masks | Resized with nearest-neighbour, so they hold true and false only |
+| Test set split | Half A for development and half B for final results, once, with seed 42. All photos of one part stay in one half. The files do not label defect types, so the split cannot balance them |
+
+A prepared batch of 8 half A photos per product was checked by eye and by automatic checks before any model ran.
+
 ## anomalib's default image preparation
 
 Read from the code of anomalib 2.7.0, and run on one half A photo per product on a laptop. This is what the library does if nothing is changed. The settings this project uses are chosen separately. Numbers are in [preprocessing_defaults.txt](../outputs/results/03_preprocessing/preprocessing_defaults.txt).
