@@ -190,6 +190,21 @@ Read from the code of anomalib 2.7.0, and run on one half A photo per product on
 
 In both recipes, resized masks held only 0 and 1 on these photos. The Sheet Metal figure also shows thin mask lines breaking into separate dots after resizing.
 
+## How non-square photos are prepared
+
+Photos are squashed to a square, with no padding and no cropping. This is anomalib's default resize. Numbers are in [shape_options.txt](../outputs/results/03_preprocessing/shape_options.txt) and [mask_check.txt](../outputs/results/03_preprocessing/mask_check.txt).
+
+| At size 256, half A | Squash | Pad | Crop, square from the centre |
+| --- | --- | --- | --- |
+| Sheet Metal photo fills | 100 percent | 25 percent | 100 percent, of the middle quarter |
+| Vial photo fills | 100 percent | 73.7 percent | 100 percent, of the middle 74 percent |
+| Sheet Metal defects under 1 pixel in area (of 240) | 6 | 18 | 186 lost completely |
+| Defect pixels cut off | None | None | 91.5 percent Sheet Metal, 10.2 percent Vial |
+
+**Masks** are resized with nearest-neighbour, so they stay pure defect or no defect. This was confirmed on 2 real masks at sizes 256 and 512.
+
+**Limits:** squashing distorts shapes, most on Sheet Metal (16.5 times narrower but only about 4 times shorter), and its effect on the methods has not been measured. The comparison uses half A measurements and 2 photos, not method scores.
+
 ## Which later decisions the figures support
 
 These figures are evidence. No image size or crop has been chosen yet.

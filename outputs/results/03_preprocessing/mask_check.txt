@@ -1,0 +1,20 @@
+=== sheet_metal, 000_regular.png, size 256
+recipe's values: [0, 1]
+matches separate nearest-neighbour: True
+defect pixels: 166 of 65536
+bilinear would give in-between values at: 47 pixels
+=== sheet_metal, 000_regular.png, size 512
+recipe's values: [0, 1]
+matches separate nearest-neighbour: True
+defect pixels: 673 of 262144
+bilinear would give in-between values at: 195 pixels
+=== vial, 001_regular.png, size 256
+recipe's values: [0, 1]
+matches separate nearest-neighbour: True
+defect pixels: 546 of 65536
+bilinear would give in-between values at: 19 pixels
+=== vial, 001_regular.png, size 512
+recipe's values: [0, 1]
+matches separate nearest-neighbour: True
+defect pixels: 2182 of 262144
+bilinear would give in-between values at: 69 pixels

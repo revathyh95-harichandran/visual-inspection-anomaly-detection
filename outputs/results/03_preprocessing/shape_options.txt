@@ -1,0 +1,22 @@
+made-up test, AU-PRO at a 30 percent limit
+without border: 0.4886
+with border pixels added: 0.8098
+
+=== sheet_metal, half A, 240 defects counting each lighting
+256 squash: photo fills 100.0 percent, middle defect 14.9 pixels, under 1 pixel in area 6, under 1 pixel wide or tall 66
+256 pad: photo fills 25.0 percent, middle defect 3.7 pixels, under 1 pixel in area 18, under 1 pixel wide or tall 66
+256 crop: keeps 1056 x 1056, one new pixel covers 17.0 old pixels
+512 squash: photo fills 100.0 percent, middle defect 59.8 pixels, under 1 pixel in area 6, under 1 pixel wide or tall 18
+512 pad: photo fills 25.0 percent, middle defect 14.9 pixels, under 1 pixel in area 6, under 1 pixel wide or tall 18
+512 crop: keeps 1056 x 1056, one new pixel covers 4.3 old pixels
+this photo at 256, defect pixels: squash 166, pad 43, crop 114
+
+=== vial, half A, 56 defects counting each lighting
+256 squash: photo fills 100.0 percent, middle defect 1503.0 pixels, under 1 pixel in area 0, under 1 pixel wide or tall 0
+256 pad: photo fills 73.7 percent, middle defect 1107.4 pixels, under 1 pixel in area 0, under 1 pixel wide or tall 0
+256 crop: keeps 1400 x 1400, one new pixel covers 29.9 old pixels
+512 squash: photo fills 100.0 percent, middle defect 6011.9 pixels, under 1 pixel in area 0, under 1 pixel wide or tall 0
+512 pad: photo fills 73.7 percent, middle defect 4429.8 pixels, under 1 pixel in area 0, under 1 pixel wide or tall 0
+512 crop: keeps 1400 x 1400, one new pixel covers 7.5 old pixels
+this photo at 256, defect pixels: squash 546, pad 405, crop 738
+
