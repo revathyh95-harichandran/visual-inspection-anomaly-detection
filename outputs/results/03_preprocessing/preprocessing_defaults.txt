@@ -1,0 +1,56 @@
+=== PaDiM default recipe
+Compose(
+      Resize(size=[256, 256], interpolation=bilinear, antialias=True)
+      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
+)
+=== PatchCore default recipe
+Compose(
+      Resize(size=[256, 256], interpolation=bilinear, antialias=True)
+      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
+)
+=== Reverse Distillation default recipe
+Compose(
+      Resize(size=[256, 256], interpolation=bilinear, antialias=True)
+      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
+)
+=== WinCLIP default recipe
+Compose(
+      Resize(size=[240, 240], interpolation=InterpolationMode.BICUBIC, antialias=True)
+      Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711], inplace=False)
+)
+
+=== sheet_metal, 000_regular.png
+as loaded: photo [3, 1056, 4224], values 0.016 to 1.0
+as loaded: mask [1056, 4224], defect pixels 11670
+ImageNet recipe, PaDiM, PatchCore, Reverse Distillation:
+  after resize: photo [3, 256, 256], values 0.03 to 1.0
+  after resize: mask values [0, 1], defect pixels 166
+  after normalize: values -1.987 to 2.64
+  centre pixel, channel 0: (0.1423 - 0.485) / 0.229 = -1.4966, anomalib gave -1.4966
+  centre pixel, channel 1: (0.1423 - 0.456) / 0.224 = -1.4006, anomalib gave -1.4006
+  centre pixel, channel 2: (0.1423 - 0.406) / 0.225 = -1.1721, anomalib gave -1.1721
+CLIP recipe, WinCLIP:
+  after resize: photo [3, 240, 240], values -0.018 to 1.054
+  after resize: mask values [0, 1], defect pixels 138
+  after normalize: values -1.859 to 2.342
+  centre pixel, channel 0: (0.1142 - 0.4815) / 0.2686 = -1.367, anomalib gave -1.367
+  centre pixel, channel 1: (0.1142 - 0.4578) / 0.2613 = -1.3149, anomalib gave -1.3149
+  centre pixel, channel 2: (0.1142 - 0.4082) / 0.2758 = -1.066, anomalib gave -1.066
+
+=== vial, 001_regular.png
+as loaded: photo [3, 1900, 1400], values 0.008 to 1.0
+as loaded: mask [1900, 1400], defect pixels 22097
+ImageNet recipe, PaDiM, PatchCore, Reverse Distillation:
+  after resize: photo [3, 256, 256], values 0.012 to 1.0
+  after resize: mask values [0, 1], defect pixels 546
+  after normalize: values -2.067 to 2.64
+  centre pixel, channel 0: (0.8047 - 0.485) / 0.229 = 1.396, anomalib gave 1.396
+  centre pixel, channel 1: (0.8047 - 0.456) / 0.224 = 1.5566, anomalib gave 1.5566
+  centre pixel, channel 2: (0.8047 - 0.406) / 0.225 = 1.7719, anomalib gave 1.7719
+CLIP recipe, WinCLIP:
+  after resize: photo [3, 240, 240], values 0.001 to 1.046
+  after resize: mask values [0, 1], defect pixels 480
+  after normalize: values -1.789 to 2.311
+  centre pixel, channel 0: (0.8048 - 0.4815) / 0.2686 = 1.2035, anomalib gave 1.2035
+  centre pixel, channel 1: (0.8048 - 0.4578) / 0.2613 = 1.3277, anomalib gave 1.3277
+  centre pixel, channel 2: (0.8048 - 0.4082) / 0.2758 = 1.4379, anomalib gave 1.4379

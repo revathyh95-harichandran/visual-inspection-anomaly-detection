@@ -170,6 +170,26 @@ The 6 smallest Sheet Metal defects in `regular` lighting were viewed at original
 - **The 7-pixel mark, part 009:** it is 1 pixel wide and 7 tall, and appears in the same place under all 6 lighting conditions. It sits in line with other outlined pieces beside a longer scratch. It stands out from its surroundings by about 2.8 standard deviations under `regular`, `overexposed` and `underexposed`, but only about 0.5 under `shift_1` to `shift_3`.
 - **What this does not show:** what the marks physically are, or why the masks have gaps. This was judged by eye on 6 defects, and no measurement was removed or changed.
 
+## anomalib's default image preparation
+
+Read from the code of anomalib 2.7.0, and run on one half A photo per product on a laptop. This is what the library does if nothing is changed. The settings this project uses are chosen separately. Numbers are in [preprocessing_defaults.txt](../outputs/results/03_preprocessing/preprocessing_defaults.txt).
+
+| | PaDiM, PatchCore, Reverse Distillation | WinCLIP |
+| --- | --- | --- |
+| Resize | To 256 x 256, ignoring the photo's shape | To 240 x 240, ignoring the photo's shape |
+| Interpolation | Bilinear, antialias on | Bicubic, antialias on |
+| Crop | None (PatchCore crops only if asked) | None |
+| Normalization mean | 0.485, 0.456, 0.406 | 0.48145466, 0.4578275, 0.40821073 |
+| Normalization std | 0.229, 0.224, 0.225 | 0.26862954, 0.26130258, 0.27577711 |
+
+| Mask defect pixels on the 2 photos | Sheet Metal `000_regular.png` | Vial `001_regular.png` |
+| --- | --- | --- |
+| Original | 11,670 | 22,097 |
+| After 256 x 256 | 166 | 546 |
+| After 240 x 240 | 138 | 480 |
+
+In both recipes, resized masks held only 0 and 1 on these photos. The Sheet Metal figure also shows thin mask lines breaking into separate dots after resizing.
+
 ## Which later decisions the figures support
 
 These figures are evidence. No image size or crop has been chosen yet.
