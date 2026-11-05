@@ -29,8 +29,8 @@ normalization:
 
 method:
   name: patchcore
-  backbone: TO_BE_DECIDED  # The exact EfficientNet version is decided in Phase 4, by the compatibility test
-  layers: TO_BE_DECIDED  # Decided in Phase 4 from the network's layer names, using half A
+  backbone: efficientnet_b0  # The smallest version, to show most clearly what a very efficient network can do. Passed a run check on 8 photos
+  layers: [blocks.2, blocks.4]  # Shrink the photo by 8 and 16, matching layer2 and layer3 in the ResNets
   pre_trained: true  # anomalib's default. Uses features learned on ImageNet
   coreset_sampling_ratio: 0.1  # anomalib's default. Keeps the most useful 10 percent of the memory bank, to save memory and search time
   num_neighbors: 9  # anomalib's default. Number of nearest neighbours used to judge how unusual a photo is

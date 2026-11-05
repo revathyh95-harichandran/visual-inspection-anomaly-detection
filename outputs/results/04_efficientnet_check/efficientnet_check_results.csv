@@ -1,0 +1,29 @@
+method,measure,value
+padim,step_built_model,worked
+padim,features_available,176
+padim,step_features,worked
+padim,seconds_per_photo_features,1.1627
+padim,embedding_shape,"[8, 100, 64, 64]"
+padim,peak_gpu_gb_features,0.13
+padim,step_fit_on_processor,worked
+padim,seconds_fit,2.405
+padim,largest_inverse_error_first_position,0.000498
+padim,step_scoring,worked
+padim,anomaly_map_shape,"[8, 1, 256, 256]"
+padim,scores_all_finite,True
+padim,peak_gpu_gb_scoring,0.295
+padim,outcome,worked
+patchcore,step_built_model,worked
+patchcore,step_features,worked
+patchcore,seconds_per_photo_features,0.0047
+patchcore,patches_per_photo,1024
+patchcore,feature_length,152
+patchcore,peak_gpu_gb_features,0.138
+patchcore,step_coreset,worked
+patchcore,seconds_coreset,0.456
+patchcore,memory_bank_shape,"[819, 152]"
+patchcore,step_scoring,worked
+patchcore,anomaly_map_shape,"[8, 1, 256, 256]"
+patchcore,scores_all_finite,True
+patchcore,peak_gpu_gb_scoring,0.144
+patchcore,outcome,worked

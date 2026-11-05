@@ -29,11 +29,11 @@ normalization:
 
 method:
   name: padim
-  backbone: TO_BE_DECIDED  # The exact EfficientNet version is decided in Phase 4, by the compatibility test
-  layers: TO_BE_DECIDED  # Decided in Phase 4 from the network's layer names, using half A
+  backbone: efficientnet_b0  # The smallest version, to show most clearly what a very efficient network can do. Passed a run check on 8 photos
+  layers: [blocks.1, blocks.2, blocks.4]  # Shrink the photo by 4, 8 and 16, matching layer1, layer2 and layer3 in the ResNets
   pre_trained: true  # anomalib's default. Uses features learned on ImageNet, since this project trains no network for PaDiM
-  n_features: TO_BE_DECIDED  # Decided in Phase 4. anomalib has defaults only for ResNet-18 and Wide ResNet-50
-  statistics_on: processor  # The GPU's many-at-once inverse crashed in this setup. Not yet checked with EfficientNet
+  n_features: 100  # anomalib has no default here. Matches ResNet-18, so the table size stays the same. This keeps 100 of 176 features
+  statistics_on: processor  # The GPU's many-at-once inverse crashed in this setup. Checked with EfficientNet on 8 photos only
   train_batch_size: 8  # Memory measured at 8. Batch size only affects speed here, because all photos are used once
   eval_batch_size: 8  # Same reason. anomalib's default for both is 32, which has not been measured
 
