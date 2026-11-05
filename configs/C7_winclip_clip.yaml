@@ -1,0 +1,50 @@
+# C7: WinCLIP with CLIP
+# CRISP-DM stage: data preparation. These settings are used in modelling and evaluation.
+# TO_BE_DECIDED marks a setting that is deliberately still open.
+
+config_id: C7
+anomalib_version: "2.7.0"  # The interface changes between versions, so the version is pinned
+seeds: [42]  # One seed as planned. WinCLIP does not train on photos here
+
+data:
+  products: [sheet_metal, vial]  # The two MVTec AD 2 product types chosen for this project
+  fit_on: none  # Zero-shot: WinCLIP is not fitted on any photos
+  settings_and_benchmark_threshold_on: validation  # Good validation photos, which are separate from training
+  development_file_list: outputs/results/02_exploration/half_a_files.csv  # Half A, for every choice needing defect examples
+  final_file_list: outputs/results/02_exploration/half_b_files.csv  # Half B, for final reported results only
+  augmentation: none  # Augmentation is only ever a deliberate, logged experiment
+  num_workers: 0  # Reads photos in the main process, simplest to explain. anomalib's default of 8 is faster but not needed yet
+
+image:
+  size: 240  # anomalib fixes WinCLIP at 240. A documented exception to using one size, stated in the report
+  shape_handling: squash  # Keeps every border defect and uses all pixels. A square crop would lose 91.5 percent of Sheet Metal's defect pixels
+  padding: none  # Padding would leave Sheet Metal filling 25 percent of the square, and add made-up streaks
+  crop: none  # Crops can remove border defects
+  interpolation: bicubic  # anomalib's default for this method
+  antialias: true  # anomalib's default. Smooths pixels when shrinking, so fine patterns do not break up
+  mask_interpolation: nearest  # Masks must stay pure defect or no defect. torchvision does this automatically for masks
+normalization:
+  mean: [0.48145466, 0.4578275, 0.40821073]   # CLIP's own numbers, anomalib's fixed setting for WinCLIP
+  std: [0.26862954, 0.26130258, 0.27577711]   # CLIP's own numbers, anomalib's fixed setting for WinCLIP
+
+method:
+  name: winclip
+  backbone: ViT-B-16-plus-240  # anomalib's fixed CLIP network for WinCLIP
+  pretrained_weights: laion400m_e31  # anomalib's fixed weights for WinCLIP
+  class_name: null  # anomalib's default. Uses the dataset's name, such as sheet_metal, in its prompts. How this reads is checked at the first run
+  prompts: anomalib_default  # anomalib's built-in prompts, recorded here so nothing is hidden
+  k_shot: 0  # anomalib's default. Zero-shot: it uses no reference photos, only text prompts
+  few_shot_source: null  # anomalib's default. Not used when k_shot is 0
+  scales: [2, 3]  # anomalib's default. Window sizes used to compare parts of a photo with the prompts
+  eval_batch_size: 8  # Matches the other methods. Its memory at this batch size has not been measured
+
+thresholds:
+  benchmark_rule: mean_plus_3_std_of_good_validation_scores  # The benchmark's own rule, so results can be compared with the paper
+  cost_based_chosen_on: half_a  # Choosing needs defect examples, and half B must never be used for a choice
+  cost_ratio: 10  # A missed defect is assumed to cost 10 false rejects, from the project's business assumption
+  cost_ratio_sensitivity: [2, 5, 10, 20, 50, 100]  # Real costs are unknown, so the assumption is tested over a range
+
+metrics:
+  headline: [au_pro_at_5_percent, au_pro_at_30_percent, pixel_f1, image_f1, image_au_roc]  # The benchmark's metrics
+  cost: [runtime_per_image, peak_gpu_memory]  # A production line must be able to afford the method
+  appendix: [image_auprc, pixel_average_precision, precision, recall]  # Secondary metrics, kept out of the headlines

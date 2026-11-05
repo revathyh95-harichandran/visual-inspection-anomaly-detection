@@ -1,0 +1,49 @@
+# C2: PaDiM with Wide ResNet-50
+# CRISP-DM stage: data preparation. These settings are used in modelling and evaluation.
+# TO_BE_DECIDED marks a setting that is deliberately still open.
+
+config_id: C2
+anomalib_version: "2.7.0"  # The interface changes between versions, so the version is pinned
+seeds: [42]  # One seed as planned. PaDiM's random feature choice and any other randomness are fixed with this
+
+data:
+  products: [sheet_metal, vial]  # The two MVTec AD 2 product types chosen for this project
+  fit_on: train  # Good training photos only, because defects must stay unknown to the methods
+  settings_and_benchmark_threshold_on: validation  # Good validation photos, which are separate from training
+  development_file_list: outputs/results/02_exploration/half_a_files.csv  # Half A, for every choice needing defect examples
+  final_file_list: outputs/results/02_exploration/half_b_files.csv  # Half B, for final reported results only
+  augmentation: none  # Augmentation is only ever a deliberate, logged experiment
+  num_workers: 0  # Reads photos in the main process, simplest to explain. anomalib's default of 8 is faster but not needed yet
+
+image:
+  size: 256  # The main size, where every measured method fits on the GPU. The resolution test uses 512, on the best pair only
+  shape_handling: squash  # Keeps every border defect and uses all pixels. A square crop would lose 91.5 percent of Sheet Metal's defect pixels
+  padding: none  # Padding would leave Sheet Metal filling 25 percent of the square, and add made-up streaks
+  crop: none  # Crops can remove border defects
+  interpolation: bilinear  # anomalib's default for this method
+  antialias: true  # anomalib's default. Smooths pixels when shrinking, so fine patterns do not break up
+  mask_interpolation: nearest  # Masks must stay pure defect or no defect. torchvision does this automatically for masks
+normalization:
+  mean: [0.485, 0.456, 0.406]  # ImageNet average brightness per channel, because these networks learned on ImageNet
+  std: [0.229, 0.224, 0.225]   # ImageNet spread per channel, for the same reason. Both are anomalib's defaults
+
+method:
+  name: padim
+  backbone: wide_resnet50_2  # The large, detailed network in the comparison
+  layers: [layer1, layer2, layer3]  # anomalib's default for PaDiM, combining fine and coarse detail
+  pre_trained: true  # anomalib's default. Uses features learned on ImageNet, since this project trains no network for PaDiM
+  n_features: 550  # anomalib's default for this network, and the PaDiM paper's value
+  statistics_on: processor  # The GPU's many-at-once inverse crashed in this setup. Checked on the real model at 256 with both ResNet-18 and Wide ResNet-50
+  train_batch_size: 8  # Memory measured at 8. Batch size only affects speed here, because all photos are used once
+  eval_batch_size: 8  # Same reason. anomalib's default for both is 32, which has not been measured
+
+thresholds:
+  benchmark_rule: mean_plus_3_std_of_good_validation_scores  # The benchmark's own rule, so results can be compared with the paper
+  cost_based_chosen_on: half_a  # Choosing needs defect examples, and half B must never be used for a choice
+  cost_ratio: 10  # A missed defect is assumed to cost 10 false rejects, from the project's business assumption
+  cost_ratio_sensitivity: [2, 5, 10, 20, 50, 100]  # Real costs are unknown, so the assumption is tested over a range
+
+metrics:
+  headline: [au_pro_at_5_percent, au_pro_at_30_percent, pixel_f1, image_f1, image_au_roc]  # The benchmark's metrics
+  cost: [runtime_per_image, peak_gpu_memory]  # A production line must be able to afford the method
+  appendix: [image_auprc, pixel_average_precision, precision, recall]  # Secondary metrics, kept out of the headlines
