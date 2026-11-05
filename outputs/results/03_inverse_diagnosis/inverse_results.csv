@@ -1,0 +1,7 @@
+part,table_size,tables,group,outcome,seconds,peak_gpu_gb,largest_error
+A,100,1,1,worked,0.406,0.01,4.4e-05
+A,100,16,16,worked,0.075,0.01,7.8e-05
+A,100,256,256,gpu error: CUDA error: an illegal memory access was encountered,,,
+B,100,4096,1024,gpu error: CUDA error: an illegal memory access was encountered,,,
+C,100,4096,4096,worked,0.568,,0.00014
+C,550,4096,4096,worked,19.776,,0.000481

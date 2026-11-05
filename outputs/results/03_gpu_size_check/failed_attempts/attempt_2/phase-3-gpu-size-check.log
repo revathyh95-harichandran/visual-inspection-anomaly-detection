@@ -1,0 +1,244 @@
+[{"stream_name":"stderr","time":10.821623249,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.821663053,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.821668836,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.821672794,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.51164153,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.511672778,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.511676267,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.511678833,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.207441897,"data":"Collecting anomalib==2.7.0\r\n"}
+,{"stream_name":"stdout","time":14.257316682,"data":"  Downloading anomalib-2.7.0-py3-none-any.whl.metadata (35 kB)\r\n"}
+,{"stream_name":"stdout","time":14.308023384,"data":"Requirement already satisfied: docstring-parser in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.18.0)\r\n"}
+,{"stream_name":"stdout","time":14.308044968,"data":"Requirement already satisfied: einops\u003e=0.3.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.8.2)\r\n"}
+,{"stream_name":"stdout","time":14.358898974,"data":"Collecting freia\u003e=0.2 (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":14.358920156,"data":"  Downloading FrEIA-0.2.tar.gz (34 kB)\r\n"}
+,{"stream_name":"stdout","time":18.10528798,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":18.460448632,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":18.66304902,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":18.764481239,"data":"Collecting imagecodecs (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":18.764508381,"data":"  Downloading imagecodecs-2026.10.10-cp312-abi3-manylinux_2_28_x86_64.whl.metadata (22 kB)\r\n"}
+,{"stream_name":"stdout","time":18.865884628,"data":"Collecting jsonargparse\u003c4.47.0,\u003e=4.27.7 (from jsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":18.865908083,"data":"  Downloading jsonargparse-4.46.0-py3-none-any.whl.metadata (12 kB)\r\n"}
+,{"stream_name":"stdout","time":18.916135434,"data":"Requirement already satisfied: kornia\u003e=0.6.6 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.9.0)\r\n"}
+,{"stream_name":"stdout","time":18.966891426,"data":"Collecting lightning!=2.6.2,!=2.6.3,\u003e=2.6 (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":18.966910711,"data":"  Downloading lightning-2.6.6-py3-none-any.whl.metadata (45 kB)\r\n"}
+,{"stream_name":"stdout","time":19.017878076,"data":"Requirement already satisfied: lightning-utilities in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.15.3)\r\n"}
+,{"stream_name":"stdout","time":19.017896664,"data":"Requirement already satisfied: matplotlib\u003e=3.4.3 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (3.10.0)\r\n"}
+,{"stream_name":"stdout","time":19.01790265,"data":"Requirement already satisfied: omegaconf\u003e=2.1.1 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2.4.0)\r\n"}
+,{"stream_name":"stdout","time":19.017930196,"data":"Requirement already satisfied: opencv-python-headless\u003e=4.5.3.56 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (4.14.0.94)\r\n"}
+,{"stream_name":"stdout","time":19.017935275,"data":"Requirement already satisfied: pandas\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2.3.3)\r\n"}
+,{"stream_name":"stdout","time":19.017939772,"data":"Requirement already satisfied: pillow\u003e=10.1.0 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (13.0.0)\r\n"}
+,{"stream_name":"stdout","time":19.017943769,"data":"Requirement already satisfied: platformdirs\u003e=4.9.4 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (4.13.5)\r\n"}
+,{"stream_name":"stdout","time":19.068189425,"data":"Collecting rich-argparse (from anomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":19.068207218,"data":"  Downloading rich_argparse-1.8.0-py3-none-any.whl.metadata (15 kB)\r\n"}
+,{"stream_name":"stdout","time":19.068220336,"data":"Requirement already satisfied: rich\u003e=13.5.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (13.9.4)\r\n"}
+,{"stream_name":"stdout","time":19.068225082,"data":"Requirement already satisfied: scikit-image in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (0.25.2)\r\n"}
+,{"stream_name":"stdout","time":19.068229466,"data":"Requirement already satisfied: scikit-learn in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.6.1)\r\n"}
+,{"stream_name":"stdout","time":19.068233625,"data":"Requirement already satisfied: tifffile in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (2026.10.15)\r\n"}
+,{"stream_name":"stdout","time":19.068237704,"data":"Requirement already satisfied: timm in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.0.30)\r\n"}
+,{"stream_name":"stdout","time":19.068247882,"data":"Requirement already satisfied: torchmetrics\u003e=1.8.2 in /usr/local/lib/python3.13/dist-packages (from anomalib==2.7.0) (1.9.0)\r\n"}
+,{"stream_name":"stdout","time":19.068251843,"data":"Requirement already satisfied: PyYAML\u003e=3.13 in /usr/local/lib/python3.13/dist-packages (from jsonargparse\u003c4.47.0,\u003e=4.27.7-\u003ejsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0) (6.0.3)\r\n"}
+,{"stream_name":"stdout","time":19.118956499,"data":"Collecting typeshed-client\u003e=2.8.2 (from jsonargparse[signatures]\u003c4.47.0,\u003e=4.27.7-\u003eanomalib==2.7.0)\r\n"}
+,{"stream_name":"stdout","time":19.118975166,"data":"  Downloading typeshed_client-2.15.0-py3-none-any.whl.metadata (11 kB)\r\n"}
+,{"stream_name":"stdout","time":19.17012565,"data":"Requirement already satisfied: numpy\u003e=1.15.0 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (2.1.3)\r\n"}
+,{"stream_name":"stdout","time":19.170143441,"data":"Requirement already satisfied: scipy\u003e=1.5 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (1.16.3)\r\n"}
+,{"stream_name":"stdout","time":19.170148336,"data":"Requirement already satisfied: torch\u003e=1.0.0 in /usr/local/lib/python3.13/dist-packages (from freia\u003e=0.2-\u003eanomalib==2.7.0) (2.11.0+cu130)\r\n"}
+,{"stream_name":"stdout","time":19.170152471,"data":"Requirement already satisfied: kornia-rs\u003e=0.2.0 in /usr/local/lib/python3.13/dist-packages (from kornia\u003e=0.6.6-\u003eanomalib==2.7.0) (0.2.0)\r\n"}
+,{"stream_name":"stdout","time":19.170156485,"data":"Requirement already satisfied: fsspec\u003c2028.0,\u003e=2022.5.0 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2025.12.0)\r\n"}
+,{"stream_name":"stdout","time":19.170160966,"data":"Requirement already satisfied: packaging\u003c27.0,\u003e=23.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (26.3)\r\n"}
+,{"stream_name":"stdout","time":19.170173706,"data":"Requirement already satisfied: tqdm\u003c6.0,\u003e=4.57.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (4.67.3)\r\n"}
+,{"stream_name":"stdout","time":19.170178078,"data":"Requirement already satisfied: typing-extensions\u003c6.0,\u003e4.5.0 in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (4.16.0)\r\n"}
+,{"stream_name":"stdout","time":19.170182109,"data":"Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.13/dist-packages (from lightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2.6.6)\r\n"}
+,{"stream_name":"stdout","time":19.170186246,"data":"Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (3.14.5)\r\n"}
+,{"stream_name":"stdout","time":19.170190581,"data":"Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (4.2.4)\r\n"}
+,{"stream_name":"stdout","time":19.170194321,"data":"Requirement already satisfied: setuptools\u003c82 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (81.0.0)\r\n"}
+,{"stream_name":"stdout","time":19.170198131,"data":"Requirement already satisfied: sympy\u003e=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.14.0)\r\n"}
+,{"stream_name":"stdout","time":19.170202745,"data":"Requirement already satisfied: networkx\u003e=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.7)\r\n"}
+,{"stream_name":"stdout","time":19.170206754,"data":"Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.1.6)\r\n"}
+,{"stream_name":"stdout","time":19.170211117,"data":"Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.2)\r\n"}
+,{"stream_name":"stdout","time":19.170215837,"data":"Requirement already satisfied: cuda-bindings\u003c14,\u003e=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.3)\r\n"}
+,{"stream_name":"stdout","time":19.170220002,"data":"Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (9.19.0.56)\r\n"}
+,{"stream_name":"stdout","time":19.170224066,"data":"Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (0.8.0)\r\n"}
+,{"stream_name":"stdout","time":19.170227967,"data":"Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (2.28.9)\r\n"}
+,{"stream_name":"stdout","time":19.17023964,"data":"Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.4.5)\r\n"}
+,{"stream_name":"stdout","time":19.170247792,"data":"Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.6.0)\r\n"}
+,{"stream_name":"stdout","time":19.170251741,"data":"Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.1.0.3)\r\n"}
+,{"stream_name":"stdout","time":19.170256691,"data":"Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.96)\r\n"}
+,{"stream_name":"stdout","time":19.220868714,"data":"Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (12.0.0.61)\r\n"}
+,{"stream_name":"stdout","time":19.220887083,"data":"Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.15.1.6)\r\n"}
+,{"stream_name":"stdout","time":19.220892773,"data":"Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.85)\r\n"}
+,{"stream_name":"stdout","time":19.220897851,"data":"Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (10.4.0.35)\r\n"}
+,{"stream_name":"stdout","time":19.220902703,"data":"Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (12.0.4.66)\r\n"}
+,{"stream_name":"stdout","time":19.220908175,"data":"Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (12.6.3.3)\r\n"}
+,{"stream_name":"stdout","time":19.220913888,"data":"Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.88)\r\n"}
+,{"stream_name":"stdout","time":19.220919021,"data":"Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.88)\r\n"}
+,{"stream_name":"stdout","time":19.22093241,"data":"Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (13.0.85)\r\n"}
+,{"stream_name":"stdout","time":19.220937442,"data":"Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings\u003c14,\u003e=13.0.3-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.8.4)\r\n"}
+,{"stream_name":"stdout","time":19.220941939,"data":"Requirement already satisfied: aiohappyeyeballs\u003e=2.5.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (2.7.1)\r\n"}
+,{"stream_name":"stdout","time":19.220946572,"data":"Requirement already satisfied: aiosignal\u003e=1.4.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.4.0)\r\n"}
+,{"stream_name":"stdout","time":19.220951197,"data":"Requirement already satisfied: attrs\u003e=17.3.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (26.1.0)\r\n"}
+,{"stream_name":"stdout","time":19.220955657,"data":"Requirement already satisfied: frozenlist\u003e=1.1.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.8.0)\r\n"}
+,{"stream_name":"stdout","time":19.271304385,"data":"Requirement already satisfied: multidict\u003c8.0,\u003e=4.5 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (6.9.1)\r\n"}
+,{"stream_name":"stdout","time":19.271321569,"data":"Requirement already satisfied: propcache\u003e=0.2.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (0.5.4)\r\n"}
+,{"stream_name":"stdout","time":19.27132688,"data":"Requirement already satisfied: yarl\u003c2.0,\u003e=1.25.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (1.25.1)\r\n"}
+,{"stream_name":"stdout","time":19.271332024,"data":"Requirement already satisfied: idna\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from yarl\u003c2.0,\u003e=1.25.1-\u003eaiohttp!=4.0.0a0,!=4.0.0a1-\u003efsspec[http]\u003c2028.0,\u003e=2022.5.0-\u003elightning!=2.6.2,!=2.6.3,\u003e=2.6-\u003eanomalib==2.7.0) (3.20)\r\n"}
+,{"stream_name":"stdout","time":19.271336838,"data":"Requirement already satisfied: contourpy\u003e=1.0.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.4.0)\r\n"}
+,{"stream_name":"stdout","time":19.271340978,"data":"Requirement already satisfied: cycler\u003e=0.10 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (0.12.1)\r\n"}
+,{"stream_name":"stdout","time":19.271345031,"data":"Requirement already satisfied: fonttools\u003e=4.22.0 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (4.67.0)\r\n"}
+,{"stream_name":"stdout","time":19.271349092,"data":"Requirement already satisfied: kiwisolver\u003e=1.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.5.1)\r\n"}
+,{"stream_name":"stdout","time":19.271360529,"data":"Requirement already satisfied: pyparsing\u003e=2.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (3.3.3)\r\n"}
+,{"stream_name":"stdout","time":19.27136448,"data":"Requirement already satisfied: python-dateutil\u003e=2.7 in /usr/local/lib/python3.13/dist-packages (from matplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (2.9.0.post0)\r\n"}
+,{"stream_name":"stdout","time":19.27136862,"data":"Requirement already satisfied: pytz\u003e=2020.1 in /usr/local/lib/python3.13/dist-packages (from pandas\u003e=1.1.0-\u003eanomalib==2.7.0) (2025.2)\r\n"}
+,{"stream_name":"stdout","time":19.271372599,"data":"Requirement already satisfied: tzdata\u003e=2022.7 in /usr/local/lib/python3.13/dist-packages (from pandas\u003e=1.1.0-\u003eanomalib==2.7.0) (2026.5)\r\n"}
+,{"stream_name":"stdout","time":19.321983774,"data":"Requirement already satisfied: six\u003e=1.5 in /usr/local/lib/python3.13/dist-packages (from python-dateutil\u003e=2.7-\u003ematplotlib\u003e=3.4.3-\u003eanomalib==2.7.0) (1.17.0)\r\n"}
+,{"stream_name":"stdout","time":19.322001308,"data":"Requirement already satisfied: markdown-it-py\u003e=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.5.2-\u003eanomalib==2.7.0) (4.2.0)\r\n"}
+,{"stream_name":"stdout","time":19.322006406,"data":"Requirement already satisfied: pygments\u003c3.0.0,\u003e=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.5.2-\u003eanomalib==2.7.0) (2.21.0)\r\n"}
+,{"stream_name":"stdout","time":19.322010895,"data":"Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py\u003e=2.2.0-\u003erich\u003e=13.5.2-\u003eanomalib==2.7.0) (0.1.2)\r\n"}
+,{"stream_name":"stdout","time":19.322015269,"data":"Requirement already satisfied: mpmath\u003c1.4,\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy\u003e=1.13.3-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (1.3.0)\r\n"}
+,{"stream_name":"stdout","time":19.322022144,"data":"Requirement already satisfied: MarkupSafe\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2-\u003etorch\u003e=1.0.0-\u003efreia\u003e=0.2-\u003eanomalib==2.7.0) (3.0.4)\r\n"}
+,{"stream_name":"stdout","time":19.372845147,"data":"Requirement already satisfied: imageio!=2.35.0,\u003e=2.33 in /usr/local/lib/python3.13/dist-packages (from scikit-image-\u003eanomalib==2.7.0) (2.38.1)\r\n"}
+,{"stream_name":"stdout","time":19.372863053,"data":"Requirement already satisfied: lazy-loader\u003e=0.4 in /usr/local/lib/python3.13/dist-packages (from scikit-image-\u003eanomalib==2.7.0) (0.6)\r\n"}
+,{"stream_name":"stdout","time":19.372867858,"data":"Requirement already satisfied: joblib\u003e=1.2.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn-\u003eanomalib==2.7.0) (1.6.0)\r\n"}
+,{"stream_name":"stdout","time":19.372872078,"data":"Requirement already satisfied: threadpoolctl\u003e=3.1.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn-\u003eanomalib==2.7.0) (3.7.0)\r\n"}
+,{"stream_name":"stdout","time":19.372876031,"data":"Requirement already satisfied: cloudpickle\u003e=3.0 in /usr/local/lib/python3.13/dist-packages (from joblib\u003e=1.2.0-\u003escikit-learn-\u003eanomalib==2.7.0) (3.1.2)\r\n"}
+,{"stream_name":"stdout","time":19.372880344,"data":"Requirement already satisfied: torchvision in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (0.26.0+cu130)\r\n"}
+,{"stream_name":"stdout","time":19.372884656,"data":"Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (1.33.0)\r\n"}
+,{"stream_name":"stdout","time":19.37289689,"data":"Requirement already satisfied: safetensors in /usr/local/lib/python3.13/dist-packages (from timm-\u003eanomalib==2.7.0) (0.8.0)\r\n"}
+,{"stream_name":"stdout","time":19.372900996,"data":"Requirement already satisfied: click\u003c9.0.0,\u003e=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (8.5.0)\r\n"}
+,{"stream_name":"stdout","time":19.372905233,"data":"Requirement already satisfied: hf-xet\u003c2.0.0,\u003e=1.6.0 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (1.7.0)\r\n"}
+,{"stream_name":"stdout","time":19.37290923,"data":"Requirement already satisfied: httpx\u003c1,\u003e=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (0.28.1)\r\n"}
+,{"stream_name":"stdout","time":19.372913295,"data":"Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (4.15.1)\r\n"}
+,{"stream_name":"stdout","time":19.37291748,"data":"Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (2026.10.23)\r\n"}
+,{"stream_name":"stdout","time":19.372921766,"data":"Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (1.0.9)\r\n"}
+,{"stream_name":"stdout","time":19.423381402,"data":"Requirement already satisfied: h11\u003e=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*-\u003ehttpx\u003c1,\u003e=0.23.0-\u003ehuggingface_hub-\u003etimm-\u003eanomalib==2.7.0) (0.16.0)\r\n"}
+,{"stream_name":"stdout","time":19.423407829,"data":"Downloading anomalib-2.7.0-py3-none-any.whl (1.1 MB)\r\n"}
+,{"stream_name":"stdout","time":19.524965685,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/1.1 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.1/1.1 MB\u001b[0m \u001b[31m11.2 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":19.524992803,"data":"\u001b[?25hDownloading jsonargparse-4.46.0-py3-none-any.whl (246 kB)\r\n"}
+,{"stream_name":"stdout","time":19.575570501,"data":"Downloading lightning-2.6.6-py3-none-any.whl (849 kB)\r\n"}
+,{"stream_name":"stdout","time":19.626011254,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/849.3 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m849.3/849.3 kB\u001b[0m \u001b[31m15.4 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":19.626034484,"data":"\u001b[?25hDownloading typeshed_client-2.15.0-py3-none-any.whl (808 kB)\r\n"}
+,{"stream_name":"stdout","time":19.676869843,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/808.0 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m808.0/808.0 kB\u001b[0m \u001b[31m12.8 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":19.676902476,"data":"\u001b[?25hDownloading imagecodecs-2026.10.10-cp312-abi3-manylinux_2_28_x86_64.whl (28.4 MB)\r\n"}
+,{"stream_name":"stdout","time":20.032221055,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/28.4 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m20.2/28.4 MB\u001b[0m \u001b[31m102.8 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m28.4/28.4 MB\u001b[0m \u001b[31m88.5 MB/s\u001b[0m  \u001b[33m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":20.032257961,"data":"\u001b[?25hDownloading rich_argparse-1.8.0-py3-none-any.whl (25 kB)\r\n"}
+,{"stream_name":"stdout","time":20.184557393,"data":"Building wheels for collected packages: freia\r\n"}
+,{"stream_name":"stdout","time":20.438178943,"data":"  Building wheel for freia (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":20.438207634,"data":"  Created wheel for freia: filename=freia-0.2-py3-none-any.whl size=42849 sha256=2f2332d00438aa688275e5a700e2f8a8b2d75674365ed777f5408c87dbc556c0\r\n"}
+,{"stream_name":"stdout","time":20.438230289,"data":"  Stored in directory: /root/.cache/pip/wheels/b1/66/ba/29fd62b92bba7c42af99ae475baafa7d205b2c3e7fcc8670b7\r\n"}
+,{"stream_name":"stdout","time":20.438234525,"data":"Successfully built freia\r\n"}
+,{"stream_name":"stdout","time":21.400888322,"data":"Installing collected packages: typeshed-client, jsonargparse, imagecodecs, rich-argparse, freia, lightning, anomalib\r\n"}
+,{"stream_name":"stdout","time":23.529998735,"data":"\u001b[?25l\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1/7\u001b[0m [jsonargparse]\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1/7\u001b[0m [jsonargparse]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2/7\u001b[0m [imagecodecs]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━\u001b[0m \u001b[32m5/7\u001b[0m [lightning]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━\u001b[0m \u001b[32m6/7\u001b[0m [anomalib]\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m7/7\u001b[0m [anomalib]\r\n"}
+,{"stream_name":"stdout","time":23.63134286,"data":"\u001b[?25h\r\u001b[1A\u001b[2KSuccessfully installed anomalib-2.7.0 freia-0.2 imagecodecs-2026.10.10 jsonargparse-4.46.0 lightning-2.6.6 rich-argparse-1.8.0 typeshed-client-2.15.0\r\n"}
+,{"stream_name":"stderr","time":76.662124784,"data":"/usr/local/lib/python3.13/dist-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers\n"}
+,{"stream_name":"stderr","time":76.6621566,"data":"  warnings.warn(f\"Importing from {__name__} is deprecated, please import via timm.layers\", FutureWarning)\n"}
+,{"stream_name":"stderr","time":76.662164191,"data":"/usr/local/lib/python3.13/dist-packages/anomalib/models/image/dinomaly/components/layers.py:22: FutureWarning: The anomalib.models.components.dinov2 package is deprecated and will be removed in a future release. Please use the timm-based feature extractor instead: anomalib.models.components.feature_extractors.TimmFeatureExtractor\n"}
+,{"stream_name":"stderr","time":76.662170876,"data":"  from anomalib.models.components.dinov2.layers import Attention, DropPath, LayerScale, MemEffAttention\n"}
+,{"stream_name":"stderr","time":76.662175582,"data":"\n"}
+,{"stream_name":"stderr","time":76.662180102,"data":"/usr/local/lib/python3.13/dist-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers\n"}
+,{"stream_name":"stderr","time":76.662185458,"data":"  warnings.warn(f\"Importing from {__name__} is deprecated, please import via timm.layers\", FutureWarning)\n"}
+,{"stream_name":"stderr","time":76.662190706,"data":"/usr/local/lib/python3.13/dist-packages/anomalib/models/image/dinomaly/components/layers.py:22: FutureWarning: The anomalib.models.components.dinov2 package is deprecated and will be removed in a future release. Please use the timm-based feature extractor instead: anomalib.models.components.feature_extractors.TimmFeatureExtractor\n"}
+,{"stream_name":"stderr","time":76.662196162,"data":"  from anomalib.models.components.dinov2.layers import Attention, DropPath, LayerScale, MemEffAttention\n"}
+,{"stream_name":"stdout","time":79.034150457,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":79.034184034,"data":"GPU memory in GB: 15.6\n"}
+,{"stream_name":"stdout","time":80.632693664,"data":"Photos used: ['000_regular.png', '036_regular.png', '072_regular.png', '108_regular.png', '144_regular.png', '180_regular.png', '216_regular.png', '252_regular.png']\n"}
+,{"stream_name":"stderr","time":84.758982438,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":84.75901233,"data":"\n"}
+,{"stream_name":"stderr","time":84.759017572,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":98.549400346,"data":"256 patchcore_features seconds_per_photo 0.0113\n"}
+,{"stream_name":"stdout","time":98.549440157,"data":"256 patchcore_features patches_per_photo 1024\n"}
+,{"stream_name":"stdout","time":98.549445252,"data":"256 patchcore_features feature_length 1536\n"}
+,{"stream_name":"stdout","time":98.549450689,"data":"256 patchcore_features estimated_full_bank_before_sampling_gb 1.83\n"}
+,{"stream_name":"stdout","time":98.549459969,"data":"256 patchcore_features peak_gpu_gb 0.39\n"}
+,{"stream_name":"stderr","time":101.56412169,"data":"/tmp/ipykernel_23/464909914.py:38: DeprecationWarning: Argument embeddings is deprecated since v2.1.0.\n"}
+,{"stream_name":"stderr","time":101.564156534,"data":"  model.subsample_embedding(CORESET_RATIO)\n"}
+,{"stream_name":"stderr","time":101.564161562,"data":"\n"}
+,{"stream_name":"stderr","time":101.564165565,"data":"/tmp/ipykernel_23/464909914.py:38: DeprecationWarning: Argument embeddings is deprecated since v2.1.0.\n"}
+,{"stream_name":"stderr","time":101.564169887,"data":"  model.subsample_embedding(CORESET_RATIO)\n"}
+,{"stream_name":"stderr","time":101.628395102,"data":"\rSelecting Coreset Indices.:   0%|          | 0/818 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":101.744639077,"data":"\rSelecting Coreset Indices.:   0%|          | 0/818 [00:00\u003c?, ?it/s]\rSelecting Coreset Indices.:   0%|          | 1/818 [00:00\u003c01:37,  8.36it/s]\n"}
+,{"stream_name":"stderr","time":101.844942291,"data":"\rSelecting Coreset Indices.:   0%|          | 1/818 [00:00\u003c01:37,  8.36it/s]\rSelecting Coreset Indices.:  46%|████▌     | 377/818 [00:00\u003c00:00, 2049.39it/s]\n"}
+,{"stream_name":"stderr","time":101.923710794,"data":"\rSelecting Coreset Indices.:  46%|████▌     | 377/818 [00:00\u003c00:00, 2049.39it/s]\rSelecting Coreset Indices.: 100%|██████████| 818/818 [00:00\u003c00:00, 2736.43it/s]\n"}
+,{"stream_name":"stderr","time":102.303888767,"data":"\rSelecting Coreset Indices.: 100%|██████████| 818/818 [00:00\u003c00:00, 2736.43it/s]\n"}
+,{"stream_name":"stderr","time":102.303953955,"data":"\n"}
+,{"stream_name":"stderr","time":102.303958875,"data":"\n"}
+,{"stream_name":"stdout","time":102.305018793,"data":"256 patchcore_coreset seconds_on_test_batch 0.58\n"}
+,{"stream_name":"stdout","time":102.305061142,"data":"256 patchcore_coreset rough_estimate_full_run_minutes 12.7\n"}
+,{"stream_name":"stdout","time":102.305066106,"data":"256 patchcore_coreset peak_gpu_gb 0.34\n"}
+,{"stream_name":"stdout","time":106.400748496,"data":"256 patchcore_search seconds_per_photo 0.0392\n"}
+,{"stream_name":"stdout","time":106.400783725,"data":"256 patchcore_search memory_bank_gb 0.18\n"}
+,{"stream_name":"stdout","time":106.400788166,"data":"256 patchcore_search peak_gpu_gb 0.61\n"}
+,{"stream_name":"stdout","time":109.046951783,"data":"256 padim_resnet18 positions 4096\n"}
+,{"stream_name":"stdout","time":109.046994095,"data":"256 padim_resnet18 seconds_per_photo_features 0.0021\n"}
+,{"stream_name":"stdout","time":109.046998345,"data":"256 padim_resnet18 estimated_full_features_gb 0.48\n"}
+,{"stream_name":"stdout","time":109.047001308,"data":"256 padim_resnet18 estimated_covariance_gb 0.16\n"}
+,{"stream_name":"stderr","time":109.858462622,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:217\n"}
+,{"stream_name":"stderr","time":109.858492925,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:218\n"}
+,{"stream_name":"stderr","time":109.858517015,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:219\n"}
+,{"stream_name":"stderr","time":109.924047199,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_queue_destroy_internal at /builder/magma/magma-cuda130/magma-2.6.1/interface_cuda/interface.cpp:1205\n"}
+,{"stream_name":"stderr","time":110.288694663,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:217\n"}
+,{"stream_name":"stderr","time":110.288739645,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:218\n"}
+,{"stream_name":"stderr","time":110.288744683,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:219\n"}
+,{"stream_name":"stderr","time":110.288748773,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_queue_destroy_internal at /builder/magma/magma-cuda130/magma-2.6.1/interface_cuda/interface.cpp:1205\n"}
+,{"stream_name":"stderr","time":110.288754793,"data":"\n"}
+,{"stream_name":"stderr","time":110.288761956,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:217\n"}
+,{"stream_name":"stderr","time":110.288765056,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:218\n"}
+,{"stream_name":"stderr","time":110.288767766,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:219\n"}
+,{"stream_name":"stderr","time":110.288770438,"data":"CUDA runtime error: an illegal memory access was encountered (700) in magma_queue_destroy_internal at /builder/magma/magma-cuda130/magma-2.6.1/interface_cuda/interface.cpp:1205\n"}
+,{"stream_name":"stdout","time":110.289532977,"data":"256 padim_resnet18 outcome gpu error: CUDA error: an illegal memory access was encountered\n"}
+,{"stream_name":"stderr","time":114.141698734,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":114.142336082,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":114.142349828,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":114.142355956,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":114.142360988,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":114.142365195,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":114.142369031,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":114.142373072,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":114.142385962,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":114.142469688,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":114.142496535,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":114.142500267,"data":"Exception encountered at \"In [4]\":\n"}
+,{"stream_name":"stderr","time":114.142503844,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":114.142507493,"data":"AcceleratorError                          Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":114.142511052,"data":"/tmp/ipykernel_23/464909914.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":114.142514883,"data":"    141 for size in IMAGE_SIZES:\n"}
+,{"stream_name":"stderr","time":114.142518256,"data":"    142     for check_name, check_function in CHECKS:\n"}
+,{"stream_name":"stderr","time":114.142521714,"data":"--\u003e 143         run_check(size, check_name, check_function)\n"}
+,{"stream_name":"stderr","time":114.142525228,"data":"    144 \n"}
+,{"stream_name":"stderr","time":114.142528644,"data":"    145 # Runs last and stops at its first failure, so it cannot affect the other measurements\n"}
+,{"stream_name":"stderr","time":114.142532289,"data":"\n"}
+,{"stream_name":"stderr","time":114.142535618,"data":"/tmp/ipykernel_23/56203553.py in run_check(size, check_name, check_function)\n"}
+,{"stream_name":"stderr","time":114.142539169,"data":"     52         outcome = \"gpu error\"\n"}
+,{"stream_name":"stderr","time":114.142542787,"data":"     53         record(size, check_name, \"outcome\", outcome + \": \" + str(gpu_error).split(chr(10))[0])\n"}
+,{"stream_name":"stderr","time":114.14254665,"data":"---\u003e 54     clear_memory()\n"}
+,{"stream_name":"stderr","time":114.142550155,"data":"     55     return outcome\n"}
+,{"stream_name":"stderr","time":114.142553608,"data":"\n"}
+,{"stream_name":"stderr","time":114.142586726,"data":"/tmp/ipykernel_23/56203553.py in clear_memory()\n"}
+,{"stream_name":"stderr","time":114.142591446,"data":"     33     gc.collect()\n"}
+,{"stream_name":"stderr","time":114.14260859,"data":"     34     if USING_GPU:\n"}
+,{"stream_name":"stderr","time":114.142613504,"data":"---\u003e 35         torch.cuda.empty_cache()\n"}
+,{"stream_name":"stderr","time":114.149660275,"data":"     36         torch.cuda.reset_peak_memory_stats()\n"}
+,{"stream_name":"stderr","time":114.149679596,"data":"     37 \n"}
+,{"stream_name":"stderr","time":114.149682647,"data":"\n"}
+,{"stream_name":"stderr","time":114.149685077,"data":"/usr/local/lib/python3.13/dist-packages/torch/cuda/memory.py in empty_cache()\n"}
+,{"stream_name":"stderr","time":114.149687831,"data":"    222     \"\"\"\n"}
+,{"stream_name":"stderr","time":114.149690387,"data":"    223     if is_initialized():\n"}
+,{"stream_name":"stderr","time":114.1496929,"data":"--\u003e 224         torch._C._cuda_emptyCache()\n"}
+,{"stream_name":"stderr","time":114.14969561,"data":"    225 \n"}
+,{"stream_name":"stderr","time":114.149697931,"data":"    226 \n"}
+,{"stream_name":"stderr","time":114.149700333,"data":"\n"}
+,{"stream_name":"stderr","time":114.149703177,"data":"AcceleratorError: CUDA error: an illegal memory access was encountered\n"}
+,{"stream_name":"stderr","time":114.149707285,"data":"Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+,{"stream_name":"stderr","time":114.149710139,"data":"CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\n"}
+,{"stream_name":"stderr","time":114.149719365,"data":"For debugging consider passing CUDA_LAUNCH_BLOCKING=1\n"}
+,{"stream_name":"stderr","time":114.149721969,"data":"Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n"}
+,{"stream_name":"stderr","time":114.149724485,"data":"\n"}
+,{"stream_name":"stderr","time":114.149726776,"data":"\n"}
+,{"stream_name":"stderr","time":116.357366986,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":116.357393518,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":116.547957276,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":116.547980602,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":117.358057495,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":117.450906839,"data":"[NbConvertApp] Writing 97359 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":119.940865658,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":120.503830824,"data":"[NbConvertApp] Writing 391252 bytes to __results__.html\n"}
+]

@@ -1,0 +1,9 @@
+A 100 1 1 worked 0.406 0.01 4.4e-05
+A 100 16 16 worked 0.075 0.01 7.8e-05
+A 100 256 256 gpu error: CUDA error: an illegal memory access was encountered   
+
+--- messages
+CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:217
+CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:218
+CUDA runtime error: an illegal memory access was encountered (700) in magma_sgetrf_batched at /builder/magma/magma-cuda130/magma-2.6.1/src/sgetrf_batched.cpp:219
+CUDA runtime error: an illegal memory access was encountered (700) in magma_queue_destroy_internal at /builder/magma/magma-cuda130/magma-2.6.1/interface_cuda/interface.cpp:1205

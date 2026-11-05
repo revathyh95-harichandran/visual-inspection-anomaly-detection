@@ -1,0 +1,8 @@
+python: 3.13.16
+torch: 2.11.0+cu130
+torch built for cuda: 13.0
+processor threads: 2
+gpu: Tesla T4
+gpu memory GB: 15.6
+driver: 580.178.04
+580.178.04

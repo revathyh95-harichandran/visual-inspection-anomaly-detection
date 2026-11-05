@@ -1,0 +1,41 @@
+[{"stream_name":"stderr","time":8.309216063,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.309276162,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.30928209,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.309286313,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.9282674,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.928299176,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.928303154,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.928305633,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.479403177000002,"data":"python: 3.13.16\n"}
+,{"stream_name":"stdout","time":17.479436375,"data":"torch: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":17.479440082,"data":"torch built for cuda: 13.0\n"}
+,{"stream_name":"stdout","time":17.479442632,"data":"processor threads: 2\n"}
+,{"stream_name":"stdout","time":17.479444989,"data":"gpu: Tesla T4\n"}
+,{"stream_name":"stdout","time":17.479447395,"data":"gpu memory GB: 15.6\n"}
+,{"stream_name":"stdout","time":17.479450158,"data":"driver: 580.178.04\n"}
+,{"stream_name":"stdout","time":17.479452543,"data":"580.178.04\n"}
+,{"stream_name":"stdout","time":17.494404596,"data":"Test script written\n"}
+,{"stream_name":"stdout","time":17.680313484,"data":"=== Part A\n"}
+,{"stream_name":"stdout","time":23.959598491,"data":"A 100 1 1 worked 0.406 0.01 4.4e-05\n"}
+,{"stream_name":"stdout","time":23.959629549,"data":"A 100 16 16 worked 0.075 0.01 7.8e-05\n"}
+,{"stream_name":"stdout","time":23.959634065,"data":"A 100 256 256 gpu error: CUDA error: an illegal memory access was encountered   \n"}
+,{"stream_name":"stdout","time":23.959638291,"data":"\n"}
+,{"stream_name":"stdout","time":23.959641783,"data":"Part A exit code: 0\n"}
+,{"stream_name":"stdout","time":23.95964547,"data":"=== Part B\n"}
+,{"stream_name":"stdout","time":26.763897337,"data":"B 100 4096 1024 gpu error: CUDA error: an illegal memory access was encountered   \n"}
+,{"stream_name":"stdout","time":26.763928598,"data":"\n"}
+,{"stream_name":"stdout","time":26.763933831,"data":"Part B exit code: 0\n"}
+,{"stream_name":"stdout","time":26.763938325,"data":"=== Part C\n"}
+,{"stream_name":"stdout","time":56.743796225,"data":"C 100 4096 4096 worked 0.568  0.00014\n"}
+,{"stream_name":"stdout","time":56.74383052,"data":"C 550 4096 4096 worked 19.776  0.000481\n"}
+,{"stream_name":"stdout","time":56.743835952,"data":"\n"}
+,{"stream_name":"stdout","time":56.743840797,"data":"Part C exit code: 0\n"}
+,{"stream_name":"stderr","time":59.823656291,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":59.823715913,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":59.991836239,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":59.991865882,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":60.779944934,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":60.872744516,"data":"[NbConvertApp] Writing 16360 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":63.464592957,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":63.979344942,"data":"[NbConvertApp] Writing 297099 bytes to __results__.html\n"}
+]
