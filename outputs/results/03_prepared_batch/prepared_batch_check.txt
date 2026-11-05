@@ -1,0 +1,84 @@
+
+=== sheet_metal, imagenet_256
+batch shape: [8, 3, 256, 256]
+mask shape: [8, 256, 256]
+value range after normalization: -2.024 to 2.64
+unique mask values: [False, True]
+  bad 000_regular.png: defect pixels 166
+  bad 004_regular.png: defect pixels 1157
+  bad 005_regular.png: defect pixels 240
+  bad 007_regular.png: defect pixels 422
+  bad 009_regular.png: defect pixels 166
+  bad 012_regular.png: defect pixels 6
+  good 001_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
+
+=== sheet_metal, clip_240
+batch shape: [8, 3, 240, 240]
+mask shape: [8, 240, 240]
+value range after normalization: -1.859 to 2.396
+unique mask values: [False, True]
+  bad 000_regular.png: defect pixels 138
+  bad 004_regular.png: defect pixels 924
+  bad 005_regular.png: defect pixels 202
+  bad 007_regular.png: defect pixels 423
+  bad 009_regular.png: defect pixels 126
+  bad 012_regular.png: defect pixels 5
+  good 001_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
+
+=== sheet_metal, imagenet_512
+batch shape: [8, 3, 512, 512]
+mask shape: [8, 512, 512]
+value range after normalization: -2.038 to 2.64
+unique mask values: [False, True]
+  bad 000_regular.png: defect pixels 673
+  bad 004_regular.png: defect pixels 4308
+  bad 005_regular.png: defect pixels 932
+  bad 007_regular.png: defect pixels 1789
+  bad 009_regular.png: defect pixels 651
+  bad 012_regular.png: defect pixels 25
+  good 001_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
+
+=== vial, imagenet_256
+batch shape: [8, 3, 256, 256]
+mask shape: [8, 256, 256]
+value range after normalization: -2.068 to 2.64
+unique mask values: [False, True]
+  bad 001_regular.png: defect pixels 546
+  bad 008_regular.png: defect pixels 8499
+  bad 010_regular.png: defect pixels 244
+  bad 011_regular.png: defect pixels 139
+  bad 012_regular.png: defect pixels 6335
+  bad 013_regular.png: defect pixels 3198
+  good 000_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
+
+=== vial, clip_240
+batch shape: [8, 3, 240, 240]
+mask shape: [8, 240, 240]
+value range after normalization: -1.857 to 2.347
+unique mask values: [False, True]
+  bad 001_regular.png: defect pixels 480
+  bad 008_regular.png: defect pixels 7480
+  bad 010_regular.png: defect pixels 211
+  bad 011_regular.png: defect pixels 122
+  bad 012_regular.png: defect pixels 5563
+  bad 013_regular.png: defect pixels 2796
+  good 000_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
+
+=== vial, imagenet_512
+batch shape: [8, 3, 512, 512]
+mask shape: [8, 512, 512]
+value range after normalization: -2.071 to 2.64
+unique mask values: [False, True]
+  bad 001_regular.png: defect pixels 2182
+  bad 008_regular.png: defect pixels 34006
+  bad 010_regular.png: defect pixels 972
+  bad 011_regular.png: defect pixels 550
+  bad 012_regular.png: defect pixels 25320
+  bad 013_regular.png: defect pixels 12771
+  good 000_regular.png: defect pixels 0
+  good 002_regular.png: defect pixels 0
