@@ -90,4 +90,22 @@ c1_threshold = 19.6001
 check("C1 image F1", round(evaluate.f1_from_flags(c1_scores > c1_threshold, c1_labels), 4), 0.8842)
 check("C1 image AU-ROC", round(evaluate.image_auroc(c1_scores, c1_labels), 4), 0.75)
 
+# Bootstrap: drawn parts keep the same numbers of good and defective parts
+import random
+drawn = evaluate.draw_parts(["good_1", "good_2"], ["defective_1", "defective_2", "defective_3"], random.Random(1))
+good_drawn = [part for part in drawn if part.startswith("good")]
+check("parts drawn", len(drawn), 5)
+check("good parts drawn", len(good_drawn), 2)
+
+# Bootstrap: perfectly separated scores give the same answer in every draw, so the interval has no width
+names = ["001_regular.png", "001_shift_1.png", "002_regular.png", "003_regular.png", "004_regular.png"]
+perfect_labels = torch.tensor([False, False, False, True, True])
+perfect_scores = torch.tensor([1.0, 1.0, 2.0, 10.0, 20.0])
+intervals = evaluate.bootstrap_image_metrics([perfect_scores, perfect_scores], [5.0, 5.0], perfect_labels, names)
+check("interval F1 low", intervals["image_f1_low"], 1.0)
+check("interval F1 high", intervals["image_f1_high"], 1.0)
+check("interval AU-ROC low", intervals["image_au_roc_low"], 1.0)
+check("good parts counted", intervals["good_parts"], 2)
+check("defective parts counted", intervals["defective_parts"], 2)
+
 print("All tests passed")

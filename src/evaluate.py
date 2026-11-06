@@ -8,8 +8,10 @@ Our own code covers only what anomalib does not provide, or does not handle
 safely on raw scores: the benchmark threshold, F1, timing and memory.
 """
 
+import random
 import time
 
+import numpy
 import torch
 from anomalib.metrics.aupro import _AUPRO
 from sklearn.metrics import roc_auc_score
@@ -147,3 +149,81 @@ def evaluate(validation_maps, maps, scores, masks, labels, model_seconds, peak_g
     results["seconds_per_photo"] = model_seconds / len(scores)
     results["peak_gpu_gb"] = peak_gb
     return results
+
+
+# Enough draws for a steady 95 percent interval. More would barely change it
+BOOTSTRAP_DRAWS = 2000
+BOOTSTRAP_SEED = 42
+# The middle 95 percent of the draws
+INTERVAL_LOW = 2.5
+INTERVAL_HIGH = 97.5
+
+
+def part_number(file_name):
+    """Return the part number from a name such as 004_shift_1.png."""
+    return file_name.split("_")[0]
+
+
+def draw_parts(good_parts, defective_parts, generator):
+    """Draw good and defective parts separately, with repeats, keeping their numbers.
+
+    Drawing the two groups separately means every draw has both good and
+    defective parts, so AU-ROC can always be calculated.
+    """
+    drawn = []
+    for parts in [good_parts, defective_parts]:
+        for count in range(len(parts)):
+            drawn.append(generator.choice(parts))
+    return drawn
+
+
+def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
+    """Return 95 percent bootstrap intervals for image F1 and image AU-ROC.
+
+    score_lists and thresholds hold one entry per seed, all for the same photos.
+    Parts are drawn, not photos, because the photos of one part under different
+    lights are not independent. In each draw, each metric is worked out for every
+    seed on the same parts, then averaged over seeds.
+    """
+    # Good and defective parts can share a number, so the label is part of the name
+    photos_of_part = {}
+    good_parts = []
+    defective_parts = []
+    for position in range(len(file_names)):
+        label = "defective" if bool(labels[position]) else "good"
+        part = label + "_" + part_number(file_names[position])
+        if part not in photos_of_part:
+            photos_of_part[part] = []
+            if label == "good":
+                good_parts.append(part)
+            else:
+                defective_parts.append(part)
+        photos_of_part[part].append(position)
+
+    generator = random.Random(BOOTSTRAP_SEED)
+    f1_values = []
+    auroc_values = []
+    for draw_number in range(BOOTSTRAP_DRAWS):
+        positions = []
+        for part in draw_parts(good_parts, defective_parts, generator):
+            positions.extend(photos_of_part[part])
+        chosen = torch.tensor(positions)
+
+        f1_total = 0.0
+        auroc_total = 0.0
+        for seed_number in range(len(score_lists)):
+            scores = score_lists[seed_number][chosen]
+            drawn_labels = labels[chosen]
+            f1_total = f1_total + f1_from_flags(scores > thresholds[seed_number], drawn_labels)
+            auroc_total = auroc_total + image_auroc(scores, drawn_labels)
+        f1_values.append(f1_total / len(score_lists))
+        auroc_values.append(auroc_total / len(score_lists))
+
+    return {
+        "image_f1_low": float(numpy.percentile(f1_values, INTERVAL_LOW)),
+        "image_f1_high": float(numpy.percentile(f1_values, INTERVAL_HIGH)),
+        "image_au_roc_low": float(numpy.percentile(auroc_values, INTERVAL_LOW)),
+        "image_au_roc_high": float(numpy.percentile(auroc_values, INTERVAL_HIGH)),
+        "good_parts": len(good_parts),
+        "defective_parts": len(defective_parts),
+    }
