@@ -1,0 +1,17 @@
+{
+  "id": "revathyh/phase-5-core-c5",
+  "title": "Phase 5 Core C5",
+  "code_file": "../../notebooks/05_core_C5.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "revathyh/mvtec-ad2-sheet-metal-vial",
+    "revathyh/visual-inspection-src"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
