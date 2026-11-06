@@ -177,14 +177,8 @@ def draw_parts(good_parts, defective_parts, generator):
     return drawn
 
 
-def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
-    """Return 95 percent bootstrap intervals for image F1 and image AU-ROC.
-
-    score_lists and thresholds hold one entry per seed, all for the same photos.
-    Parts are drawn, not photos, because the photos of one part under different
-    lights are not independent. In each draw, each metric is worked out for every
-    seed on the same parts, then averaged over seeds.
-    """
+def group_photos_by_part(labels, file_names):
+    """Return which photos belong to each part, plus the good and defective part lists."""
     # Good and defective parts can share a number, so the label is part of the name
     photos_of_part = {}
     good_parts = []
@@ -199,6 +193,30 @@ def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
             else:
                 defective_parts.append(part)
         photos_of_part[part].append(position)
+    return photos_of_part, good_parts, defective_parts
+
+
+def seed_average_metrics(score_lists, thresholds, labels, chosen):
+    """Return image F1 and image AU-ROC on chosen photos, averaged over seeds."""
+    f1_total = 0.0
+    auroc_total = 0.0
+    for seed_number in range(len(score_lists)):
+        scores = score_lists[seed_number][chosen]
+        drawn_labels = labels[chosen]
+        f1_total = f1_total + f1_from_flags(scores > thresholds[seed_number], drawn_labels)
+        auroc_total = auroc_total + image_auroc(scores, drawn_labels)
+    return f1_total / len(score_lists), auroc_total / len(score_lists)
+
+
+def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
+    """Return 95 percent bootstrap intervals for image F1 and image AU-ROC.
+
+    score_lists and thresholds hold one entry per seed, all for the same photos.
+    Parts are drawn, not photos, because the photos of one part under different
+    lights are not independent. In each draw, each metric is worked out for every
+    seed on the same parts, then averaged over seeds.
+    """
+    photos_of_part, good_parts, defective_parts = group_photos_by_part(labels, file_names)
 
     generator = random.Random(BOOTSTRAP_SEED)
     f1_values = []
@@ -208,16 +226,9 @@ def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
         for part in draw_parts(good_parts, defective_parts, generator):
             positions.extend(photos_of_part[part])
         chosen = torch.tensor(positions)
-
-        f1_total = 0.0
-        auroc_total = 0.0
-        for seed_number in range(len(score_lists)):
-            scores = score_lists[seed_number][chosen]
-            drawn_labels = labels[chosen]
-            f1_total = f1_total + f1_from_flags(scores > thresholds[seed_number], drawn_labels)
-            auroc_total = auroc_total + image_auroc(scores, drawn_labels)
-        f1_values.append(f1_total / len(score_lists))
-        auroc_values.append(auroc_total / len(score_lists))
+        f1, auroc = seed_average_metrics(score_lists, thresholds, labels, chosen)
+        f1_values.append(f1)
+        auroc_values.append(auroc)
 
     return {
         "image_f1_low": float(numpy.percentile(f1_values, INTERVAL_LOW)),
@@ -226,4 +237,40 @@ def bootstrap_image_metrics(score_lists, thresholds, labels, file_names):
         "image_au_roc_high": float(numpy.percentile(auroc_values, INTERVAL_HIGH)),
         "good_parts": len(good_parts),
         "defective_parts": len(defective_parts),
+    }
+
+
+def paired_bootstrap_difference(first, second, labels, file_names):
+    """Return the difference first minus second, with its 95 percent paired interval.
+
+    first and second each hold (score_lists, thresholds) for one configuration,
+    on the same photos in the same order. In every draw, both are measured on the
+    same drawn parts, so the interval is for the gap itself. A difference is
+    called real only if this interval leaves out 0.
+    """
+    photos_of_part, good_parts, defective_parts = group_photos_by_part(labels, file_names)
+    every_photo = torch.arange(len(file_names))
+    first_f1, first_auroc = seed_average_metrics(first[0], first[1], labels, every_photo)
+    second_f1, second_auroc = seed_average_metrics(second[0], second[1], labels, every_photo)
+
+    generator = random.Random(BOOTSTRAP_SEED)
+    f1_gaps = []
+    auroc_gaps = []
+    for draw_number in range(BOOTSTRAP_DRAWS):
+        positions = []
+        for part in draw_parts(good_parts, defective_parts, generator):
+            positions.extend(photos_of_part[part])
+        chosen = torch.tensor(positions)
+        draw_first_f1, draw_first_auroc = seed_average_metrics(first[0], first[1], labels, chosen)
+        draw_second_f1, draw_second_auroc = seed_average_metrics(second[0], second[1], labels, chosen)
+        f1_gaps.append(draw_first_f1 - draw_second_f1)
+        auroc_gaps.append(draw_first_auroc - draw_second_auroc)
+
+    return {
+        "image_f1_difference": first_f1 - second_f1,
+        "image_f1_difference_low": float(numpy.percentile(f1_gaps, INTERVAL_LOW)),
+        "image_f1_difference_high": float(numpy.percentile(f1_gaps, INTERVAL_HIGH)),
+        "image_au_roc_difference": first_auroc - second_auroc,
+        "image_au_roc_difference_low": float(numpy.percentile(auroc_gaps, INTERVAL_LOW)),
+        "image_au_roc_difference_high": float(numpy.percentile(auroc_gaps, INTERVAL_HIGH)),
     }

@@ -108,4 +108,16 @@ check("interval AU-ROC low", intervals["image_au_roc_low"], 1.0)
 check("good parts counted", intervals["good_parts"], 2)
 check("defective parts counted", intervals["defective_parts"], 2)
 
+# Paired difference: a configuration compared with itself has a gap of 0 in every draw
+same = ([perfect_scores], [5.0])
+gap = evaluate.paired_bootstrap_difference(same, same, perfect_labels, names)
+check("paired gap", gap["image_au_roc_difference"], 0.0)
+check("paired gap low", gap["image_au_roc_difference_low"], 0.0)
+check("paired gap high", gap["image_f1_difference_high"], 0.0)
+
+# Paired difference: perfect scores against reversed scores gives an AU-ROC gap of 1 - 0 = 1
+reversed_scores = torch.tensor([20.0, 20.0, 10.0, 2.0, 1.0])
+gap = evaluate.paired_bootstrap_difference(same, ([reversed_scores], [5.0]), perfect_labels, names)
+check("paired AU-ROC gap", gap["image_au_roc_difference"], 1.0)
+
 print("All tests passed")
