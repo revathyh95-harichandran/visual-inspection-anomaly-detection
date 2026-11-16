@@ -17,6 +17,7 @@ data:
 
 image:
   size: 256  # The main size, where every measured method fits on the GPU. The resolution test uses 512, on the best pair only
+  resolution_test_size: 512  # Phase 8 only. C6 was chosen as the best pair on half A. 512 is the larger size chosen in Phase 3; 768 would make the coreset step several hours long
   shape_handling: squash  # Keeps every border defect and uses all pixels. A square crop would lose 91.5 percent of Sheet Metal's defect pixels
   padding: none  # Padding would leave Sheet Metal filling 25 percent of the square, and add made-up streaks
   crop: none  # Crops can remove border defects

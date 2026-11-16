@@ -120,4 +120,26 @@ reversed_scores = torch.tensor([20.0, 20.0, 10.0, 2.0, 1.0])
 gap = evaluate.paired_bootstrap_difference(same, ([reversed_scores], [5.0]), perfect_labels, names)
 check("paired AU-ROC gap", gap["image_au_roc_difference"], 1.0)
 
+# Image AUPRC: sorted from most suspicious, 0.8 is defective (precision 1/1), 0.4 is good,
+# 0.35 is defective (precision 2/3). The average of 1 and 2/3 is 0.8333
+check("image AUPRC", evaluate.image_auprc(torch.tensor([0.1, 0.4, 0.35, 0.8]),
+                                          torch.tensor([False, False, True, True])), 0.8333)
+check("image AUPRC one kind", evaluate.image_auprc(scores, torch.tensor([True, True, True, True])), "not defined")
+
+# Precision and recall: the line 1.5 rejects scores 2, 3 and 4. Two of these are defective,
+# so precision is 2/3, and both defective photos are rejected, so recall is 1
+counts = evaluate.precision_recall_at(torch.tensor([1.0, 2.0, 3.0, 4.0]),
+                                      torch.tensor([False, True, False, True]), 1.5)
+check("precision", counts["precision"], 0.6667)
+check("recall", counts["recall"], 1.0)
+# A line above every score rejects nothing, so precision has no bottom number
+counts = evaluate.precision_recall_at(torch.tensor([1.0, 2.0]), torch.tensor([False, True]), 10.0)
+check("precision with nothing rejected", counts["precision"], "not defined")
+check("recall with nothing rejected", counts["recall"], 0.0)
+
+# Pixel average precision: both defect pixels score above both clean pixels, so it is 1.0
+pixel_maps = torch.tensor([[[0.9, 0.1], [0.8, 0.2]]])
+pixel_masks = torch.tensor([[[True, False], [True, False]]])
+check("pixel average precision", evaluate.pixel_average_precision(pixel_maps, pixel_masks), 1.0)
+
 print("All tests passed")

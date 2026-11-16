@@ -14,7 +14,7 @@ import time
 import numpy
 import torch
 from anomalib.metrics.aupro import _AUPRO
-from sklearn.metrics import roc_auc_score
+from sklearn.metrics import average_precision_score, roc_auc_score
 
 # The benchmark's rule: mean plus 3 standard deviations of good validation pixels
 STD_MULTIPLIER = 3
@@ -73,6 +73,59 @@ def image_auroc(scores, labels):
     if labels.all() or not labels.any():
         return "not defined"
     return float(roc_auc_score(labels.int().tolist(), scores.tolist()))
+
+
+def image_auprc(scores, labels):
+    """Return image AUPRC (average precision), or "not defined" if only one kind of photo is present.
+
+    Secondary metric, added in Phase 8 for the appendix. Photos are sorted from
+    most to least suspicious. At each defective photo, precision so far is
+    noted, and these are averaged. scikit-learn's `average_precision_score`
+    does this, and like `roc_auc_score` it uses only the order of the scores,
+    so raw scores above 1 are fine.
+    """
+    if labels.all() or not labels.any():
+        return "not defined"
+    return float(average_precision_score(labels.int().tolist(), scores.tolist()))
+
+
+def precision_recall_at(scores, labels, threshold):
+    """Return precision and recall of the photos above one line.
+
+    Secondary metric, added in Phase 8 for the appendix.
+    Precision: of the rejected photos, the share that are defective.
+    Recall: of the defective photos, the share that are rejected.
+    Either is "not defined" when its bottom number is 0.
+    """
+    flagged = scores > threshold
+    if flagged.shape != labels.shape:
+        raise ValueError("Scores and labels differ in shape: " + str(list(flagged.shape)) + ", " + str(list(labels.shape)))
+    right_alarms = int((flagged & labels).sum())
+    false_alarms = int((flagged & ~labels).sum())
+    misses = int((~flagged & labels).sum())
+    precision = "not defined"
+    if right_alarms + false_alarms > 0:
+        precision = right_alarms / (right_alarms + false_alarms)
+    recall = "not defined"
+    if right_alarms + misses > 0:
+        recall = right_alarms / (right_alarms + misses)
+    return {"precision": precision, "recall": recall}
+
+
+def pixel_average_precision(maps, masks):
+    """Return pixel-level average precision, treating every pixel as one item.
+
+    Secondary metric, added in Phase 8 for the appendix. The same calculation
+    as `image_auprc`, with the mask as the answer for each pixel. Like pixel F1,
+    it depends on masks drawn by people, so it is uncertain.
+    """
+    if maps.shape != masks.shape:
+        raise ValueError("Maps and masks differ in shape: " + str(list(maps.shape)) + ", " + str(list(masks.shape)))
+    answers = masks.flatten().bool()
+    if answers.all() or not answers.any():
+        return "not defined"
+    # numpy arrays, because a list of millions of pixels would be slow
+    return float(average_precision_score(answers.int().numpy(), maps.flatten().double().numpy()))
 
 
 def wait_for_gpu():
