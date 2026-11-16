@@ -1,0 +1,7 @@
+product,epoch,seconds,average_loss,peak_gpu_gb,train_photos,batch_size
+sheet_metal,1,49.58,1.06864,2.623,137,8
+sheet_metal,2,28.16,0.65106,2.627,137,8
+sheet_metal,3,24.62,0.5443,2.625,137,8
+vial,1,57.48,0.78253,2.624,291,8
+vial,2,36.06,0.34679,2.625,291,8
+vial,3,35.94,0.25455,2.626,291,8
