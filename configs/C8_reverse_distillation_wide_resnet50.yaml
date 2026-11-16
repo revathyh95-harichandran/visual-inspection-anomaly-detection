@@ -35,9 +35,9 @@ method:
   anomaly_map_mode: add  # anomalib's default. Adds the differences from each layer into one map
   optimizer: adam  # anomalib's fixed setting for this method. Only the decoder and bottleneck learn
   learning_rate: 0.005  # anomalib's fixed setting
-  betas: [0.5, 0.99]  # anomalib's fixed setting
-  training_length: TO_BE_DECIDED  # Decided in Phase 7 from GPU time per epoch, because this is the only method here that trains for many steps
-  train_batch_size: 8  # Peak memory measured at 2.40 GB at size 256. It can change training, so it is reviewed with training_length in Phase 7
+  betas: [0.5, 0.99]  # anomalib's fixed setting. The original paper used (0.5, 0.999), a small difference stated in the report
+  training_length: 200  # Epochs. The original paper's count, the same for every product. About 26 s per epoch on Sheet Metal and 36 s on Vial, measured in Phase 7 (R030)
+  train_batch_size: 8  # Peak memory 2.63 GB in the Phase 7 timing test. The paper used 16, so each of our epochs makes twice as many smaller updates. Kept at 8 to change one thing at a time
   eval_batch_size: 8  # Matches training. Only affects speed
 
 thresholds:
