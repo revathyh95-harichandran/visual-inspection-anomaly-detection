@@ -1,0 +1,21 @@
+config,product,kind,label,file_name,score
+C6,sheet_metal,hit,bad,013_regular.png,33.0221
+C6,sheet_metal,hit,bad,013_overexposed.png,33.0666
+C6,sheet_metal,hardest defective,bad,012_regular.png,19.9459
+C6,sheet_metal,hardest defective,bad,012_overexposed.png,20.0929
+C6,sheet_metal,hardest defective,bad,012_underexposed.png,20.1642
+C6,sheet_metal,hardest defective,bad,000_underexposed.png,21.0695
+C6,sheet_metal,hardest good,good,002_shift_1.png,22.8539
+C6,sheet_metal,hardest good,good,001_shift_1.png,23.0086
+C6,sheet_metal,hardest good,good,002_shift_2.png,23.1118
+C6,sheet_metal,hardest good,good,001_shift_2.png,23.2826
+C6,vial,hit,bad,001_overexposed.png,37.8122
+C6,vial,hit,bad,001_underexposed.png,38.0713
+C6,vial,hardest defective,bad,011_shift_2.png,24.4775
+C6,vial,hardest defective,bad,011_regular.png,24.8853
+C6,vial,hardest defective,bad,011_shift_3.png,24.8992
+C6,vial,hardest defective,bad,011_shift_4.png,25.2027
+C6,vial,hardest good,good,002_underexposed.png,28.5652
+C6,vial,hardest good,good,003_shift_4.png,29.2015
+C6,vial,hardest good,good,003_underexposed.png,30.4215
+C6,vial,hardest good,good,000_underexposed.png,31.2907
