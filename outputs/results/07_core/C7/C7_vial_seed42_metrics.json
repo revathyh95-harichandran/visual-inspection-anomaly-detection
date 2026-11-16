@@ -1,0 +1,23 @@
+{
+ "threshold": 0.4355203672203868,
+ "au_pro_5_percent": 0.37017688155174255,
+ "au_pro_30_percent": 0.6588974595069885,
+ "pixel_f1": 0.01586208874738261,
+ "image_f1": 0.8235294117647058,
+ "flag_everything_image_f1": 0.8235294117647058,
+ "image_au_roc": 0.901846452866861,
+ "seconds_per_photo": 0.2368210127714284,
+ "peak_gpu_gb": 1.451,
+ "config": "C7",
+ "product": "vial",
+ "seed": 42,
+ "half_a_photos": 70,
+ "defective_photos": 49,
+ "good_validation_photos_flagged": 41,
+ "good_validation_photos": 41,
+ "good_half_a_photos_flagged": 21,
+ "defective_half_a_photos_flagged": 49,
+ "image_au_roc_hottest_pixel": 0.8134110787172013,
+ "fit_seconds": 0.0,
+ "image_size": 240
+}
