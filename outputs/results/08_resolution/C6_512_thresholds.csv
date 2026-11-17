@@ -1,0 +1,7 @@
+config,product,seed,benchmark_threshold,cost_based_threshold,cost_at_cost_based_line
+C6_512,sheet_metal,42,22.7409,26.3337,0.0595
+C6_512,sheet_metal,43,22.6698,26.278,0.0595
+C6_512,sheet_metal,44,22.7082,26.3995,0.0571
+C6_512,vial,42,26.1591,38.9403,0.051
+C6_512,vial,43,26.4331,38.9252,0.051
+C6_512,vial,44,27.3266,38.9191,0.051
