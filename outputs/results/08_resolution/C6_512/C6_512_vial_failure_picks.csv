@@ -1,0 +1,11 @@
+config,product,kind,label,file_name,score
+C6_512,vial,hit,bad,001_shift_1.png,44.9284
+C6_512,vial,hit,bad,001_shift_2.png,45.0348
+C6_512,vial,hardest defective,bad,013_shift_3.png,29.3405
+C6_512,vial,hardest defective,bad,013_regular.png,29.6017
+C6_512,vial,hardest defective,bad,013_underexposed.png,29.6748
+C6_512,vial,hardest defective,bad,013_overexposed.png,29.6841
+C6_512,vial,hardest good,good,002_shift_1.png,36.6469
+C6_512,vial,hardest good,good,002_shift_4.png,36.7352
+C6_512,vial,hardest good,good,003_shift_4.png,38.6031
+C6_512,vial,hardest good,good,003_shift_1.png,38.6269
