@@ -1,0 +1,17 @@
+{
+  "id": "revathyh/final-test-c5",
+  "title": "final test c5",
+  "code_file": "../../notebooks/final_C5.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "revathyh/mvtec-ad2-sheet-metal-vial",
+    "revathyh/visual-inspection-src"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
