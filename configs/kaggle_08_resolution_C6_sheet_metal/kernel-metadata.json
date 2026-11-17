@@ -1,0 +1,17 @@
+{
+  "id": "revathyh/phase-8-resolution-c6-sheet-metal",
+  "title": "phase 8 resolution c6 sheet metal",
+  "code_file": "../../notebooks/08_resolution_C6_sheet_metal.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "revathyh/mvtec-ad2-sheet-metal-vial",
+    "revathyh/visual-inspection-src"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
