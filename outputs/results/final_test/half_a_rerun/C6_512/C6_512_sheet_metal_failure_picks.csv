@@ -1,0 +1,11 @@
+config,product,kind,label,file_name,score
+C6_512,sheet_metal,hit,bad,004_shift_1.png,32.3815
+C6_512,sheet_metal,hit,bad,004_shift_3.png,33.0205
+C6_512,sheet_metal,hardest defective,bad,007_underexposed.png,22.6152
+C6_512,sheet_metal,hardest defective,bad,007_overexposed.png,22.8644
+C6_512,sheet_metal,hardest defective,bad,007_regular.png,22.9649
+C6_512,sheet_metal,hardest defective,bad,009_underexposed.png,23.0723
+C6_512,sheet_metal,hardest good,good,001_overexposed.png,24.3195
+C6_512,sheet_metal,hardest good,good,001_shift_1.png,26.0392
+C6_512,sheet_metal,hardest good,good,001_shift_2.png,26.0655
+C6_512,sheet_metal,hardest good,good,001_shift_3.png,26.2763

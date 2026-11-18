@@ -1,0 +1,21 @@
+{
+ "threshold": 0.41706739785676317,
+ "au_pro_5_percent": 0.06631108373403549,
+ "au_pro_30_percent": 0.202381432056427,
+ "pixel_f1": 0.0,
+ "image_f1": 0.04081632653061224,
+ "flag_everything_image_f1": 0.8888888888888888,
+ "image_au_roc": 0.1736111111111111,
+ "seconds_per_photo": 0.21397141133333264,
+ "peak_gpu_gb": 1.453,
+ "run": "C7_sheet_metal_seed42",
+ "half": "B",
+ "half_b_photos": 60,
+ "defective_photos": 48,
+ "good_validation_photos_flagged": 1,
+ "good_validation_photos": 19,
+ "good_half_b_photos_flagged": 0,
+ "defective_half_b_photos_flagged": 1,
+ "image_auprc": 0.6978319033645131,
+ "pixel_average_precision": 0.0010155337539077905
+}

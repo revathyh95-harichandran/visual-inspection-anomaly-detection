@@ -1,0 +1,21 @@
+{
+ "threshold": 0.4355203672203868,
+ "au_pro_5_percent": 0.4650430679321289,
+ "au_pro_30_percent": 0.7949123382568359,
+ "pixel_f1": 0.19479996609594846,
+ "image_f1": 0.8888888888888888,
+ "flag_everything_image_f1": 0.8888888888888888,
+ "image_au_roc": 0.6568877551020408,
+ "seconds_per_photo": 0.24448875474285744,
+ "peak_gpu_gb": 1.451,
+ "run": "C7_vial_seed42",
+ "half": "B",
+ "half_b_photos": 70,
+ "defective_photos": 56,
+ "good_validation_photos_flagged": 41,
+ "good_validation_photos": 41,
+ "good_half_b_photos_flagged": 14,
+ "defective_half_b_photos_flagged": 56,
+ "image_auprc": 0.9157854215648943,
+ "pixel_average_precision": 0.1476827018969738
+}

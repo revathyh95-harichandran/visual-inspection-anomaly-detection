@@ -1,0 +1,11 @@
+run,kind,label,file_name,score
+C1_vial_seed42,hit,bad,003_underexposed.png,86.741203
+C1_vial_seed42,hit,bad,002_underexposed.png,87.119667
+C1_vial_seed42,hardest defective,bad,007_regular.png,14.710968
+C1_vial_seed42,hardest defective,bad,007_shift_3.png,15.893862
+C1_vial_seed42,hardest defective,bad,000_regular.png,16.050768
+C1_vial_seed42,hardest defective,bad,009_regular.png,16.134876
+C1_vial_seed42,hardest good,good,004_overexposed.png,59.642689
+C1_vial_seed42,hardest good,good,001_overexposed.png,59.670086
+C1_vial_seed42,hardest good,good,001_underexposed.png,85.472267
+C1_vial_seed42,hardest good,good,004_underexposed.png,86.267235

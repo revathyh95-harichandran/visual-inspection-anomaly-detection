@@ -1,0 +1,11 @@
+run,kind,label,file_name,score
+C7_sheet_metal_seed42,hit,bad,014_regular.png,0.413742
+C7_sheet_metal_seed42,hit,bad,014_underexposed.png,0.419733
+C7_sheet_metal_seed42,hardest defective,bad,010_shift_2.png,0.375398
+C7_sheet_metal_seed42,hardest defective,bad,010_shift_1.png,0.37578
+C7_sheet_metal_seed42,hardest defective,bad,001_shift_1.png,0.378099
+C7_sheet_metal_seed42,hardest defective,bad,001_shift_2.png,0.378285
+C7_sheet_metal_seed42,hardest good,good,003_underexposed.png,0.409697
+C7_sheet_metal_seed42,hardest good,good,000_shift_1.png,0.410694
+C7_sheet_metal_seed42,hardest good,good,000_shift_2.png,0.4108
+C7_sheet_metal_seed42,hardest good,good,000_shift_3.png,0.411472

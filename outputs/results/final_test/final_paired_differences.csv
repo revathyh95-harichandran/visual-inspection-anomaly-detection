@@ -1,0 +1,21 @@
+product,comparison,first_minus_second,image_f1_difference,image_f1_difference_low,image_f1_difference_high,image_au_roc_difference,image_au_roc_difference_low,image_au_roc_difference_high,image_f1_real,image_au_roc_real
+sheet_metal,"method, ResNet-18: PatchCore against PaDiM",C4 minus C1,-0.0847,-0.1914,0.0024,-0.0405,-0.257,0.1875,False,False
+sheet_metal,"method, Wide ResNet-50: PatchCore against PaDiM",C5 minus C2,0.1036,-0.0944,0.3901,-0.2749,-0.4294,-0.1389,False,True
+sheet_metal,"network, PaDiM: Wide ResNet-50 against ResNet-18",C2 minus C1,-0.1197,-0.3895,0.0562,0.2969,0.2118,0.3785,False,True
+sheet_metal,"network, PatchCore: Wide ResNet-50 against ResNet-18",C5 minus C4,0.0686,-0.007,0.1762,0.0625,-0.0996,0.2164,False,False
+sheet_metal,"network, PaDiM: EfficientNet-B0 against ResNet-18",C3 minus C1,0.0,0.0,0.0,0.033,-0.0904,0.1736,False,False
+sheet_metal,"network, PatchCore: EfficientNet-B0 against ResNet-18",C6 minus C4,0.0599,-0.0236,0.1616,-0.066,-0.2315,0.0961,False,False
+sheet_metal,"network, PatchCore: EfficientNet-B0 against Wide ResNet-50",C6 minus C5,-0.0087,-0.0543,0.0438,-0.1285,-0.2547,0.007,False,False
+sheet_metal,"method, Wide ResNet-50: Reverse Distillation against PatchCore",C8 minus C5,-0.3966,-0.7717,-0.0812,0.228,0.0486,0.4271,True,True
+sheet_metal,method: WinCLIP against PatchCore with Wide ResNet-50,C7 minus C5,-0.832,-0.9085,-0.7357,-0.4769,-0.7222,-0.1782,True,True
+sheet_metal,resolution: C6 at 512 against 256,C6_512 minus C6,0.0144,-0.0073,0.0437,0.1088,-0.0278,0.2419,False,False
+vial,"method, ResNet-18: PatchCore against PaDiM",C4 minus C1,0.0324,-0.1119,0.1469,0.2972,0.1514,0.4584,False,True
+vial,"method, Wide ResNet-50: PatchCore against PaDiM",C5 minus C2,0.0447,0.0311,0.0588,0.2564,0.2066,0.3138,True,True
+vial,"network, PaDiM: Wide ResNet-50 against ResNet-18",C2 minus C1,0.056,-0.013,0.1354,0.0587,-0.0498,0.2118,False,False
+vial,"network, PatchCore: Wide ResNet-50 against ResNet-18",C5 minus C4,0.0683,0.0,0.2017,0.0179,-0.0455,0.119,False,False
+vial,"network, PaDiM: EfficientNet-B0 against ResNet-18",C3 minus C1,-0.0099,-0.0899,0.0693,-0.051,-0.148,0.102,False,False
+vial,"network, PatchCore: EfficientNet-B0 against ResNet-18",C6 minus C4,0.0547,0.0,0.174,-0.0051,-0.1302,0.1327,False,False
+vial,"network, PatchCore: EfficientNet-B0 against Wide ResNet-50",C6 minus C5,-0.0136,-0.0277,0.0,-0.023,-0.0901,0.023,False,False
+vial,"method, Wide ResNet-50: Reverse Distillation against PatchCore",C8 minus C5,-0.0668,-0.0736,-0.0603,0.0128,-0.0714,0.0969,True,False
+vial,method: WinCLIP against PatchCore with Wide ResNet-50,C7 minus C5,-0.0739,-0.0879,-0.0603,-0.2653,-0.5128,-0.0434,True,True
+vial,resolution: C6 at 512 against 256,C6_512 minus C6,-0.0603,-0.0603,-0.0603,0.0162,-0.1241,0.1871,True,False

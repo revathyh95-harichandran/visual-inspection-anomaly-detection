@@ -1,0 +1,21 @@
+{
+ "threshold": 22.669839336023745,
+ "au_pro_5_percent": 0.06851637363433838,
+ "au_pro_30_percent": 0.24213364720344543,
+ "pixel_f1": 0.02934253556723579,
+ "image_f1": 0.8785046728971962,
+ "flag_everything_image_f1": 0.8888888888888888,
+ "image_au_roc": 0.6597222222222223,
+ "seconds_per_photo": 0.07654667986666937,
+ "peak_gpu_gb": 0.527,
+ "run": "C6_512_sheet_metal_seed43",
+ "half": "B",
+ "half_b_photos": 60,
+ "defective_photos": 48,
+ "good_validation_photos_flagged": 18,
+ "good_validation_photos": 19,
+ "good_half_b_photos_flagged": 12,
+ "defective_half_b_photos_flagged": 47,
+ "image_auprc": 0.9147391678117496,
+ "pixel_average_precision": 0.015222774745647902
+}
