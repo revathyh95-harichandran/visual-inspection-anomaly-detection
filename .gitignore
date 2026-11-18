@@ -44,3 +44,6 @@ __pycache__/
 # of the project", so that outputs/results/ is still tracked
 /results/
 lightning_logs/
+
+# Drafts of graded text, for me to rewrite in my own words before anything is shared
+/docs/drafts/

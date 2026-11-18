@@ -248,8 +248,24 @@ Run on Kaggle on all 1,773 images and masks. The checks only read files, and not
 
 **Limit of the duplicate check:** it finds byte-identical files only. It does not find the same scene under different lighting, or a re-saved copy.
 
-## Known limits so far
+## Known limits
 
 - **Repeated scenes:** in `test_public`, each number appears once per lighting condition. Sheet Metal has 4 good and 15 defective numbers with 6 conditions each. Vial has 5 good and 15 defective numbers with 7 conditions each. Masks support this: a scene number has one identical mask across all conditions for 12 of 15 Sheet Metal numbers and 9 of 15 Vial numbers. Looking at defective scene `000` of each product, the same physical part appears under every lighting condition. In Vial, its mask outlines visibly differ between conditions, which may explain some of the differing masks. This was checked by eye on one scene per product, so it does not prove the pattern for every scene.
 - **Defect types:** no folder or file name gives a defect type, and the archive's readme does not mention one.
 - **Share of defects:** the public test sets are about 75 to 80 percent defective, far more than a real production line.
+- **Too few good parts to set a threshold.** Each half holds only 2 or 3 good parts. On half A, the cost-based lines sat just above these few parts. On half B, two other good parts looked different enough (darker Sheet Metal under shifted light, and a Vial with a smaller printed code) that the same lines rejected many of them. So a threshold set on this data should not be trusted on a production line without many more good parts. See the [Final test findings](../outputs/results/final_test/final_findings.md).
+- **Lighting within the public test set.** Every part appears under 6 (Sheet Metal) or 7 (Vial) lightings, with 10 photos per lighting in each half. The lighting results are a direction, not a precise measure.
+
+## What the Final test showed about the data
+
+These are the checks on half B, which was opened once after every choice was locked (17 Nov 2026).
+
+| | Sheet Metal | Vial |
+| --- | --- | --- |
+| Half B photos | 60 (12 good, 48 defective) | 70 (14 good, 56 defective) |
+| Half B good parts | 000, 003 | 001, 004 |
+| Half A photos still repeat their locked scores | yes, all runs | yes, all runs |
+| Largest change in image AU-ROC from half A to half B | WinCLIP, 0.75 to 0.17 | Reverse Distillation, 0.51 to 0.93 |
+
+The halves were made with the same rule and the same seed. So the large changes between them come from the small number of parts in each half, mainly the good ones, and not from a different way of preparing them.
+
