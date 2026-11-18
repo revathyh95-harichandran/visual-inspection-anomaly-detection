@@ -53,6 +53,8 @@ Each value is the mean over seeds. Intervals are 95 percent part bootstraps. Wit
 | C8 Reverse Distillation, Wide ResNet-50 | 0.88 [0.75 to 0.99] | 0.19 | **0.93** [0.82 to 1.0] | 0.93 | 0.026 |
 | C6 at 512 pixels | 0.63 [0.40 to 0.82] | 0.24 | 0.92 [0.79 to 0.99] | 0.97 | 0.153 |
 
+![Half B metric comparison](outputs/figures/final_metric_comparison.png)
+
 ![Half A against half B](outputs/figures/final_half_a_vs_half_b_auroc.png)
 
 ![Cost at the locked lines](outputs/figures/final_cost_at_locked_lines.png)
