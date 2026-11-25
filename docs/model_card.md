@@ -49,7 +49,7 @@ The full comparison of all eight configurations is in the [Final test findings](
 - **Changed lighting:**
   - **What happens:** a line set under regular light rejects most good photos under over-exposure, under-exposure or a shifted light.
   - **How much:** 73 percent on Sheet Metal and 89 percent on Vial, on half B.
-- **Small, thin or faint defects** are missed, for example thin scratches and faint cracks on Sheet Metal. The heat map is too coarse at 256 pixels to separate them from the surface texture.
+- **Thin or faint defects** are often missed, for example thin scratches and faint cracks on Sheet Metal (judged by eye from the heat maps). Defect **size** alone does not explain the misses: measured from the masks after the final test, small defects were caught as often as large ones (see the [failure analysis](../outputs/results/final_test/failure_analysis/)).
 - **Defects at the very edge** of the sheet are missed more often at 512 pixels than at 256.
 - **Vial:** printed codes and bubbles on good vials can raise the score.
 

@@ -35,3 +35,5 @@ The causes are **likely**, not proven. They come from looking at the heat maps a
 - **Lighting is still the biggest cause of false alarms,** now for 7 of the 8 configurations. C3 shows the extreme case: its score is mostly a lighting measure.
 - **Reverse Distillation (C8) behaves differently on the two products.** On Sheet Metal its map points at real defects and it is the least thrown by light changes (see `outputs/results/07_lighting/lighting_by_config.csv`). On Vial it reacts to normal bubbles and print, so it barely ranks at all.
 - **Small, thin or faint defects are missed by every method,** which points to the image size (256 pixels) as one likely cause. This is what the Phase 8 resolution test checks.
+
+**Later check (25 Nov 2026):** after the final test, defect size was measured from the masks. Small defects were not caught less often than large ones, so size alone does not explain the misses. See `outputs/results/final_test/failure_analysis/` and `notebooks/final_failure_analysis.ipynb`. The text above is kept as it was written on half A.
