@@ -77,8 +77,14 @@ Each value is the mean over seeds. Intervals are 95 percent part bootstraps. Wit
    - PatchCore beats PaDiM on Vial.
    - Reverse Distillation ranks Sheet Metal photos well.
    - Lighting changes hurt every method.
-   - Small, thin or faint defects are missed most often.
+   - Thin or faint defects are often missed (judged by eye from the heat maps).
 5. **Resolution:** C6 at 512 pixels made no real difference to image AU-ROC on either half. It is 7 to 12 times slower per photo.
+6. **Failure analysis after the final test** (measured on saved results; nothing locked was changed):
+   - **Only the chosen lines broke on new good parts.** Every locked line rejected 0% of half A's good photos. On half B, most configurations rejected 0 to 14%, but C6 on Sheet Metal rejected 31% and WinCLIP on Vial 79%. A possible reason, not proven: both were chosen because their line was the cheapest, and with 2 or 3 good parts the cheapest line may fit those few parts most tightly.
+   - **Defect size does not explain the misses.** Measured from the masks, small defects were caught as often as large ones or more often (C2 on Sheet Metal: 100% of the smallest third, 47% of the largest). The earlier hint that small defects are missed is not confirmed.
+   - Notebook: [final_failure_analysis.ipynb](notebooks/final_failure_analysis.ipynb); results in [failure_analysis/](outputs/results/final_test/failure_analysis/).
+
+![Threshold transfer](outputs/figures/failure_threshold_transfer.png)
 
 **The full write-up:** [final_findings.md](outputs/results/final_test/final_findings.md), with the development work in [failure_causes_phase7.md](outputs/results/07_evaluation/failure_causes_phase7.md) and [resolution_findings.md](outputs/results/08_resolution/resolution_findings.md).
 
