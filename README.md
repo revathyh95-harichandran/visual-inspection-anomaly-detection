@@ -98,6 +98,22 @@ Each value is the mean over seeds. Intervals are 95 percent part bootstraps. Wit
 
 A small Streamlit app in [app/](app/README.md) shows C6 at work on the laptop's processor. It shows the verdict, the score, the heat map and the locked line for any public test photo. It also has a mode with the saved half B results. The model files and photos are not in the repository. [app/README.md](app/README.md) explains how to get them.
 
+## Repository structure
+
+| Folder or file | What it holds |
+| --- | --- |
+| [notebooks/](notebooks/) | Every step, numbered by phase: `00` to `04` setup, data and first runs; `05` to `08` the development runs on half A; `09` the demo model; `final_*` the Final test on half B |
+| [src/](src/) | Shared code used by every notebook: `evaluate.py` (metrics and bootstrap), `cost.py` (cost model and cost-based line), `final_test.py` (half B scoring), with known-answer tests in `test_evaluate.py` and `test_cost.py` |
+| [configs/](configs/) | One settings file per configuration (`C1` to `C8`), each setting with its reason; `kaggle_*` folders hold the Kaggle run settings for each notebook |
+| [outputs/results/](outputs/results/) | Every result as numbers (csv, json, md), by phase; the reported results are in `final_test/` |
+| [outputs/figures/](outputs/figures/) | Every chart; figures showing dataset photos are kept out of git |
+| [app/](app/README.md) | The Streamlit demo |
+| [docs/](docs/) | The [data card](docs/data_card.md), the [model card](docs/model_card.md) and the [notes on the first run against the paper](docs/c1_repeat_and_paper_notes.md) |
+| [requirements.txt](requirements.txt) | Exact library versions for the laptop |
+| [LICENSE](LICENSE) | MIT, for my code only |
+
+**Where to start:** this README, then [final_findings.md](outputs/results/final_test/final_findings.md) for the reported results, and [final_results.ipynb](notebooks/final_results.ipynb) for how they were calculated.
+
 ## Reproducing the results
 
 1. **Download the data:** MVTec AD 2 from the [official page](https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2) (CC BY-NC-SA 4.0). It is not included here.
