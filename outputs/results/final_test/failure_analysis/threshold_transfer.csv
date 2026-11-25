@@ -1,0 +1,17 @@
+product,config,seeds,good_rejected_half_a,good_rejected_half_b
+sheet_metal,C1,1,0.0,0.0833
+sheet_metal,C2,1,0.0,0.0
+sheet_metal,C3,1,0.0,0.0
+sheet_metal,C4,3,0.0,0.0278
+sheet_metal,C5,3,0.0,0.0556
+sheet_metal,C6,3,0.0,0.3055
+sheet_metal,C7,1,0.0,0.75
+sheet_metal,C8,1,0.0,0.0
+vial,C1,1,0.0,0.0
+vial,C2,1,0.0,0.0714
+vial,C3,1,0.0,0.0
+vial,C4,3,0.0,0.0
+vial,C5,3,0.0,0.0714
+vial,C6,3,0.0,0.0
+vial,C7,1,0.0,0.7857
+vial,C8,1,0.0,0.1429
